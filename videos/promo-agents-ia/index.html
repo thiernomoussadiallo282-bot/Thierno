@@ -2,8 +2,8 @@
 <html
   lang="fr"
   data-composition-variables='[
-    {"id":"brandName","type":"string","label":"Nom de l&apos;entreprise","default":"[NOM]","maxLength":24},
-    {"id":"contact","type":"string","label":"Contact affiché","default":"[contact]","maxLength":40}
+    {"id":"brandName","type":"string","label":"Nom de l&apos;entreprise","default":"AGENTS IA","maxLength":24},
+    {"id":"contact","type":"string","label":"Contact affiché (vide = « dès aujourd&apos;hui »)","default":"","maxLength":40}
   ]'
 >
   <head>
@@ -87,10 +87,12 @@
       #cta-1 { font-size: 118px; margin-top: 66px; }
       #cta-2 { font-size: 92px; color: #ffffffd9; }
       #pill {
-        position: absolute; left: 90px; right: 90px; top: 1150px; height: 160px; border-radius: 999px; background: var(--accent); color: var(--ink);
-        display: flex; align-items: center; justify-content: center; gap: 26px; font-weight: 900; font-size: 50px; box-shadow: 0 0 70px #22d3ee88;
+        position: absolute; left: 60px; right: 60px; top: 1150px; height: 160px; border-radius: 999px; background: var(--accent); color: var(--ink);
+        display: flex; align-items: center; justify-content: center; gap: 18px; padding: 0 40px; font-weight: 900; font-size: 42px; letter-spacing: -0.02em; box-shadow: 0 0 70px #22d3ee88;
       }
-      #pill .mono { font-size: 44px; }
+      #pill span { white-space: nowrap; flex: none; }
+      #pill .mono { font-size: 38px; letter-spacing: 0; }
+      #pill svg { flex: none; }
       .spark { position: absolute; left: 536px; top: 516px; width: 10px; height: 10px; border-radius: 50%; background: var(--accent); box-shadow: 0 0 16px var(--accent); }
 
       /* captions */
@@ -268,12 +270,12 @@
         <div class="meta"><span class="live"><i></i>VOTRE BUSINESS · PILOTE AUTO</span><span class="idx">05 / 05</span></div>
         <div id="s5-sparks"></div>
         <div id="cta">
-          <div id="brand" data-var-text="brandName">[NOM]</div>
+          <div id="brand" data-var-text="brandName">AGENTS IA</div>
           <div id="brand-rule"></div>
           <div id="cta-1"><span id="cta-w1" class="cta-w">Automatisez</span></div>
           <div id="cta-2"><span id="cta-w2" class="cta-w">votre&nbsp;</span><span id="cta-w3" class="cta-w">business</span></div>
         </div>
-        <div id="pill"><span>Contactez-nous</span><span id="contact" class="mono" data-var-text="contact">[contact]</span>
+        <div id="pill"><span>Contactez-nous</span><span id="contact">dès aujourd'hui</span>
           <svg width="46" height="46" viewBox="0 0 46 46"><path d="M6 23 L38 23 M26 10 L39 23 L26 36" fill="none" stroke="#04222a" stroke-width="6" stroke-linecap="round" stroke-linejoin="round" /></svg>
         </div>
       </div>
@@ -316,6 +318,19 @@
     <script>
       (function () {
         const tl = gsap.timeline({ paused: true });
+        // CTA variables: fit the brand name to the frame; show the contact only when one is given
+        const vars = (window.__hyperframes && window.__hyperframes.getVariables && window.__hyperframes.getVariables()) || {};
+        const brandTxt = (vars.brandName || "AGENTS IA").trim();
+        const brandEl = document.getElementById("brand");
+        brandEl.textContent = brandTxt;
+        brandEl.style.fontSize = Math.round(Math.min(150, 940 / (Math.max(4, brandTxt.length) * 0.74))) + "px";
+        const contactTxt = (vars.contact || "").trim();
+        if (contactTxt) {
+          const c = document.getElementById("contact");
+          c.textContent = contactTxt;
+          c.className = "mono";
+          if (contactTxt.length > 18) document.getElementById("pill").style.fontSize = "34px";
+        }
         const CX = 496, CY = 406; // card viewport centre (992 x 812)
 
         // ---------- helpers ----------
