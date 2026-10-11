@@ -41,9 +41,9 @@ sur la musique, aucun plan de plus de 3 s sans mouvement.
 - 4–12 s : « Voici votre agent IA. Il répond à vos clients, jour et nuit… même par message vocal. »
 - 12–20 s : « Un nouveau client ? Enregistré automatiquement. Une demande urgente ? Vous recevez une alerte par email. »
 - 20–28 s : « Il trie, classe et remplit vos tableaux. Et chaque matin à 7 h, votre rapport vous attend. »
-- 28–36 s : « [Nom] : automatisez votre business. Contactez-nous dès aujourd'hui. »
+- 28–36 s : « Diallo IA ! Automatisez votre business. Contactez-nous dès aujourd'hui. »
 
 ## Notes
 
-- Nom de l'entreprise et contact pas encore fournis : variables `brandName` / `contact`, à remplir avant le rendu final.
+- Entreprise : Diallo IA (prononcé « Diallo, I-A »). Fondateur affiché : Thierno Moussa Diallo. Contact : 07 77 56 15 66.
 - Couleur de marque non fournie : cyan #22D3EE retenu (recommandation acceptée).
