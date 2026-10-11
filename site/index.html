@@ -1,0 +1,884 @@
+<!doctype html>
+<html lang="fr" class="no-js">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <title>Diallo IA — Assistants IA et automatisations pour entreprises, écoles et commerçants</title>
+  <meta name="description" content="Diallo IA crée des assistants IA WhatsApp et des automatisations sur mesure : réponses aux clients, relances de paiement, rapports, rendez-vous. Basé à Man (Côte d'Ivoire), interventions à distance.">
+  <meta name="theme-color" content="#0B2545">
+  <meta name="author" content="Thierno Moussa Diallo">
+  <meta name="robots" content="index, follow">
+  <!-- Après la mise en ligne : remplacez ADRESSE-DU-SITE par l'adresse réelle (voir LISEZMOI.md) -->
+  <link rel="canonical" href="https://ADRESSE-DU-SITE/">
+  <meta property="og:type" content="website">
+  <meta property="og:locale" content="fr_FR">
+  <meta property="og:site_name" content="Diallo IA">
+  <meta property="og:title" content="Diallo IA — Assistants IA & automatisations">
+  <meta property="og:description" content="Vos tâches répétitives, faites automatiquement : assistants WhatsApp, relances de paiement, rapports, rendez-vous. Écrivez-nous sur WhatsApp.">
+  <meta property="og:url" content="https://ADRESSE-DU-SITE/">
+  <meta property="og:image" content="https://ADRESSE-DU-SITE/assets/img/og-image.png">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta property="og:image:alt" content="Diallo IA — Assistants IA et automatisations">
+  <meta name="twitter:card" content="summary_large_image">
+  <link rel="icon" href="assets/icons/favicon.svg" type="image/svg+xml">
+  <link rel="icon" href="assets/icons/favicon-32.png" sizes="32x32" type="image/png">
+  <link rel="apple-touch-icon" href="assets/icons/apple-touch-icon.png">
+  <link rel="preload" href="assets/fonts/inter-latin-var.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="stylesheet" href="assets/css/style.css">
+  <script>document.documentElement.classList.remove("no-js");</script>
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "ProfessionalService",
+    "name": "Diallo IA",
+    "description": "Assistants IA et automatisations sur mesure pour les entreprises, les écoles et les commerçants : réponses aux clients, relances de paiement, rapports, prise de rendez-vous.",
+    "url": "https://ADRESSE-DU-SITE/",
+    "image": "https://ADRESSE-DU-SITE/assets/img/og-image.png",
+    "logo": "https://ADRESSE-DU-SITE/assets/icons/logo.svg",
+    "telephone": "+2250555613362",
+    "email": "thiernomoussadiallo282@gmail.com",
+    "founder": { "@type": "Person", "name": "Thierno Moussa Diallo" },
+    "address": { "@type": "PostalAddress", "addressLocality": "Man", "addressCountry": "CI" },
+    "areaServed": ["Côte d'Ivoire", "Afrique francophone", "France", "Belgique", "Suisse", "Canada"],
+    "availableLanguage": ["fr"],
+    "contactPoint": [{ "@type": "ContactPoint", "telephone": "+2250777561566", "contactType": "customer service", "availableLanguage": ["fr"] }],
+    "sameAs": ["https://www.facebook.com/share/14vrEc1BRM5/", "https://www.tiktok.com/@thierno.agents.ia"],
+    "knowsAbout": ["Automatisation", "Assistants IA", "n8n", "WhatsApp", "Google Sheets", "Gmail"]
+  }
+  </script>
+</head>
+<body>
+<svg xmlns="http://www.w3.org/2000/svg" style="display:none" aria-hidden="true">
+<symbol id="i-message-circle" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M7.9 20A9 9 0 1 0 4 16.1L2 22Z" /></symbol>
+<symbol id="i-repeat" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m17 2 4 4-4 4" /> <path d="M3 11v-1a4 4 0 0 1 4-4h14" /> <path d="m7 22-4-4 4-4" /> <path d="M21 13v1a4 4 0 0 1-4 4H3" /></symbol>
+<symbol id="i-moon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3a6 6 0 0 0 9 9 9 9 0 1 1-9-9Z" /></symbol>
+<symbol id="i-banknote" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect width="20" height="12" x="2" y="6" rx="2" /> <circle cx="12" cy="12" r="2" /> <path d="M6 12h.01M18 12h.01" /></symbol>
+<symbol id="i-folder-open" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m6 14 1.5-2.9A2 2 0 0 1 9.24 10H20a2 2 0 0 1 1.94 2.5l-1.54 6a2 2 0 0 1-1.95 1.5H4a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h3.9a2 2 0 0 1 1.69.9l.81 1.2a2 2 0 0 0 1.67.9H18a2 2 0 0 1 2 2v2" /></symbol>
+<symbol id="i-chart-column" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 3v16a2 2 0 0 0 2 2h16" /> <path d="M18 17V9" /> <path d="M13 17V5" /> <path d="M8 17v-3" /></symbol>
+<symbol id="i-alarm-clock" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="13" r="8" /> <path d="M12 9v4l2 2" /> <path d="M5 3 2 6" /> <path d="m22 6-3-3" /> <path d="M6.38 18.7 4 21" /> <path d="M17.64 18.67 20 21" /></symbol>
+<symbol id="i-bot" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 8V4H8" /> <rect width="16" height="12" x="4" y="8" rx="2" /> <path d="M2 14h2" /> <path d="M20 14h2" /> <path d="M15 13v2" /> <path d="M9 13v2" /></symbol>
+<symbol id="i-messages-square" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M14 9a2 2 0 0 1-2 2H6l-4 4V4a2 2 0 0 1 2-2h8a2 2 0 0 1 2 2z" /> <path d="M18 9h2a2 2 0 0 1 2 2v11l-4-4h-6a2 2 0 0 1-2-2v-1" /></symbol>
+<symbol id="i-mail" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect width="20" height="16" x="2" y="4" rx="2" /> <path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7" /></symbol>
+<symbol id="i-bell-ring" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10.268 21a2 2 0 0 0 3.464 0" /> <path d="M22 8c0-2.3-.8-4.3-2-6" /> <path d="M3.262 15.326A1 1 0 0 0 4 17h16a1 1 0 0 0 .74-1.673C19.41 13.956 18 12.499 18 8A6 6 0 0 0 6 8c0 4.499-1.411 5.956-2.738 7.326" /> <path d="M4 2C2.8 3.7 2 5.7 2 8" /></symbol>
+<symbol id="i-sheet" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect width="18" height="18" x="3" y="3" rx="2" ry="2" /> <line x1="3" x2="21" y1="9" y2="9" /> <line x1="3" x2="21" y1="15" y2="15" /> <line x1="9" x2="9" y1="9" y2="21" /> <line x1="15" x2="15" y1="9" y2="21" /></symbol>
+<symbol id="i-calendar-check" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M8 2v4" /> <path d="M16 2v4" /> <rect width="18" height="18" x="3" y="4" rx="2" /> <path d="M3 10h18" /> <path d="m9 16 2 2 4-4" /></symbol>
+<symbol id="i-user-check" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2" /> <circle cx="9" cy="7" r="4" /> <polyline points="16 11 18 13 22 9" /></symbol>
+<symbol id="i-file-chart-column" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M15 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V7Z" /> <path d="M14 2v4a2 2 0 0 0 2 2h4" /> <path d="M8 18v-1" /> <path d="M12 18v-6" /> <path d="M16 18v-3" /></symbol>
+<symbol id="i-package-check" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m16 16 2 2 4-4" /> <path d="M21 10V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l2-1.14" /> <path d="m7.5 4.27 9 5.15" /> <polyline points="3.29 7 12 12 20.71 7" /> <line x1="12" x2="12" y1="22" y2="12" /></symbol>
+<symbol id="i-plug" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22v-5" /> <path d="M9 8V2" /> <path d="M15 8V2" /> <path d="M18 8v5a4 4 0 0 1-4 4h-4a4 4 0 0 1-4-4V8Z" /></symbol>
+<symbol id="i-scan-text" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 7V5a2 2 0 0 1 2-2h2" /> <path d="M17 3h2a2 2 0 0 1 2 2v2" /> <path d="M21 17v2a2 2 0 0 1-2 2h-2" /> <path d="M7 21H5a2 2 0 0 1-2-2v-2" /> <path d="M7 8h8" /> <path d="M7 12h10" /> <path d="M7 16h6" /></symbol>
+<symbol id="i-workflow" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect width="8" height="8" x="3" y="3" rx="2" /> <path d="M7 11v4a2 2 0 0 0 2 2h4" /> <rect width="8" height="8" x="13" y="13" rx="2" /></symbol>
+<symbol id="i-graduation-cap" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21.42 10.922a1 1 0 0 0-.019-1.838L12.83 5.18a2 2 0 0 0-1.66 0L2.6 9.08a1 1 0 0 0 0 1.832l8.57 3.908a2 2 0 0 0 1.66 0z" /> <path d="M22 10v6" /> <path d="M6 12.5V16a6 3 0 0 0 12 0v-3.5" /></symbol>
+<symbol id="i-house" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M15 21v-8a1 1 0 0 0-1-1h-4a1 1 0 0 0-1 1v8" /> <path d="M3 10a2 2 0 0 1 .709-1.528l7-5.999a2 2 0 0 1 2.582 0l7 5.999A2 2 0 0 1 21 10v9a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z" /></symbol>
+<symbol id="i-shopping-bag" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M6 2 3 6v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V6l-3-4Z" /> <path d="M3 6h18" /> <path d="M16 10a4 4 0 0 1-8 0" /></symbol>
+<symbol id="i-hard-hat" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 10V5a1 1 0 0 1 1-1h2a1 1 0 0 1 1 1v5" /> <path d="M14 6a6 6 0 0 1 6 6v3" /> <path d="M4 15v-3a6 6 0 0 1 6-6" /> <rect x="2" y="15" width="20" height="4" rx="1" /></symbol>
+<symbol id="i-utensils" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 2v7c0 1.1.9 2 2 2h4a2 2 0 0 0 2-2V2" /> <path d="M7 2v20" /> <path d="M21 15V2a5 5 0 0 0-5 5v6c0 1.1.9 2 2 2h3Zm0 0v7" /></symbol>
+<symbol id="i-users" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2" /> <circle cx="9" cy="7" r="4" /> <path d="M22 21v-2a4 4 0 0 0-3-3.87" /> <path d="M16 3.13a4 4 0 0 1 0 7.75" /></symbol>
+<symbol id="i-briefcase" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M16 20V4a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v16" /> <rect width="20" height="14" x="2" y="6" rx="2" /></symbol>
+<symbol id="i-check" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5" /></symbol>
+<symbol id="i-chevron-down" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m6 9 6 6 6-6" /></symbol>
+<symbol id="i-menu" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="4" x2="20" y1="12" y2="12" /> <line x1="4" x2="20" y1="6" y2="6" /> <line x1="4" x2="20" y1="18" y2="18" /></symbol>
+<symbol id="i-x" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 6 6 18" /> <path d="m6 6 12 12" /></symbol>
+<symbol id="i-phone" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z" /></symbol>
+<symbol id="i-map-pin" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 10c0 4.993-5.539 10.193-7.399 11.799a1 1 0 0 1-1.202 0C9.539 20.193 4 14.993 4 10a8 8 0 0 1 16 0" /> <circle cx="12" cy="10" r="3" /></symbol>
+<symbol id="i-shield-check" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 13c0 5-3.5 7.5-7.66 8.95a1 1 0 0 1-.67-.01C7.5 20.5 4 18 4 13V6a1 1 0 0 1 1-1c2 0 4.5-1.2 6.24-2.72a1.17 1.17 0 0 1 1.52 0C14.51 3.81 17 5 19 5a1 1 0 0 1 1 1z" /> <path d="m9 12 2 2 4-4" /></symbol>
+<symbol id="i-zap" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 14a1 1 0 0 1-.78-1.63l9.9-10.2a.5.5 0 0 1 .86.46l-1.92 6.02A1 1 0 0 0 13 10h7a1 1 0 0 1 .78 1.63l-9.9 10.2a.5.5 0 0 1-.86-.46l1.92-6.02A1 1 0 0 0 11 14z" /></symbol>
+<symbol id="i-wrench" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M14.7 6.3a1 1 0 0 0 0 1.4l1.6 1.6a1 1 0 0 0 1.4 0l3.77-3.77a6 6 0 0 1-7.94 7.94l-6.91 6.91a2.12 2.12 0 0 1-3-3l6.91-6.91a6 6 0 0 1 7.94-7.94l-3.76 3.76z" /></symbol>
+<symbol id="i-globe" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10" /> <path d="M12 2a14.5 14.5 0 0 0 0 20 14.5 14.5 0 0 0 0-20" /> <path d="M2 12h20" /></symbol>
+<symbol id="i-arrow-right" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14" /> <path d="m12 5 7 7-7 7" /></symbol>
+<symbol id="i-sparkles" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M9.937 15.5A2 2 0 0 0 8.5 14.063l-6.135-1.582a.5.5 0 0 1 0-.962L8.5 9.936A2 2 0 0 0 9.937 8.5l1.582-6.135a.5.5 0 0 1 .963 0L14.063 8.5A2 2 0 0 0 15.5 9.937l6.135 1.581a.5.5 0 0 1 0 .964L15.5 14.063a2 2 0 0 0-1.437 1.437l-1.582 6.135a.5.5 0 0 1-.963 0z" /> <path d="M20 3v4" /> <path d="M22 5h-4" /> <path d="M4 17v2" /> <path d="M5 18H3" /></symbol>
+<symbol id="i-clock" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10" /> <polyline points="12 6 12 12 16 14" /></symbol>
+<symbol id="i-handshake" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m11 17 2 2a1 1 0 1 0 3-3" /> <path d="m14 14 2.5 2.5a1 1 0 1 0 3-3l-3.88-3.88a3 3 0 0 0-4.24 0l-.88.88a1 1 0 1 1-3-3l2.81-2.81a5.79 5.79 0 0 1 7.06-.87l.47.28a2 2 0 0 0 1.42.25L21 4" /> <path d="m21 3 1 11h-2" /> <path d="M3 3 2 14l6.5 6.5a1 1 0 1 0 3-3" /> <path d="M3 4h8" /></symbol>
+<symbol id="i-badge-check" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3.85 8.62a4 4 0 0 1 4.78-4.77 4 4 0 0 1 6.74 0 4 4 0 0 1 4.78 4.78 4 4 0 0 1 0 6.74 4 4 0 0 1-4.77 4.78 4 4 0 0 1-6.75 0 4 4 0 0 1-4.78-4.77 4 4 0 0 1 0-6.76Z" /> <path d="m9 12 2 2 4-4" /></symbol>
+<symbol id="i-mouse-pointer-click" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M14 4.1 12 6" /> <path d="m5.1 8-2.9-.8" /> <path d="m6 12-1.9 2" /> <path d="M7.2 2.2 8 5.1" /> <path d="M9.037 9.69a.498.498 0 0 1 .653-.653l11 4.5a.5.5 0 0 1-.074.949l-4.349 1.041a1 1 0 0 0-.74.739l-1.04 4.35a.5.5 0 0 1-.95.074z" /></symbol>
+<symbol id="i-lock" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect width="18" height="11" x="3" y="11" rx="2" ry="2" /> <path d="M7 11V7a5 5 0 0 1 10 0v4" /></symbol>
+<symbol id="i-send" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M14.536 21.686a.5.5 0 0 0 .937-.024l6.5-19a.496.496 0 0 0-.635-.635l-19 6.5a.5.5 0 0 0-.024.937l7.93 3.18a2 2 0 0 1 1.112 1.11z" /> <path d="m21.854 2.147-10.94 10.939" /></symbol>
+<symbol id="i-user" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M19 21v-2a4 4 0 0 0-4-4H9a4 4 0 0 0-4 4v2" /> <circle cx="12" cy="7" r="4" /></symbol>
+<symbol id="i-layers" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12.83 2.18a2 2 0 0 0-1.66 0L2.6 6.08a1 1 0 0 0 0 1.83l8.58 3.91a2 2 0 0 0 1.66 0l8.58-3.9a1 1 0 0 0 0-1.83z" /> <path d="M2 12a1 1 0 0 0 .58.91l8.6 3.91a2 2 0 0 0 1.65 0l8.58-3.9A1 1 0 0 0 22 12" /> <path d="M2 17a1 1 0 0 0 .58.91l8.6 3.91a2 2 0 0 0 1.65 0l8.58-3.9A1 1 0 0 0 22 17" /></symbol>
+<symbol id="i-filter" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polygon points="22 3 2 3 10 12.46 10 19 14 21 14 12.46 22 3" /></symbol>
+<symbol id="i-database" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><ellipse cx="12" cy="5" rx="9" ry="3" /> <path d="M3 5V19A9 3 0 0 0 21 19V5" /> <path d="M3 12A9 3 0 0 0 21 12" /></symbol>
+<symbol id="b-whatsapp" viewBox="0 0 24 24"><path fill="currentColor" d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413Z"/></symbol>
+<symbol id="b-telegram" viewBox="0 0 24 24"><path fill="currentColor" d="M11.944 0A12 12 0 0 0 0 12a12 12 0 0 0 12 12 12 12 0 0 0 12-12A12 12 0 0 0 12 0a12 12 0 0 0-.056 0zm4.962 7.224c.1-.002.321.023.465.14a.506.506 0 0 1 .171.325c.016.093.036.306.02.472-.18 1.898-.962 6.502-1.36 8.627-.168.9-.499 1.201-.82 1.23-.696.065-1.225-.46-1.9-.902-1.056-.693-1.653-1.124-2.678-1.8-1.185-.78-.417-1.21.258-1.91.177-.184 3.247-2.977 3.307-3.23.007-.032.014-.15-.056-.212s-.174-.041-.249-.024c-.106.024-1.793 1.14-5.061 3.345-.48.33-.913.49-1.302.48-.428-.008-1.252-.241-1.865-.44-.752-.245-1.349-.374-1.297-.789.027-.216.325-.437.893-.663 3.498-1.524 5.83-2.529 6.998-3.014 3.332-1.386 4.025-1.627 4.476-1.635z"/></symbol>
+<symbol id="b-gmail" viewBox="0 0 24 24"><path fill="currentColor" d="M24 5.457v13.909c0 .904-.732 1.636-1.636 1.636h-3.819V11.73L12 16.64l-6.545-4.91v9.273H1.636A1.636 1.636 0 0 1 0 19.366V5.457c0-2.023 2.309-3.178 3.927-1.964L5.455 4.64 12 9.548l6.545-4.91 1.528-1.145C21.69 2.28 24 3.434 24 5.457z"/></symbol>
+<symbol id="b-googlesheets" viewBox="0 0 24 24"><path fill="currentColor" d="M11.318 12.545H7.91v-1.909h3.41v1.91zM14.728 0v6h6l-6-6zm1.363 10.636h-3.41v1.91h3.41v-1.91zm0 3.273h-3.41v1.91h3.41v-1.91zM20.727 6.5v15.864c0 .904-.732 1.636-1.636 1.636H4.909a1.636 1.636 0 0 1-1.636-1.636V1.636C3.273.732 4.005 0 4.909 0h9.318v6.5h6.5zm-3.273 2.773H6.545v7.909h10.91v-7.91zm-6.136 4.636H7.91v1.91h3.41v-1.91z"/></symbol>
+<symbol id="b-googlecalendar" viewBox="0 0 24 24"><path fill="currentColor" d="M18.316 5.684H24v12.632h-5.684V5.684zM5.684 24h12.632v-5.684H5.684V24zM18.316 5.684V0H1.895A1.894 1.894 0 0 0 0 1.895v16.421h5.684V5.684h12.632zm-7.207 6.25v-.065c.272-.144.5-.349.687-.617s.279-.595.279-.982c0-.379-.099-.72-.3-1.025a2.05 2.05 0 0 0-.832-.714 2.703 2.703 0 0 0-1.197-.257c-.6 0-1.094.156-1.481.467-.386.311-.65.671-.793 1.078l1.085.452c.086-.249.224-.461.413-.633.189-.172.445-.257.767-.257.33 0 .602.088.816.264a.86.86 0 0 1 .322.703c0 .33-.12.589-.36.778-.24.19-.535.284-.886.284h-.567v1.085h.633c.407 0 .748.109 1.02.327.272.218.407.499.407.843 0 .336-.129.614-.387.832s-.565.327-.924.327c-.351 0-.651-.103-.897-.311-.248-.208-.422-.502-.521-.881l-1.096.452c.178.616.505 1.082.977 1.401.472.319.984.478 1.538.477a2.84 2.84 0 0 0 1.293-.291c.382-.193.684-.458.902-.794.218-.336.327-.72.327-1.149 0-.429-.115-.797-.344-1.105a2.067 2.067 0 0 0-.881-.689zm2.093-1.931l.602.913L15 10.045v5.744h1.187V8.446h-.827l-2.158 1.557zM22.105 0h-3.289v5.184H24V1.895A1.894 1.894 0 0 0 22.105 0zm-3.289 23.5l4.684-4.684h-4.684V23.5zM0 22.105C0 23.152.848 24 1.895 24h3.289v-5.184H0v3.289z"/></symbol>
+<symbol id="b-messenger" viewBox="0 0 24 24"><path fill="currentColor" d="M.001 11.639C.001 4.949 5.241 0 12.001 0S24 4.95 24 11.639c0 6.689-5.24 11.638-12 11.638-1.21 0-2.38-.16-3.47-.46a.96.96 0 00-.64.05l-2.39 1.05a.96.96 0 01-1.35-.85l-.07-2.14a.97.97 0 00-.32-.68A11.39 11.389 0 01.002 11.64zm8.32-2.19l-3.52 5.6c-.35.53.32 1.139.82.75l3.79-2.87c.26-.2.6-.2.87 0l2.8 2.1c.84.63 2.04.4 2.6-.48l3.52-5.6c.35-.53-.32-1.13-.82-.75l-3.79 2.87c-.25.2-.6.2-.86 0l-2.8-2.1a1.8 1.8 0 00-2.61.48z"/></symbol>
+<symbol id="b-n8n" viewBox="0 0 24 24"><path fill="currentColor" d="M21.4737 5.6842c-1.1772 0-2.1663.8051-2.4468 1.8947h-2.8955c-1.235 0-2.289.893-2.492 2.111l-.1038.623a1.263 1.263 0 0 1-1.246 1.0555H11.289c-.2805-1.0896-1.2696-1.8947-2.4468-1.8947s-2.1663.8051-2.4467 1.8947H4.973c-.2805-1.0896-1.2696-1.8947-2.4468-1.8947C1.1311 9.4737 0 10.6047 0 12s1.131 2.5263 2.5263 2.5263c1.1772 0 2.1663-.8051 2.4468-1.8947h1.4223c.2804 1.0896 1.2696 1.8947 2.4467 1.8947 1.1772 0 2.1663-.8051 2.4468-1.8947h1.0008a1.263 1.263 0 0 1 1.2459 1.0555l.1038.623c.203 1.218 1.257 2.111 2.492 2.111h.3692c.2804 1.0895 1.2696 1.8947 2.4468 1.8947 1.3952 0 2.5263-1.131 2.5263-2.5263s-1.131-2.5263-2.5263-2.5263c-1.1772 0-2.1664.805-2.4468 1.8947h-.3692a1.263 1.263 0 0 1-1.246-1.0555l-.1037-.623A2.52 2.52 0 0 0 13.9607 12a2.52 2.52 0 0 0 .821-1.4794l.1038-.623a1.263 1.263 0 0 1 1.2459-1.0555h2.8955c.2805 1.0896 1.2696 1.8947 2.4468 1.8947 1.3952 0 2.5263-1.131 2.5263-2.5263s-1.131-2.5263-2.5263-2.5263m0 1.2632a1.263 1.263 0 0 1 1.2631 1.2631 1.263 1.263 0 0 1-1.2631 1.2632 1.263 1.263 0 0 1-1.2632-1.2632 1.263 1.263 0 0 1 1.2632-1.2631M2.5263 10.7368A1.263 1.263 0 0 1 3.7895 12a1.263 1.263 0 0 1-1.2632 1.2632A1.263 1.263 0 0 1 1.2632 12a1.263 1.263 0 0 1 1.2631-1.2632m6.3158 0A1.263 1.263 0 0 1 10.1053 12a1.263 1.263 0 0 1-1.2632 1.2632A1.263 1.263 0 0 1 7.579 12a1.263 1.263 0 0 1 1.2632-1.2632m10.1053 3.7895a1.263 1.263 0 0 1 1.2631 1.2632 1.263 1.263 0 0 1-1.2631 1.2631 1.263 1.263 0 0 1-1.2632-1.2631 1.263 1.263 0 0 1 1.2632-1.2632"/></symbol>
+<symbol id="b-facebook" viewBox="0 0 24 24"><path fill="currentColor" d="M9.101 23.691v-7.98H6.627v-3.667h2.474v-1.58c0-4.085 1.848-5.978 5.858-5.978.401 0 .955.042 1.468.103a8.68 8.68 0 0 1 1.141.195v3.325a8.623 8.623 0 0 0-.653-.036 26.805 26.805 0 0 0-.733-.009c-.707 0-1.259.096-1.675.309a1.686 1.686 0 0 0-.679.622c-.258.42-.374.995-.374 1.752v1.297h3.919l-.386 2.103-.287 1.564h-3.246v8.245C19.396 23.238 24 18.179 24 12.044c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.628 3.874 10.35 9.101 11.647Z"/></symbol>
+<symbol id="b-tiktok" viewBox="0 0 24 24"><path fill="currentColor" d="M12.525.02c1.31-.02 2.61-.01 3.91-.02.08 1.53.63 3.09 1.75 4.17 1.12 1.11 2.7 1.62 4.24 1.79v4.03c-1.44-.05-2.89-.35-4.2-.97-.57-.26-1.1-.59-1.62-.93-.01 2.92.01 5.84-.02 8.75-.08 1.4-.54 2.79-1.35 3.94-1.31 1.92-3.58 3.17-5.91 3.21-1.43.08-2.86-.31-4.08-1.03-2.02-1.19-3.44-3.37-3.65-5.71-.02-.5-.03-1-.01-1.49.18-1.9 1.12-3.72 2.58-4.96 1.66-1.44 3.98-2.13 6.15-1.72.02 1.48-.04 2.96-.04 4.44-.99-.32-2.15-.23-3.02.37-.63.41-1.11 1.04-1.36 1.75-.21.51-.15 1.07-.14 1.61.24 1.64 1.82 3.02 3.5 2.87 1.12-.01 2.19-.66 2.77-1.61.19-.33.4-.67.41-1.06.1-1.79.06-3.57.07-5.36.01-4.03-.01-8.05.02-12.07z"/></symbol>
+</svg>
+<a class="skip-link" href="#contenu">Aller au contenu</a>
+
+<header class="site-header" id="haut">
+  <div class="container header-inner">
+    <a class="brand" href="#haut" aria-label="Diallo IA — retour en haut"><svg viewBox="0 0 40 40" aria-hidden="true" focusable="false"><rect width="40" height="40" rx="11" fill="#13315C"/><path d="M13 11.5h6.2a8.5 8.5 0 0 1 0 17H13z" fill="none" stroke="#fff" stroke-width="3.2" stroke-linejoin="round"/><circle cx="29.2" cy="11.2" r="3.3" fill="#F4B942"/></svg><span class="brand-name">Diallo <span>IA</span></span></a>
+    <nav class="main-nav" aria-label="Navigation principale">
+      <ul>
+        <li><a href="#services">Services</a></li>
+        <li><a href="#secteurs">Secteurs</a></li>
+        <li><a href="#demos">Démos</a></li>
+        <li><a href="#tarifs">Tarifs</a></li>
+        <li><a href="#methode">Méthode</a></li>
+        <li><a href="#faq">FAQ</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+    <div class="header-actions">
+      <a class="btn btn-wa btn-sm header-cta" data-wa="Bonjour Diallo IA, j'aimerais automatiser une tâche dans mon entreprise." href="https://wa.me/2250777561566?text=Bonjour%20Diallo%20IA%2C%20j'aimerais%20automatiser%20une%20t%C3%A2che%20dans%20mon%20entreprise." target="_blank" rel="noopener"><svg class="icon" aria-hidden="true" focusable="false"><use href="#b-whatsapp"/></svg><span class="label-long">Écrire sur WhatsApp</span><span class="label-short">WhatsApp</span></a>
+      <button class="burger" type="button" aria-label="Ouvrir le menu" aria-expanded="false" aria-controls="menu-mobile" data-menu-open><svg class="icon" aria-hidden="true" focusable="false"><use href="#i-menu"/></svg></button>
+    </div>
+  </div>
+</header>
+
+<div class="mobile-menu" id="menu-mobile" role="dialog" aria-modal="true" aria-label="Menu" hidden>
+  <div class="mobile-menu-top">
+    <a class="brand" href="#haut" data-menu-close><svg viewBox="0 0 40 40" aria-hidden="true" focusable="false"><rect width="40" height="40" rx="11" fill="#13315C"/><path d="M13 11.5h6.2a8.5 8.5 0 0 1 0 17H13z" fill="none" stroke="#fff" stroke-width="3.2" stroke-linejoin="round"/><circle cx="29.2" cy="11.2" r="3.3" fill="#F4B942"/></svg><span class="brand-name">Diallo <span>IA</span></span></a>
+    <button class="burger" type="button" aria-label="Fermer le menu" data-menu-close><svg class="icon" aria-hidden="true" focusable="false"><use href="#i-x"/></svg></button>
+  </div>
+  <nav aria-label="Navigation mobile">
+    <a href="#services" data-menu-close>Services <svg class="icon" aria-hidden="true" focusable="false"><use href="#i-arrow-right"/></svg></a>
+    <a href="#secteurs" data-menu-close>Secteurs <svg class="icon" aria-hidden="true" focusable="false"><use href="#i-arrow-right"/></svg></a>
+    <a href="#demos" data-menu-close>Démos <svg class="icon" aria-hidden="true" focusable="false"><use href="#i-arrow-right"/></svg></a>
+    <a href="#tarifs" data-menu-close>Tarifs <svg class="icon" aria-hidden="true" focusable="false"><use href="#i-arrow-right"/></svg></a>
+    <a href="#methode" data-menu-close>Méthode <svg class="icon" aria-hidden="true" focusable="false"><use href="#i-arrow-right"/></svg></a>
+    <a href="#faq" data-menu-close>FAQ <svg class="icon" aria-hidden="true" focusable="false"><use href="#i-arrow-right"/></svg></a>
+    <a href="#contact" data-menu-close>Contact <svg class="icon" aria-hidden="true" focusable="false"><use href="#i-arrow-right"/></svg></a>
+  </nav>
+  <a class="btn btn-wa btn-lg btn-block" data-wa="Bonjour Diallo IA, j'aimerais automatiser une tâche dans mon entreprise." href="https://wa.me/2250777561566?text=Bonjour%20Diallo%20IA%2C%20j'aimerais%20automatiser%20une%20t%C3%A2che%20dans%20mon%20entreprise." target="_blank" rel="noopener"><svg class="icon" aria-hidden="true" focusable="false"><use href="#b-whatsapp"/></svg>Écrire sur WhatsApp</a>
+</div>
+
+<main id="contenu">
+
+  <!-- ============ HÉROS ============ -->
+  <section class="hero on-dark" aria-labelledby="titre-hero">
+    <div class="container hero-grid">
+      <div>
+        <span class="hero-badge"><span class="dot" aria-hidden="true"></span>Assistants IA &amp; automatisations · Man, Côte d'Ivoire</span>
+        <h1 id="titre-hero">Vos tâches répétitives, faites <em>automatiquement</em>.</h1>
+        <p class="hero-sub">Diallo IA crée des assistants IA et des automatisations sur mesure pour les entreprises, les écoles et les commerçants : réponses aux clients, relances de paiement, rapports, prise de rendez-vous… Vous vous concentrez sur votre métier, le reste tourne tout seul.</p>
+        <div class="hero-ctas">
+          <a class="btn btn-wa btn-lg" data-wa="Bonjour Diallo IA, j'aimerais automatiser une tâche dans mon entreprise." href="https://wa.me/2250777561566?text=Bonjour%20Diallo%20IA%2C%20j'aimerais%20automatiser%20une%20t%C3%A2che%20dans%20mon%20entreprise." target="_blank" rel="noopener"><svg class="icon" aria-hidden="true" focusable="false"><use href="#b-whatsapp"/></svg>Discuter sur WhatsApp</a>
+          <a class="btn btn-outline btn-lg" href="#tarifs">Voir les tarifs</a>
+        </div>
+        <ul class="hero-guarantees">
+          <li><svg class="icon" aria-hidden="true" focusable="false"><use href="#i-zap"/></svg>Installation rapide</li>
+          <li><svg class="icon" aria-hidden="true" focusable="false"><use href="#i-wrench"/></svg>Suivi mensuel inclus</li>
+          <li><svg class="icon" aria-hidden="true" focusable="false"><use href="#i-check"/></svg>Vous gardez vos outils (WhatsApp, Gmail, Google Sheets)</li>
+        </ul>
+      </div>
+
+      <div class="hero-visual">
+        <span class="demo-tag">Exemple</span>
+        <div class="phone" role="img" aria-label="Exemple de conversation WhatsApp : un client demande un prix, l'assistant répond aussitôt et le client est enregistré dans Google Sheets.">
+          <div class="phone-screen" aria-hidden="true">
+            <div class="wa-top">
+              <span class="wa-avatar"><svg viewBox="0 0 40 40" aria-hidden="true" focusable="false"><rect width="40" height="40" rx="11" fill="#13315C"/><path d="M13 11.5h6.2a8.5 8.5 0 0 1 0 17H13z" fill="none" stroke="#fff" stroke-width="3.2" stroke-linejoin="round"/><circle cx="29.2" cy="11.2" r="3.3" fill="#F4B942"/></svg></span>
+              <div><div class="wa-name">Boutique Awa · Assistant</div><div class="wa-status">en ligne</div></div>
+            </div>
+            <div class="wa-body">
+              <div class="bubble in seq seq-1">Bonjour, c'est combien le pack Premium ?<time>19:42</time></div>
+              <div class="typing seq seq-2"><span></span><span></span><span></span></div>
+              <div class="bubble out seq seq-3">Bonjour 👋 Le pack Premium est à <strong>25 000 FCFA</strong>, livraison incluse à Man. Je vous en réserve un ?<time>19:42</time></div>
+              <div class="bubble in seq seq-4">Oui, je le prends !<time>19:43</time></div>
+              <div class="bubble out seq seq-5">C'est noté ✅ Un conseiller vous confirme la livraison demain matin.<time>19:43</time></div>
+            </div>
+          </div>
+        </div>
+        <div class="notif seq seq-6" aria-hidden="true">
+          <span class="notif-ico"><svg class="icon" aria-hidden="true" focusable="false"><use href="#b-googlesheets"/></svg></span>
+          <span><strong>Nouveau client enregistré dans Google Sheets</strong>Commande « Pack Premium » · à l'instant</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ OUTILS ============ -->
+  <section class="tools" aria-labelledby="titre-outils">
+    <div class="container">
+      <h2 class="tools-title" id="titre-outils">Les outils que nous connectons</h2>
+      <ul class="tools-list">
+        <li><svg class="icon" aria-hidden="true" focusable="false"><use href="#b-whatsapp"/></svg>WhatsApp</li>
+        <li><svg class="icon" aria-hidden="true" focusable="false"><use href="#b-telegram"/></svg>Telegram</li>
+        <li><svg class="icon" aria-hidden="true" focusable="false"><use href="#b-gmail"/></svg>Gmail</li>
+        <li><svg class="icon" aria-hidden="true" focusable="false"><use href="#b-googlesheets"/></svg>Google Sheets</li>
+        <li><svg class="icon" aria-hidden="true" focusable="false"><use href="#b-googlecalendar"/></svg>Google Agenda</li>
+        <li><svg class="icon" aria-hidden="true" focusable="false"><use href="#b-messenger"/></svg>Facebook Messenger</li>
+        <li><svg class="icon" aria-hidden="true" focusable="false"><use href="#i-mouse-pointer-click"/></svg>Formulaires web</li>
+        <li><svg class="icon" aria-hidden="true" focusable="false"><use href="#b-n8n"/></svg>n8n</li>
+        <li><svg class="icon" aria-hidden="true" focusable="false"><use href="#i-sparkles"/></svg>IA (Claude, modèles de langage)</li>
+        <li><svg class="icon" aria-hidden="true" focusable="false"><use href="#i-plug"/></svg>API</li>
+      </ul>
+    </div>
+  </section>
+
+  <!-- ============ PROBLÈMES ============ -->
+  <section class="section" aria-labelledby="titre-problemes">
+    <div class="container">
+      <div class="section-head center reveal">
+        <span class="eyebrow">Ça vous parle ?</span>
+        <h2 class="section-title" id="titre-problemes">Ces tâches qui vous prennent du temps chaque jour</h2>
+      </div>
+      <div class="grid problems">
+        <div class="card reveal"><span class="card-ico"><svg class="icon" aria-hidden="true" focusable="false"><use href="#i-repeat"/></svg></span><p>Vous répondez 50 fois par jour aux mêmes questions (prix, disponibilité, adresse).</p></div>
+        <div class="card reveal"><span class="card-ico"><svg class="icon" aria-hidden="true" focusable="false"><use href="#i-moon"/></svg></span><p>Des messages restent sans réponse le soir et le week-end, et les clients partent ailleurs.</p></div>
+        <div class="card reveal"><span class="card-ico"><svg class="icon" aria-hidden="true" focusable="false"><use href="#i-banknote"/></svg></span><p>Vous relancez à la main les paiements en retard.</p></div>
+        <div class="card reveal"><span class="card-ico"><svg class="icon" aria-hidden="true" focusable="false"><use href="#i-folder-open"/></svg></span><p>Vos informations clients sont éparpillées entre carnets, WhatsApp et fichiers Excel.</p></div>
+        <div class="card reveal"><span class="card-ico"><svg class="icon" aria-hidden="true" focusable="false"><use href="#i-chart-column"/></svg></span><p>Vous passez des heures à préparer des rapports.</p></div>
+        <div class="card reveal"><span class="card-ico"><svg class="icon" aria-hidden="true" focusable="false"><use href="#i-alarm-clock"/></svg></span><p>Vous oubliez des rendez-vous, des relances ou des suivis.</p></div>
+      </div>
+      <p class="transition-line reveal"><span>Chacune de ces tâches peut être automatisée.</span></p>
+    </div>
+  </section>
+
+  <!-- ============ SERVICES ============ -->
+  <section class="section section-alt" id="services" aria-labelledby="titre-services">
+    <div class="container">
+      <div class="section-head reveal">
+        <span class="eyebrow">Services</span>
+        <h2 class="section-title" id="titre-services">Ce que Diallo IA automatise pour vous</h2>
+        <p class="section-lead">Des assistants et des automatisations construits autour de vos outils actuels. Chaque projet est configuré sur vos informations et testé avec vous avant la mise en service.</p>
+      </div>
+      <div class="grid grid-3">
+
+        <article class="card service reveal">
+          <span class="card-ico"><svg class="icon" aria-hidden="true" focusable="false"><use href="#b-whatsapp"/></svg></span>
+          <h3>Assistants IA sur WhatsApp</h3>
+          <p>Répond à vos clients 24 h/24, présente vos produits ou vos biens, donne les prix, qualifie la demande et vous transmet uniquement les contacts sérieux.</p>
+          <ul>
+            <li><svg class="icon" aria-hidden="true" focusable="false"><use href="#i-check"/></svg>Réponses instantanées sur les prix et la disponibilité</li>
+            <li><svg class="icon" aria-hidden="true" focusable="false"><use href="#i-check"/></svg>Présentation de votre catalogue ou de vos biens</li>
+            <li><svg class="icon" aria-hidden="true" focusable="false"><use href="#i-check"/></svg>Transmission des clients prêts à acheter</li>
+          </ul>
+          <a class="btn btn-wa btn-sm" data-wa="Bonjour, je suis intéressé(e) par un assistant IA (WhatsApp / e-mail / Telegram)." href="https://wa.me/2250777561566?text=Bonjour%2C%20je%20suis%20int%C3%A9ress%C3%A9(e)%20par%20un%20assistant%20IA%20(WhatsApp%20%2F%20e-mail%20%2F%20Telegram)." target="_blank" rel="noopener"><svg class="icon" aria-hidden="true" focusable="false"><use href="#b-whatsapp"/></svg>En parler</a>
+        </article>
+
+        <article class="card service reveal">
+          <span class="card-ico"><svg class="icon" aria-hidden="true" focusable="false"><use href="#i-messages-square"/></svg></span>
+          <h3>Assistants IA sur Telegram, Messenger et site web</h3>
+          <p>Le même assistant, avec les mêmes informations, sur vos autres canaux de discussion.</p>
+          <ul>
+            <li><svg class="icon" aria-hidden="true" focusable="false"><use href="#i-check"/></svg>Assistant Telegram pour vos clients ou votre équipe</li>
+            <li><svg class="icon" aria-hidden="true" focusable="false"><use href="#i-check"/></svg>Réponses automatiques sur Facebook Messenger</li>
+            <li><svg class="icon" aria-hidden="true" focusable="false"><use href="#i-check"/></svg>Fenêtre de discussion sur votre site</li>
+          </ul>
+          <a class="btn btn-wa btn-sm" data-wa="Bonjour, je suis intéressé(e) par un assistant IA (WhatsApp / e-mail / Telegram)." href="https://wa.me/2250777561566?text=Bonjour%2C%20je%20suis%20int%C3%A9ress%C3%A9(e)%20par%20un%20assistant%20IA%20(WhatsApp%20%2F%20e-mail%20%2F%20Telegram)." target="_blank" rel="noopener"><svg class="icon" aria-hidden="true" focusable="false"><use href="#b-whatsapp"/></svg>En parler</a>
+        </article>
+
+        <article class="card service reveal">
+          <span class="card-ico"><svg class="icon" aria-hidden="true" focusable="false"><use href="#i-mail"/></svg></span>
+          <h3>Automatisation des e-mails</h3>
+          <p>Vos e-mails triés, traités et envoyés au bon moment, sans y passer vos journées.</p>
+          <ul>
+            <li><svg class="icon" aria-hidden="true" focusable="false"><use href="#i-check"/></svg>Réponses automatiques aux demandes fréquentes</li>
+            <li><svg class="icon" aria-hidden="true" focusable="false"><use href="#i-check"/></svg>Tri et classement des messages entrants</li>
+            <li><svg class="icon" aria-hidden="true" focusable="false"><use href="#i-check"/></svg>Envoi de devis, relances et confirmations</li>
+          </ul>
+          <a class="btn btn-wa btn-sm" data-wa="Bonjour Diallo IA, je suis intéressé(e) par l'automatisation de mes e-mails." href="https://wa.me/2250777561566?text=Bonjour%20Diallo%20IA%2C%20je%20suis%20int%C3%A9ress%C3%A9(e)%20par%20l'automatisation%20de%20mes%20e-mails." target="_blank" rel="noopener"><svg class="icon" aria-hidden="true" focusable="false"><use href="#b-whatsapp"/></svg>En parler</a>
+        </article>
+
+        <article class="card service reveal">
+          <span class="card-ico"><svg class="icon" aria-hidden="true" focusable="false"><use href="#i-bell-ring"/></svg></span>
+          <h3>Relances de paiement automatiques</h3>
+          <p>Les rappels partent tout seuls, au bon moment, et vous savez toujours qui doit quoi.</p>
+          <ul>
+            <li><svg class="icon" aria-hidden="true" focusable="false"><use href="#i-check"/></svg>Rappel avant chaque échéance</li>
+            <li><svg class="icon" aria-hidden="true" focusable="false"><use href="#i-check"/></svg>Relance après un retard de paiement</li>
+            <li><svg class="icon" aria-hidden="true" focusable="false"><use href="#i-check"/></svg>Rapport des impayés envoyé au responsable</li>
+          </ul>
+          <a class="btn btn-wa btn-sm" data-wa="Bonjour Diallo IA, je suis intéressé(e) par les relances de paiement automatiques." href="https://wa.me/2250777561566?text=Bonjour%20Diallo%20IA%2C%20je%20suis%20int%C3%A9ress%C3%A9(e)%20par%20les%20relances%20de%20paiement%20automatiques." target="_blank" rel="noopener"><svg class="icon" aria-hidden="true" focusable="false"><use href="#b-whatsapp"/></svg>En parler</a>
+        </article>
+
+        <article class="card service reveal">
+          <span class="card-ico"><svg class="icon" aria-hidden="true" focusable="false"><use href="#i-sheet"/></svg></span>
+          <h3>Gestion des clients dans Google Sheets</h3>
+          <p>Un mini-CRM simple : chaque demande est enregistrée automatiquement, avec son statut et son suivi.</p>
+          <ul>
+            <li><svg class="icon" aria-hidden="true" focusable="false"><use href="#i-check"/></svg>Chaque nouveau contact ajouté sans copier-coller</li>
+            <li><svg class="icon" aria-hidden="true" focusable="false"><use href="#i-check"/></svg>Statut clair : nouveau, à rappeler, client</li>
+            <li><svg class="icon" aria-hidden="true" focusable="false"><use href="#i-check"/></svg>Historique accessible depuis votre téléphone</li>
+          </ul>
+          <a class="btn btn-wa btn-sm" data-wa="Bonjour Diallo IA, je suis intéressé(e) par un mini-CRM dans Google Sheets." href="https://wa.me/2250777561566?text=Bonjour%20Diallo%20IA%2C%20je%20suis%20int%C3%A9ress%C3%A9(e)%20par%20un%20mini-CRM%20dans%20Google%20Sheets." target="_blank" rel="noopener"><svg class="icon" aria-hidden="true" focusable="false"><use href="#b-whatsapp"/></svg>En parler</a>
+        </article>
+
+        <article class="card service reveal">
+          <span class="card-ico"><svg class="icon" aria-hidden="true" focusable="false"><use href="#i-calendar-check"/></svg></span>
+          <h3>Prise de rendez-vous automatique</h3>
+          <p>L'assistant propose des créneaux libres, les inscrit dans votre agenda et rappelle le client la veille.</p>
+          <ul>
+            <li><svg class="icon" aria-hidden="true" focusable="false"><use href="#i-check"/></svg>Créneaux proposés selon vos disponibilités</li>
+            <li><svg class="icon" aria-hidden="true" focusable="false"><use href="#i-check"/></svg>Inscription directe dans Google Agenda</li>
+            <li><svg class="icon" aria-hidden="true" focusable="false"><use href="#i-check"/></svg>Rappel automatique la veille</li>
+          </ul>
+          <a class="btn btn-wa btn-sm" data-wa="Bonjour Diallo IA, je suis intéressé(e) par la prise de rendez-vous automatique." href="https://wa.me/2250777561566?text=Bonjour%20Diallo%20IA%2C%20je%20suis%20int%C3%A9ress%C3%A9(e)%20par%20la%20prise%20de%20rendez-vous%20automatique." target="_blank" rel="noopener"><svg class="icon" aria-hidden="true" focusable="false"><use href="#b-whatsapp"/></svg>En parler</a>
+        </article>
+
+        <article class="card service reveal">
+          <span class="card-ico"><svg class="icon" aria-hidden="true" focusable="false"><use href="#i-user-check"/></svg></span>
+          <h3>Qualification de prospects</h3>
+          <p>L'assistant pose les bonnes questions et classe les prospects pour que vous rappeliez les bons en premier.</p>
+          <ul>
+            <li><svg class="icon" aria-hidden="true" focusable="false"><use href="#i-check"/></svg>Questions sur le budget, le besoin et le délai</li>
+            <li><svg class="icon" aria-hidden="true" focusable="false"><use href="#i-check"/></svg>Classement automatique des demandes</li>
+            <li><svg class="icon" aria-hidden="true" focusable="false"><use href="#i-check"/></svg>Alerte quand un prospect est prêt</li>
+          </ul>
+          <a class="btn btn-wa btn-sm" data-wa="Bonjour Diallo IA, je suis intéressé(e) par la qualification automatique de prospects." href="https://wa.me/2250777561566?text=Bonjour%20Diallo%20IA%2C%20je%20suis%20int%C3%A9ress%C3%A9(e)%20par%20la%20qualification%20automatique%20de%20prospects." target="_blank" rel="noopener"><svg class="icon" aria-hidden="true" focusable="false"><use href="#b-whatsapp"/></svg>En parler</a>
+        </article>
+
+        <article class="card service reveal">
+          <span class="card-ico"><svg class="icon" aria-hidden="true" focusable="false"><use href="#i-file-chart-column"/></svg></span>
+          <h3>Rapports automatiques</h3>
+          <p>Chaque jour ou chaque semaine, un résumé clair dans votre boîte e-mail.</p>
+          <ul>
+            <li><svg class="icon" aria-hidden="true" focusable="false"><use href="#i-check"/></svg>Ventes et demandes de la veille</li>
+            <li><svg class="icon" aria-hidden="true" focusable="false"><use href="#i-check"/></svg>Impayés et échéances à venir</li>
+            <li><svg class="icon" aria-hidden="true" focusable="false"><use href="#i-check"/></svg>Envoyé à l'heure de votre choix</li>
+          </ul>
+          <a class="btn btn-wa btn-sm" data-wa="Bonjour Diallo IA, je suis intéressé(e) par des rapports automatiques." href="https://wa.me/2250777561566?text=Bonjour%20Diallo%20IA%2C%20je%20suis%20int%C3%A9ress%C3%A9(e)%20par%20des%20rapports%20automatiques." target="_blank" rel="noopener"><svg class="icon" aria-hidden="true" focusable="false"><use href="#b-whatsapp"/></svg>En parler</a>
+        </article>
+
+        <article class="card service reveal">
+          <span class="card-ico"><svg class="icon" aria-hidden="true" focusable="false"><use href="#i-package-check"/></svg></span>
+          <h3>Suivi des commandes pour la vente en ligne</h3>
+          <p>Commandes enregistrées automatiquement, client confirmé avant la livraison, stock suivi.</p>
+          <ul>
+            <li><svg class="icon" aria-hidden="true" focusable="false"><use href="#i-check"/></svg>Commande notée dès la conversation</li>
+            <li><svg class="icon" aria-hidden="true" focusable="false"><use href="#i-check"/></svg>Confirmation envoyée avant livraison</li>
+            <li><svg class="icon" aria-hidden="true" focusable="false"><use href="#i-check"/></svg>Suivi du stock dans votre tableau</li>
+          </ul>
+          <a class="btn btn-wa btn-sm" data-wa="Bonjour Diallo IA, je suis intéressé(e) par le suivi automatique des commandes." href="https://wa.me/2250777561566?text=Bonjour%20Diallo%20IA%2C%20je%20suis%20int%C3%A9ress%C3%A9(e)%20par%20le%20suivi%20automatique%20des%20commandes." target="_blank" rel="noopener"><svg class="icon" aria-hidden="true" focusable="false"><use href="#b-whatsapp"/></svg>En parler</a>
+        </article>
+
+        <article class="card service reveal">
+          <span class="card-ico"><svg class="icon" aria-hidden="true" focusable="false"><use href="#i-plug"/></svg></span>
+          <h3>Connexion de vos outils</h3>
+          <p>Formulaires, tableurs, e-mail, messageries et applications qui se parlent entre eux, sans copier-coller.</p>
+          <ul>
+            <li><svg class="icon" aria-hidden="true" focusable="false"><use href="#i-check"/></svg>Formulaire rempli → tableau mis à jour</li>
+            <li><svg class="icon" aria-hidden="true" focusable="false"><use href="#i-check"/></svg>Nouveau message → alerte à la bonne personne</li>
+            <li><svg class="icon" aria-hidden="true" focusable="false"><use href="#i-check"/></svg>Données synchronisées entre vos outils</li>
+          </ul>
+          <a class="btn btn-wa btn-sm" data-wa="Bonjour Diallo IA, j'aimerais connecter mes outils entre eux." href="https://wa.me/2250777561566?text=Bonjour%20Diallo%20IA%2C%20j'aimerais%20connecter%20mes%20outils%20entre%20eux." target="_blank" rel="noopener"><svg class="icon" aria-hidden="true" focusable="false"><use href="#b-whatsapp"/></svg>En parler</a>
+        </article>
+
+        <article class="card service reveal">
+          <span class="card-ico"><svg class="icon" aria-hidden="true" focusable="false"><use href="#i-scan-text"/></svg></span>
+          <h3>Traitement de documents</h3>
+          <p>Les informations utiles extraites de vos documents, puis classées automatiquement.</p>
+          <ul>
+            <li><svg class="icon" aria-hidden="true" focusable="false"><use href="#i-check"/></svg>Lecture de factures et de bons de commande</li>
+            <li><svg class="icon" aria-hidden="true" focusable="false"><use href="#i-check"/></svg>Extraction des montants, dates et noms</li>
+            <li><svg class="icon" aria-hidden="true" focusable="false"><use href="#i-check"/></svg>Classement dans le bon dossier ou tableau</li>
+          </ul>
+          <a class="btn btn-wa btn-sm" data-wa="Bonjour Diallo IA, je suis intéressé(e) par le traitement automatique de documents." href="https://wa.me/2250777561566?text=Bonjour%20Diallo%20IA%2C%20je%20suis%20int%C3%A9ress%C3%A9(e)%20par%20le%20traitement%20automatique%20de%20documents." target="_blank" rel="noopener"><svg class="icon" aria-hidden="true" focusable="false"><use href="#b-whatsapp"/></svg>En parler</a>
+        </article>
+
+        <article class="card service reveal">
+          <span class="card-ico"><svg class="icon" aria-hidden="true" focusable="false"><use href="#i-workflow"/></svg></span>
+          <h3>Automatisations complexes sur mesure</h3>
+          <p>Des processus complets de plusieurs dizaines d'étapes, avec plusieurs outils et de l'IA.</p>
+          <ul>
+            <li><svg class="icon" aria-hidden="true" focusable="false"><use href="#i-check"/></svg>Plusieurs systèmes reliés entre eux</li>
+            <li><svg class="icon" aria-hidden="true" focusable="false"><use href="#i-check"/></svg>Logique avancée et décisions par l'IA</li>
+            <li><svg class="icon" aria-hidden="true" focusable="false"><use href="#i-check"/></svg>Proposition écrite avant de commencer</li>
+          </ul>
+          <a class="btn btn-wa btn-sm" data-wa="Bonjour, j'ai besoin d'une automatisation sur mesure. Voici mon besoin : " href="https://wa.me/2250777561566?text=Bonjour%2C%20j'ai%20besoin%20d'une%20automatisation%20sur%20mesure.%20Voici%20mon%20besoin%20%3A%20" target="_blank" rel="noopener"><svg class="icon" aria-hidden="true" focusable="false"><use href="#b-whatsapp"/></svg>En parler</a>
+        </article>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ SECTEURS ============ -->
+  <section class="section section-dark on-dark" id="secteurs" aria-labelledby="titre-secteurs">
+    <div class="container">
+      <div class="section-head reveal">
+        <span class="eyebrow">Secteurs</span>
+        <h2 class="section-title" id="titre-secteurs">Des automatisations adaptées à votre activité</h2>
+        <p class="section-lead">Quelques exemples concrets de ce qui peut tourner tout seul, selon votre métier.</p>
+      </div>
+      <div class="grid grid-3">
+        <div class="sector-card reveal"><h3><svg class="icon" aria-hidden="true" focusable="false"><use href="#i-graduation-cap"/></svg>Écoles privées</h3><span class="ex">Exemple</span><p>Rappels de scolarité envoyés aux parents avant chaque échéance, rapport des impayés au fondateur.</p></div>
+        <div class="sector-card reveal"><h3><svg class="icon" aria-hidden="true" focusable="false"><use href="#i-house"/></svg>Immobilier</h3><span class="ex">Exemple</span><p>Un assistant qui présente les biens, prend les rendez-vous de visite et enregistre les prospects.</p></div>
+        <div class="sector-card reveal"><h3><svg class="icon" aria-hidden="true" focusable="false"><use href="#i-shopping-bag"/></svg>Vente en ligne et commerçants</h3><span class="ex">Exemple</span><p>Réponses sur les prix, prise de commande et confirmation avec le client avant la livraison.</p></div>
+        <div class="sector-card reveal"><h3><svg class="icon" aria-hidden="true" focusable="false"><use href="#i-hard-hat"/></svg>Construction et artisans</h3><span class="ex">Exemple</span><p>Réception des demandes de devis avec photos et localisation, rangées dans un tableau.</p></div>
+        <div class="sector-card reveal"><h3><svg class="icon" aria-hidden="true" focusable="false"><use href="#i-utensils"/></svg>Restaurants, salons, services à domicile</h3><span class="ex">Exemple</span><p>Réservations prises automatiquement et rappels de rendez-vous la veille.</p></div>
+        <div class="sector-card reveal"><h3><svg class="icon" aria-hidden="true" focusable="false"><use href="#i-users"/></svg>Associations et organismes de formation</h3><span class="ex">Exemple</span><p>Suivi des cotisations, inscriptions enregistrées et rappels avant les sessions.</p></div>
+        <div class="sector-card reveal"><h3><svg class="icon" aria-hidden="true" focusable="false"><use href="#i-briefcase"/></svg>PME et agences</h3><span class="ex">Exemple</span><p>CRM simple, rapports hebdomadaires et automatisation des tâches administratives.</p></div>
+      </div>
+      <div class="final-ctas reveal">
+        <a class="btn btn-wa btn-lg" data-wa="Bonjour Diallo IA, j'aimerais automatiser une tâche dans mon entreprise." href="https://wa.me/2250777561566?text=Bonjour%20Diallo%20IA%2C%20j'aimerais%20automatiser%20une%20t%C3%A2che%20dans%20mon%20entreprise." target="_blank" rel="noopener"><svg class="icon" aria-hidden="true" focusable="false"><use href="#b-whatsapp"/></svg>Mon secteur n'est pas listé ? Parlons-en</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ DÉMOS ============ -->
+  <section class="section" id="demos" aria-labelledby="titre-demos">
+    <div class="container">
+      <div class="section-head reveal">
+        <span class="eyebrow">Démonstrations</span>
+        <h2 class="section-title" id="titre-demos">Voyez le résultat</h2>
+        <p class="section-lead">Voici à quoi ressemblent concrètement les automatisations, du côté de vos clients et du vôtre.</p>
+        <p class="demo-notice"><svg class="icon" aria-hidden="true" focusable="false"><use href="#i-shield-check"/></svg>Démonstrations réalisées avec des données fictives.</p>
+      </div>
+
+      <div class="tabs" role="tablist" aria-label="Choisir une démonstration">
+        <button class="tab" role="tab" id="tab-1" aria-controls="demo-1" aria-selected="true"><svg class="icon" aria-hidden="true" focusable="false"><use href="#b-whatsapp"/></svg>Assistant immobilier</button>
+        <button class="tab" role="tab" id="tab-2" aria-controls="demo-2" aria-selected="false" tabindex="-1"><svg class="icon" aria-hidden="true" focusable="false"><use href="#i-mail"/></svg>Rappel de scolarité</button>
+        <button class="tab" role="tab" id="tab-3" aria-controls="demo-3" aria-selected="false" tabindex="-1"><svg class="icon" aria-hidden="true" focusable="false"><use href="#i-file-chart-column"/></svg>Rapport des impayés</button>
+        <button class="tab" role="tab" id="tab-4" aria-controls="demo-4" aria-selected="false" tabindex="-1"><svg class="icon" aria-hidden="true" focusable="false"><use href="#i-sheet"/></svg>Tableau de prospects</button>
+        <button class="tab" role="tab" id="tab-5" aria-controls="demo-5" aria-selected="false" tabindex="-1"><svg class="icon" aria-hidden="true" focusable="false"><use href="#i-workflow"/></svg>Schéma d'un workflow</button>
+      </div>
+
+      <!-- Démo 1 : assistant WhatsApp immobilier -->
+      <div class="tab-panel is-active" role="tabpanel" id="demo-1" aria-labelledby="tab-1" tabindex="0">
+        <div class="demo-stage">
+          <div class="demo-text">
+            <h3>Assistant WhatsApp pour une agence immobilière</h3>
+            <p>Le client écrit à n'importe quelle heure. L'assistant comprend la demande, propose les biens qui correspondent, récupère le nom et le numéro, puis prévient le conseiller.</p>
+            <ul>
+              <li><svg class="icon" aria-hidden="true" focusable="false"><use href="#i-check"/></svg>Réponse en quelques secondes, même le soir</li>
+              <li><svg class="icon" aria-hidden="true" focusable="false"><use href="#i-check"/></svg>Seuls les biens qui correspondent au budget</li>
+              <li><svg class="icon" aria-hidden="true" focusable="false"><use href="#i-check"/></svg>Le prospect est enregistré et transmis au conseiller</li>
+            </ul>
+          </div>
+          <div class="phone" role="img" aria-label="Démonstration : conversation WhatsApp entre un client et l'assistant d'une agence immobilière fictive.">
+            <div class="phone-screen" aria-hidden="true">
+              <div class="wa-top">
+                <span class="wa-avatar"><svg class="icon" aria-hidden="true" focusable="false"><use href="#i-house"/></svg></span>
+                <div><div class="wa-name">Agence Horizon (démo)</div><div class="wa-status">Assistant · en ligne</div></div>
+              </div>
+              <div class="wa-body">
+                <div class="bubble in">Bonsoir, je cherche une villa 4 pièces à moins de 70 millions.<time>21:14</time></div>
+                <div class="bubble out">Bonsoir 👋 Voici deux biens qui correspondent :
+                  <div class="property"><strong>Villa 4 pièces · Bingerville</strong><br>62 000 000 FCFA · terrain de 450 m²</div>
+                  <div class="property"><strong>Villa duplex 4 pièces · Cocody</strong><br>68 500 000 FCFA · garage 2 voitures</div>
+                  <time>21:14</time></div>
+                <div class="bubble out">Pour organiser une visite, pouvez-vous m'indiquer votre nom et votre numéro ?<time>21:14</time></div>
+                <div class="bubble in">Yao Kouassi, 07 00 00 00 01<time>21:16</time></div>
+                <div class="bubble out">Merci M. Kouassi ✅ Un conseiller vous rappelle demain avant 10 h pour fixer la visite.<time>21:16</time></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Démo 2 : rappel de scolarité -->
+      <div class="tab-panel" role="tabpanel" id="demo-2" aria-labelledby="tab-2" tabindex="0" hidden>
+        <div class="demo-stage">
+          <div class="demo-text">
+            <h3>Le rappel reçu par un parent</h3>
+            <p>Quelques jours avant chaque échéance, chaque parent reçoit automatiquement un rappel personnalisé, par e-mail ou sur WhatsApp.</p>
+            <ul>
+              <li><svg class="icon" aria-hidden="true" focusable="false"><use href="#i-check"/></svg>Nom de l'élève, montant restant et date</li>
+              <li><svg class="icon" aria-hidden="true" focusable="false"><use href="#i-check"/></svg>Envoyé seulement aux familles concernées</li>
+              <li><svg class="icon" aria-hidden="true" focusable="false"><use href="#i-check"/></svg>Chaque envoi est noté dans le journal des rappels</li>
+            </ul>
+          </div>
+          <div class="window">
+            <div class="window-bar"><i></i><i></i><i></i><span>Boîte de réception</span></div>
+            <div class="mail">
+              <div class="mail-head">
+                <div class="mail-subject">Rappel : Tranche 2 de scolarité de Koné Aminata</div>
+                <div class="mail-meta">De : Groupe Scolaire Les Étoiles · À : Parent de Koné Aminata</div>
+              </div>
+              <p>Bonjour,</p>
+              <p>Nous vous rappelons que la <strong>tranche 2</strong> de la scolarité de Koné Aminata (CM2 B) arrive bientôt à échéance.</p>
+              <div class="amount-box"><span>Montant restant</span><b>65 000 FCFA</b><span>Date d'échéance : 15 novembre 2026</span></div>
+              <p>Le paiement est possible par Mobile Money ou à la caisse de l'école. Si vous avez déjà réglé, merci de ne pas tenir compte de ce message.</p>
+              <p class="mail-sign">Groupe Scolaire Les Étoiles (école de démonstration)</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Démo 3 : rapport des impayés -->
+      <div class="tab-panel" role="tabpanel" id="demo-3" aria-labelledby="tab-3" tabindex="0" hidden>
+        <div class="demo-stage">
+          <div class="demo-text">
+            <h3>Le rapport reçu par le fondateur</h3>
+            <p>Chaque matin, le responsable reçoit un résumé clair : ce qui est en retard, ce qui arrive à échéance, et qui doit quoi.</p>
+            <ul>
+              <li><svg class="icon" aria-hidden="true" focusable="false"><use href="#i-check"/></svg>Totaux calculés automatiquement</li>
+              <li><svg class="icon" aria-hidden="true" focusable="false"><use href="#i-check"/></svg>Retards et échéances proches séparés</li>
+              <li><svg class="icon" aria-hidden="true" focusable="false"><use href="#i-check"/></svg>Liste des élèves concernés</li>
+            </ul>
+          </div>
+          <div class="window">
+            <div class="window-bar"><i></i><i></i><i></i><span>Boîte de réception · 7 h 00</span></div>
+            <div class="mail">
+              <div class="mail-head">
+                <div class="mail-subject">Scolarité : 970 000 FCFA à encaisser</div>
+                <div class="mail-meta">Rapport automatique · Groupe Scolaire Les Étoiles (démo)</div>
+              </div>
+              <div class="kpis">
+                <div class="kpi late"><small>En retard</small><b>80 000 FCFA</b><span>3 échéances</span></div>
+                <div class="kpi"><small>Échéance dans 5 jours ou moins</small><b>890 000 FCFA</b><span>14 échéances</span></div>
+              </div>
+              <table class="mini-table">
+                <thead><tr><th scope="col">Élève</th><th scope="col">Classe</th><th scope="col">Statut</th><th scope="col">Montant</th></tr></thead>
+                <tbody>
+                  <tr><td>Traoré Ibrahim</td><td>6e A</td><td><span class="tag tag-red">En retard</span></td><td>30 000 FCFA</td></tr>
+                  <tr><td>Bamba Mariam</td><td>CE1</td><td><span class="tag tag-red">En retard</span></td><td>25 000 FCFA</td></tr>
+                  <tr><td>Ouattara Moussa</td><td>CM1</td><td><span class="tag tag-red">En retard</span></td><td>25 000 FCFA</td></tr>
+                  <tr><td>Koné Aminata</td><td>CM2 B</td><td><span class="tag tag-amber">Dans 5 j</span></td><td>65 000 FCFA</td></tr>
+                  <tr><td>Kouadio Grâce</td><td>3e</td><td><span class="tag tag-amber">Dans 3 j</span></td><td>65 000 FCFA</td></tr>
+                  <tr><td>N'Guessan Paul</td><td>5e</td><td><span class="tag tag-amber">Dans 2 j</span></td><td>60 000 FCFA</td></tr>
+                </tbody>
+              </table>
+              <p class="mail-sign">… et 11 autres échéances à venir (700 000 FCFA). Détail complet dans le fichier de suivi.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Démo 4 : tableau Google Sheets -->
+      <div class="tab-panel" role="tabpanel" id="demo-4" aria-labelledby="tab-4" tabindex="0" hidden>
+        <div class="demo-stage">
+          <div class="demo-text">
+            <h3>Le tableau qui se remplit tout seul</h3>
+            <p>Chaque conversation utile devient une ligne dans votre Google Sheets : nom, besoin, budget et statut. Vous ouvrez le tableau, vous savez qui rappeler.</p>
+            <ul>
+              <li><svg class="icon" aria-hidden="true" focusable="false"><use href="#i-check"/></svg>Aucune saisie à la main</li>
+              <li><svg class="icon" aria-hidden="true" focusable="false"><use href="#i-check"/></svg>Statut mis à jour automatiquement</li>
+              <li><svg class="icon" aria-hidden="true" focusable="false"><use href="#i-check"/></svg>Consultable depuis votre téléphone</li>
+            </ul>
+          </div>
+          <div class="window">
+            <div class="sheet-bar"><svg class="icon" aria-hidden="true" focusable="false"><use href="#b-googlesheets"/></svg>Prospects · Agence Horizon (démo)</div>
+            <div class="sheet-wrap">
+              <table class="sheet">
+                <thead><tr><th class="rownum"></th><th scope="col">Nom</th><th scope="col">Besoin</th><th scope="col">Budget</th><th scope="col">Statut</th></tr></thead>
+                <tbody>
+                  <tr class="new"><td class="rownum">2</td><td>Yao Kouassi</td><td>Villa 4 pièces</td><td>70 M FCFA</td><td><span class="tag tag-amber">À rappeler</span></td></tr>
+                  <tr class="new"><td class="rownum">3</td><td>Diomandé Awa</td><td>Appartement 3 pièces</td><td>35 M FCFA</td><td><span class="tag tag-amber">À rappeler</span></td></tr>
+                  <tr class="new"><td class="rownum">4</td><td>Konaté Seydou</td><td>Terrain 500 m²</td><td>15 M FCFA</td><td><span class="tag tag-amber">À rappeler</span></td></tr>
+                  <tr class="new"><td class="rownum">5</td><td>Aka Estelle</td><td>Location studio</td><td>120 000 FCFA/mois</td><td><span class="tag tag-amber">À rappeler</span></td></tr>
+                  <tr class="new"><td class="rownum">6</td><td>Coulibaly Issa</td><td>Villa 5 pièces</td><td>90 M FCFA</td><td><span class="tag tag-amber">À rappeler</span></td></tr>
+                </tbody>
+              </table>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Démo 5 : schéma de workflow -->
+      <div class="tab-panel" role="tabpanel" id="demo-5" aria-labelledby="tab-5" tabindex="0" hidden>
+        <div class="demo-stage">
+          <div class="demo-text">
+            <h3>Ce qui se passe en coulisses</h3>
+            <p>Une automatisation est une suite d'étapes qui s'enchaînent toutes seules. Exemple : les relances de scolarité, chaque matin.</p>
+            <ul>
+              <li><svg class="icon" aria-hidden="true" focusable="false"><use href="#i-check"/></svg>Déclenchement à l'heure prévue</li>
+              <li><svg class="icon" aria-hidden="true" focusable="false"><use href="#i-check"/></svg>L'IA rédige un message adapté à chaque famille</li>
+              <li><svg class="icon" aria-hidden="true" focusable="false"><use href="#i-check"/></svg>Tout est enregistré pour le suivi</li>
+            </ul>
+          </div>
+          <div class="flow">
+            <ol class="flow-list" aria-label="Étapes de l'automatisation des relances de scolarité">
+              <li class="flow-step" style="--i:0"><span class="flow-dot"><svg class="icon" aria-hidden="true" focusable="false"><use href="#i-alarm-clock"/></svg></span><span><b>Déclencheur</b><small>Chaque matin à 7 h</small></span></li>
+              <li class="flow-step" style="--i:1"><span class="flow-dot"><svg class="icon" aria-hidden="true" focusable="false"><use href="#i-database"/></svg></span><span><b>Lecture des données</b><small>Google Sheets : élèves, échéances, paiements</small></span></li>
+              <li class="flow-step" style="--i:2"><span class="flow-dot"><svg class="icon" aria-hidden="true" focusable="false"><use href="#i-filter"/></svg></span><span><b>Filtre</b><small>Échéances proches ou en retard</small></span></li>
+              <li class="flow-step" style="--i:3"><span class="flow-dot"><svg class="icon" aria-hidden="true" focusable="false"><use href="#i-sparkles"/></svg></span><span><b>IA</b><small>Rédige un message adapté à chaque famille</small></span></li>
+              <li class="flow-step" style="--i:4"><span class="flow-dot"><svg class="icon" aria-hidden="true" focusable="false"><use href="#i-send"/></svg></span><span><b>Envoi</b><small>WhatsApp ou e-mail</small></span></li>
+              <li class="flow-step" style="--i:5"><span class="flow-dot"><svg class="icon" aria-hidden="true" focusable="false"><use href="#i-file-chart-column"/></svg></span><span><b>Enregistrement</b><small>Journal des rappels et rapport au responsable</small></span></li>
+            </ol>
+          </div>
+        </div>
+      </div>
+
+      <div class="final-ctas reveal">
+        <a class="btn btn-wa btn-lg" data-wa="Bonjour, j'aimerais voir une démonstration." href="https://wa.me/2250777561566?text=Bonjour%2C%20j'aimerais%20voir%20une%20d%C3%A9monstration." target="_blank" rel="noopener"><svg class="icon" aria-hidden="true" focusable="false"><use href="#b-whatsapp"/></svg>Je veux une démonstration pour mon activité</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ MÉTHODE ============ -->
+  <section class="section section-alt" id="methode" aria-labelledby="titre-methode">
+    <div class="container">
+      <div class="section-head center reveal">
+        <span class="eyebrow">Méthode</span>
+        <h2 class="section-title" id="titre-methode">Comment ça marche</h2>
+        <p class="section-lead">Quatre étapes simples, sans jargon et sans engagement de durée.</p>
+      </div>
+      <ol class="steps">
+        <li class="step reveal"><span class="step-num">1</span><h3>On échange</h3><p>Sur WhatsApp ou par téléphone : vous expliquez la tâche qui vous fait perdre du temps.</p></li>
+        <li class="step reveal"><span class="step-num">2</span><h3>Proposition claire</h3><p>Ce que l'automatisation fera, le prix et le délai, par écrit.</p></li>
+        <li class="step reveal"><span class="step-num">3</span><h3>Installation</h3><p>Le travail démarre dès le paiement de l'installation. Tests avec vous avant la mise en service.</p></li>
+        <li class="step reveal"><span class="step-num">4</span><h3>Suivi mensuel</h3><p>Hébergement, maintenance, ajustements et assistance. Vous pouvez arrêter quand vous voulez.</p></li>
+      </ol>
+    </div>
+  </section>
+
+  <!-- ============ TARIFS ============ -->
+  <section class="section section-dark on-dark" id="tarifs" aria-labelledby="titre-tarifs">
+    <div class="container">
+      <div class="section-head center reveal">
+        <span class="eyebrow">Tarifs</span>
+        <h2 class="section-title" id="titre-tarifs">Des prix clairs, connus à l'avance</h2>
+        <p class="section-lead">Une installation payée au démarrage, puis un abonnement mensuel qui couvre l'hébergement, la maintenance et le suivi. Équivalents en euros donnés à titre indicatif.</p>
+      </div>
+
+      <div class="pricing">
+        <article class="price-card reveal">
+          <h3>Assistant IA</h3>
+          <p class="desc">Assistants WhatsApp, e-mail, Telegram, Messenger, et automatisations standards.</p>
+          <div class="price-line"><small>Installation</small><span class="price">50 000 FCFA</span><span class="eur">≈ 76 €</span></div>
+          <div class="price-line"><small>Abonnement</small><span class="price">100 000 FCFA <span class="per">/ mois</span></span><span class="eur">≈ 152 € / mois</span></div>
+          <ul>
+            <li><svg class="icon" aria-hidden="true" focusable="false"><use href="#i-check"/></svg>Configuration sur vos informations</li>
+            <li><svg class="icon" aria-hidden="true" focusable="false"><use href="#i-check"/></svg>Base de données Google Sheets</li>
+            <li><svg class="icon" aria-hidden="true" focusable="false"><use href="#i-check"/></svg>Transmission des contacts sérieux</li>
+            <li><svg class="icon" aria-hidden="true" focusable="false"><use href="#i-check"/></svg>Hébergement, maintenance, ajustements et assistance</li>
+          </ul>
+          <a class="btn btn-wa btn-block" data-wa="Bonjour, je suis intéressé(e) par un assistant IA (WhatsApp / e-mail / Telegram)." href="https://wa.me/2250777561566?text=Bonjour%2C%20je%20suis%20int%C3%A9ress%C3%A9(e)%20par%20un%20assistant%20IA%20(WhatsApp%20%2F%20e-mail%20%2F%20Telegram)." target="_blank" rel="noopener"><svg class="icon" aria-hidden="true" focusable="false"><use href="#b-whatsapp"/></svg>Démarrer mon assistant</a>
+        </article>
+
+        <article class="price-card featured reveal">
+          <span class="ribbon">Le plus flexible</span>
+          <h3>Automatisation sur mesure</h3>
+          <p class="desc">Pour les processus avancés : plusieurs outils connectés, IA, rapports, relances, CRM.</p>
+          <div class="quote-box">Prix sur devis, établi après un échange gratuit sur WhatsApp.</div>
+          <ul>
+            <li><svg class="icon" aria-hidden="true" focusable="false"><use href="#i-check"/></svg>Analyse de votre besoin</li>
+            <li><svg class="icon" aria-hidden="true" focusable="false"><use href="#i-check"/></svg>Proposition écrite : contenu, prix, délai</li>
+            <li><svg class="icon" aria-hidden="true" focusable="false"><use href="#i-check"/></svg>Plusieurs outils et de l'IA, selon le projet</li>
+            <li><svg class="icon" aria-hidden="true" focusable="false"><use href="#i-check"/></svg>Suivi mensuel après la mise en service</li>
+          </ul>
+          <a class="btn btn-wa btn-block" data-wa="Bonjour, j'ai besoin d'une automatisation sur mesure. Voici mon besoin : " href="https://wa.me/2250777561566?text=Bonjour%2C%20j'ai%20besoin%20d'une%20automatisation%20sur%20mesure.%20Voici%20mon%20besoin%20%3A%20" target="_blank" rel="noopener"><svg class="icon" aria-hidden="true" focusable="false"><use href="#b-whatsapp"/></svg>Décrire mon besoin</a>
+        </article>
+
+        <article class="price-card reveal">
+          <h3>Automatisation complexe</h3>
+          <p class="desc">Processus complets de plus de 20 à 30 étapes, plusieurs systèmes, logique avancée.</p>
+          <div class="price-line"><small>Installation</small><span class="price"><span class="from">À partir de</span>200 000 FCFA</span><span class="eur">≈ 305 €</span></div>
+          <div class="price-line"><small>Abonnement</small><span class="price"><span class="from">À partir de</span>150 000 FCFA <span class="per">/ mois</span></span><span class="eur">≈ 229 € / mois</span></div>
+          <ul>
+            <li><svg class="icon" aria-hidden="true" focusable="false"><use href="#i-check"/></svg>Plusieurs systèmes connectés</li>
+            <li><svg class="icon" aria-hidden="true" focusable="false"><use href="#i-check"/></svg>Logique avancée et étapes d'IA</li>
+            <li><svg class="icon" aria-hidden="true" focusable="false"><use href="#i-check"/></svg>Proposition écrite avant de commencer</li>
+          </ul>
+          <a class="btn btn-wa btn-block" data-wa="Bonjour, j'aimerais parler de mon projet d'automatisation complexe." href="https://wa.me/2250777561566?text=Bonjour%2C%20j'aimerais%20parler%20de%20mon%20projet%20d'automatisation%20complexe." target="_blank" rel="noopener"><svg class="icon" aria-hidden="true" focusable="false"><use href="#b-whatsapp"/></svg>Parler de mon projet</a>
+        </article>
+      </div>
+
+      <div class="school-pack reveal" id="pack-ecoles">
+        <div class="school-pack-head">
+          <span class="card-ico"><svg class="icon" aria-hidden="true" focusable="false"><use href="#i-graduation-cap"/></svg></span>
+          <div>
+            <h3>Pack Écoles — Relance de scolarité automatique</h3>
+            <p class="desc">Un tarif selon la taille de l'école.</p>
+          </div>
+        </div>
+        <div class="price-table-wrap">
+          <table class="price-table">
+            <caption class="sr-only">Tarifs du Pack Écoles selon le nombre d'élèves</caption>
+            <thead><tr><th scope="col">Taille de l'école</th><th scope="col">Installation</th><th scope="col">Abonnement mensuel</th></tr></thead>
+            <tbody>
+              <tr><td data-label="Taille de l'école">Moins de 300 élèves</td><td data-label="Installation">100 000 FCFA<span class="eur">≈ 152 €</span></td><td data-label="Abonnement mensuel">30 000 FCFA<span class="eur">≈ 46 €</span></td></tr>
+              <tr><td data-label="Taille de l'école">300 à 800 élèves</td><td data-label="Installation">150 000 FCFA<span class="eur">≈ 229 €</span></td><td data-label="Abonnement mensuel">45 000 FCFA<span class="eur">≈ 69 €</span></td></tr>
+              <tr><td data-label="Taille de l'école">Plus de 800 élèves</td><td data-label="Installation">200 000 FCFA<span class="eur">≈ 305 €</span></td><td data-label="Abonnement mensuel">60 000 FCFA<span class="eur">≈ 91 €</span></td></tr>
+            </tbody>
+          </table>
+        </div>
+        <ul class="school-includes">
+          <li><svg class="icon" aria-hidden="true" focusable="false"><use href="#i-check"/></svg>Rappels automatiques aux parents avant chaque échéance</li>
+          <li><svg class="icon" aria-hidden="true" focusable="false"><use href="#i-check"/></svg>Rapport des impayés au responsable</li>
+          <li><svg class="icon" aria-hidden="true" focusable="false"><use href="#i-check"/></svg>Journal des rappels</li>
+          <li><svg class="icon" aria-hidden="true" focusable="false"><use href="#i-check"/></svg>Fichier de suivi Google Sheets</li>
+        </ul>
+        <a class="btn btn-gold" data-wa="Bonjour, je souhaite automatiser les relances de paiement de mon école. Nombre d'élèves : " href="https://wa.me/2250777561566?text=Bonjour%2C%20je%20souhaite%20automatiser%20les%20relances%20de%20paiement%20de%20mon%20%C3%A9cole.%20Nombre%20d'%C3%A9l%C3%A8ves%20%3A%20" target="_blank" rel="noopener"><svg class="icon" aria-hidden="true" focusable="false"><use href="#i-graduation-cap"/></svg>Équiper mon école</a>
+      </div>
+
+      <p class="pricing-note">Paiement par Mobile Money, virement bancaire ou, pour l'international, par transfert sécurisé. L'installation est payée au démarrage ; l'abonnement couvre l'hébergement, la maintenance et le suivi. Sans engagement de durée.</p>
+    </div>
+  </section>
+
+  <!-- ============ POURQUOI ============ -->
+  <section class="section" aria-labelledby="titre-pourquoi">
+    <div class="container">
+      <div class="section-head center reveal">
+        <span class="eyebrow">Pourquoi Diallo IA</span>
+        <h2 class="section-title" id="titre-pourquoi">Simple pour vous, solide en coulisses</h2>
+      </div>
+      <div class="grid grid-2 why">
+        <div class="card reveal"><span class="card-ico"><svg class="icon" aria-hidden="true" focusable="false"><use href="#i-layers"/></svg></span><h3>Vous gardez vos outils</h3><p>WhatsApp, Gmail, Google Sheets. Pas de nouveau logiciel à apprendre.</p></div>
+        <div class="card reveal"><span class="card-ico"><svg class="icon" aria-hidden="true" focusable="false"><use href="#i-handshake"/></svg></span><h3>Un interlocuteur unique</h3><p>Vous parlez directement à la personne qui construit votre automatisation.</p></div>
+        <div class="card reveal"><span class="card-ico"><svg class="icon" aria-hidden="true" focusable="false"><use href="#i-badge-check"/></svg></span><h3>Prix clairs</h3><p>Installation + abonnement, connus à l'avance.</p></div>
+        <div class="card reveal"><span class="card-ico"><svg class="icon" aria-hidden="true" focusable="false"><use href="#i-globe"/></svg></span><h3>Proche de l'Afrique francophone, ouvert à l'international</h3><p>Basé en Côte d'Ivoire, joignable sur WhatsApp, travail 100 % à distance.</p></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ À PROPOS ============ -->
+  <section class="section section-alt" id="a-propos" aria-labelledby="titre-apropos">
+    <div class="container about">
+      <div class="avatar reveal">
+        <span class="mono" aria-hidden="true">TD</span>
+        <!-- Photo du fondateur : remplacez assets/img/thierno.webp (format carré, 480 × 480 px conseillé).
+             Si l'image est absente, le monogramme « TD » s'affiche à la place. -->
+        <img src="assets/img/thierno.webp" alt="Thierno Moussa Diallo, fondateur de Diallo IA" width="480" height="480" loading="lazy" decoding="async" onerror="this.remove()">
+      </div>
+      <div class="about-text reveal">
+        <span class="eyebrow">À propos</span>
+        <h2 class="section-title" id="titre-apropos">Une personne, un savoir-faire, un suivi direct</h2>
+        <p class="quote" style="margin-top:16px">Je suis Thierno Moussa Diallo, fondateur de Diallo IA. Je construis des automatisations et des assistants IA avec n8n, Google Sheets, Gmail et les modèles d'IA les plus récents, pour que les entreprises arrêtent de perdre du temps sur des tâches répétitives. Basé à Man, en Côte d'Ivoire, je travaille à distance avec des clients en Afrique et à l'international.</p>
+        <div class="about-sign">
+          <strong>Thierno Moussa Diallo</strong>
+          <span><svg class="icon" aria-hidden="true" focusable="false"><use href="#i-map-pin"/></svg>Man, Côte d'Ivoire</span>
+          <span><svg class="icon" aria-hidden="true" focusable="false"><use href="#i-globe"/></svg>100 % à distance</span>
+        </div>
+        <div class="hero-ctas" style="margin-top:22px">
+          <a class="btn btn-wa" data-wa="Bonjour Diallo IA, j'aimerais automatiser une tâche dans mon entreprise." href="https://wa.me/2250777561566?text=Bonjour%20Diallo%20IA%2C%20j'aimerais%20automatiser%20une%20t%C3%A2che%20dans%20mon%20entreprise." target="_blank" rel="noopener"><svg class="icon" aria-hidden="true" focusable="false"><use href="#b-whatsapp"/></svg>Écrire à Thierno</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ TÉMOIGNAGES (désactivé) ============
+       Cette section est prête mais masquée tant qu'il n'y a pas de vrais avis.
+       Pour l'activer :
+       1. Supprimez la ligne « TÉMOIGNAGES-DÉBUT » et la ligne « TÉMOIGNAGES-FIN » (elles ouvrent et ferment ce commentaire).
+       2. Remplacez les textes entre crochets par de vrais avis, avec l'accord écrit des clients.
+       3. N'ajoutez jamais d'avis inventé ni de note étoilée non vérifiable.
+  TÉMOIGNAGES-DÉBUT
+  <section class="section" id="temoignages" aria-labelledby="titre-temoignages">
+    <div class="container">
+      <div class="section-head center reveal">
+        <span class="eyebrow">Témoignages</span>
+        <h2 class="section-title" id="titre-temoignages">Ils ont automatisé avec Diallo IA</h2>
+      </div>
+      <div class="grid grid-3">
+        <figure class="card reveal">
+          <blockquote><p>[Texte exact de l'avis du client]</p></blockquote>
+          <figcaption><strong>[Prénom Nom]</strong> — [Fonction, entreprise, ville]</figcaption>
+        </figure>
+        <figure class="card reveal">
+          <blockquote><p>[Texte exact de l'avis du client]</p></blockquote>
+          <figcaption><strong>[Prénom Nom]</strong> — [Fonction, entreprise, ville]</figcaption>
+        </figure>
+        <figure class="card reveal">
+          <blockquote><p>[Texte exact de l'avis du client]</p></blockquote>
+          <figcaption><strong>[Prénom Nom]</strong> — [Fonction, entreprise, ville]</figcaption>
+        </figure>
+      </div>
+    </div>
+  </section>
+  TÉMOIGNAGES-FIN
+  ============ FIN TÉMOIGNAGES ============ -->
+
+  <!-- ============ FAQ ============ -->
+  <section class="section" id="faq" aria-labelledby="titre-faq">
+    <div class="container">
+      <div class="section-head center reveal">
+        <span class="eyebrow">FAQ</span>
+        <h2 class="section-title" id="titre-faq">Vos questions, nos réponses</h2>
+      </div>
+      <div class="faq">
+        <details class="reveal"><summary>Faut-il savoir utiliser l'informatique ?<svg class="icon" aria-hidden="true" focusable="false"><use href="#i-chevron-down"/></svg></summary><div class="answer"><p>Non. Vous continuez à utiliser WhatsApp, vos e-mails et un tableau simple. Je m'occupe de la technique.</p></div></details>
+        <details class="reveal"><summary>Combien de temps pour l'installation ?<svg class="icon" aria-hidden="true" focusable="false"><use href="#i-chevron-down"/></svg></summary><div class="answer"><p>Pour un assistant standard, généralement quelques jours. Pour une automatisation complexe, le délai est fixé dans la proposition écrite.</p></div></details>
+        <details class="reveal"><summary>Que comprend l'abonnement mensuel ?<svg class="icon" aria-hidden="true" focusable="false"><use href="#i-chevron-down"/></svg></summary><div class="answer"><p>L'hébergement, la maintenance, les ajustements et l'assistance. Sans engagement de durée.</p></div></details>
+        <details class="reveal"><summary>Mes données sont-elles en sécurité ?<svg class="icon" aria-hidden="true" focusable="false"><use href="#i-chevron-down"/></svg></summary><div class="answer"><p>Elles restent dans vos propres outils (votre Google Sheets, votre Gmail). Elles ne sont ni revendues ni partagées.</p></div></details>
+        <details class="reveal"><summary>Travaillez-vous hors de Côte d'Ivoire ?<svg class="icon" aria-hidden="true" focusable="false"><use href="#i-chevron-down"/></svg></summary><div class="answer"><p>Oui, tout se fait à distance, en Afrique francophone, en Europe et au Canada.</p></div></details>
+        <details class="reveal"><summary>Comment payer ?<svg class="icon" aria-hidden="true" focusable="false"><use href="#i-chevron-down"/></svg></summary><div class="answer"><p>Mobile Money, virement bancaire, ou transfert international sécurisé.</p></div></details>
+        <details class="reveal"><summary>Puis-je voir une démonstration avant ?<svg class="icon" aria-hidden="true" focusable="false"><use href="#i-chevron-down"/></svg></summary><div class="answer"><p>Oui, écrivez-nous sur WhatsApp. <a data-wa="Bonjour, j'aimerais voir une démonstration." href="https://wa.me/2250777561566?text=Bonjour%2C%20j'aimerais%20voir%20une%20d%C3%A9monstration." target="_blank" rel="noopener">Demander une démonstration</a></p></div></details>
+        <details class="reveal"><summary>L'assistant remplace-t-il mon équipe ?<svg class="icon" aria-hidden="true" focusable="false"><use href="#i-chevron-down"/></svg></summary><div class="answer"><p>Non. Il répond aux questions répétitives et vous transmet les vrais clients ; les décisions importantes restent humaines.</p></div></details>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ APPEL FINAL ============ -->
+  <section class="final-cta on-dark" aria-labelledby="titre-final">
+    <div class="container reveal">
+      <h2 id="titre-final">Quelle tâche voulez-vous ne plus jamais faire à la main ?</h2>
+      <p>Décrivez-la en un message. Vous recevez une réponse claire : ce qui est possible, le prix et le délai.</p>
+      <div class="final-ctas">
+        <a class="btn btn-wa btn-lg" data-wa="Bonjour Diallo IA, j'aimerais automatiser une tâche dans mon entreprise." href="https://wa.me/2250777561566?text=Bonjour%20Diallo%20IA%2C%20j'aimerais%20automatiser%20une%20t%C3%A2che%20dans%20mon%20entreprise." target="_blank" rel="noopener"><svg class="icon" aria-hidden="true" focusable="false"><use href="#b-whatsapp"/></svg>Écrire sur WhatsApp</a>
+        <a class="btn btn-outline btn-lg" href="tel:+2250555613362"><svg class="icon" aria-hidden="true" focusable="false"><use href="#i-phone"/></svg>Appeler</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ CONTACT ============ -->
+  <section class="section" id="contact" aria-labelledby="titre-contact">
+    <div class="container">
+      <div class="section-head reveal">
+        <span class="eyebrow">Contact</span>
+        <h2 class="section-title" id="titre-contact">Parlons de votre projet</h2>
+        <p class="section-lead">Pas de formulaire : écrivez directement, vous parlez à la personne qui construit votre automatisation.</p>
+        <p class="fast-reply"><i aria-hidden="true"></i>Réponse rapide sur WhatsApp</p>
+      </div>
+      <div class="contact-grid">
+        <a class="contact-card wa reveal" data-wa="Bonjour Diallo IA, j'aimerais automatiser une tâche dans mon entreprise." href="https://wa.me/2250777561566?text=Bonjour%20Diallo%20IA%2C%20j'aimerais%20automatiser%20une%20t%C3%A2che%20dans%20mon%20entreprise." target="_blank" rel="noopener"><span class="contact-ico"><svg class="icon" aria-hidden="true" focusable="false"><use href="#b-whatsapp"/></svg></span><span><small>WhatsApp</small><strong>+225 07 77 56 15 66</strong></span><span class="go"><svg class="icon" aria-hidden="true" focusable="false"><use href="#i-arrow-right"/></svg></span></a>
+        <a class="contact-card reveal" href="tel:+2250555613362"><span class="contact-ico"><svg class="icon" aria-hidden="true" focusable="false"><use href="#i-phone"/></svg></span><span><small>Appel entreprise</small><strong>+225 05 55 61 33 62</strong></span><span class="go"><svg class="icon" aria-hidden="true" focusable="false"><use href="#i-arrow-right"/></svg></span></a>
+        <a class="contact-card reveal" href="mailto:thiernomoussadiallo282@gmail.com"><span class="contact-ico"><svg class="icon" aria-hidden="true" focusable="false"><use href="#i-mail"/></svg></span><span><small>E-mail</small><strong>thiernomoussadiallo282@gmail.com</strong></span><span class="go"><svg class="icon" aria-hidden="true" focusable="false"><use href="#i-arrow-right"/></svg></span></a>
+        <a class="contact-card reveal" href="https://www.facebook.com/share/14vrEc1BRM5/" target="_blank" rel="noopener"><span class="contact-ico"><svg class="icon" aria-hidden="true" focusable="false"><use href="#b-facebook"/></svg></span><span><small>Facebook</small><strong>Diallo IA</strong></span><span class="go"><svg class="icon" aria-hidden="true" focusable="false"><use href="#i-arrow-right"/></svg></span></a>
+        <a class="contact-card reveal" href="https://www.tiktok.com/@thierno.agents.ia" target="_blank" rel="noopener"><span class="contact-ico"><svg class="icon" aria-hidden="true" focusable="false"><use href="#b-tiktok"/></svg></span><span><small>TikTok</small><strong>@thierno.agents.ia</strong></span><span class="go"><svg class="icon" aria-hidden="true" focusable="false"><use href="#i-arrow-right"/></svg></span></a>
+        <a class="contact-card reveal" href="tel:+2250777561566"><span class="contact-ico"><svg class="icon" aria-hidden="true" focusable="false"><use href="#i-user"/></svg></span><span><small>Téléphone de Thierno</small><strong>+225 07 77 56 15 66</strong></span><span class="go"><svg class="icon" aria-hidden="true" focusable="false"><use href="#i-arrow-right"/></svg></span></a>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<footer class="site-footer on-dark">
+  <div class="container">
+    <div class="footer-grid">
+      <div>
+        <a class="brand" href="#haut" aria-label="Diallo IA — accueil"><svg viewBox="0 0 40 40" aria-hidden="true" focusable="false"><rect width="40" height="40" rx="11" fill="#13315C"/><path d="M13 11.5h6.2a8.5 8.5 0 0 1 0 17H13z" fill="none" stroke="#fff" stroke-width="3.2" stroke-linejoin="round"/><circle cx="29.2" cy="11.2" r="3.3" fill="#F4B942"/></svg><span class="brand-name">Diallo <span>IA</span></span></a>
+        <p style="margin-top:14px;max-width:340px">Assistants IA et automatisations sur mesure pour les entreprises, les écoles et les commerçants.</p>
+        <div class="socials">
+          <a href="https://www.facebook.com/share/14vrEc1BRM5/" aria-label="Diallo IA sur Facebook" target="_blank" rel="noopener"><svg class="icon" aria-hidden="true" focusable="false"><use href="#b-facebook"/></svg></a>
+          <a href="https://www.tiktok.com/@thierno.agents.ia" aria-label="Diallo IA sur TikTok" target="_blank" rel="noopener"><svg class="icon" aria-hidden="true" focusable="false"><use href="#b-tiktok"/></svg></a>
+          <a data-wa="Bonjour Diallo IA, j'aimerais automatiser une tâche dans mon entreprise." aria-label="Écrire à Diallo IA sur WhatsApp" href="https://wa.me/2250777561566?text=Bonjour%20Diallo%20IA%2C%20j'aimerais%20automatiser%20une%20t%C3%A2che%20dans%20mon%20entreprise." target="_blank" rel="noopener"><svg class="icon" aria-hidden="true" focusable="false"><use href="#b-whatsapp"/></svg></a>
+        </div>
+      </div>
+      <div>
+        <h2 class="footer-title">Liens rapides</h2>
+        <ul>
+          <li><a href="#services">Services</a></li>
+          <li><a href="#secteurs">Secteurs</a></li>
+          <li><a href="#demos">Démos</a></li>
+          <li><a href="#tarifs">Tarifs</a></li>
+        </ul>
+      </div>
+      <div>
+        <h2 class="footer-title">En savoir plus</h2>
+        <ul>
+          <li><a href="#methode">Méthode</a></li>
+          <li><a href="#a-propos">À propos</a></li>
+          <li><a href="#faq">FAQ</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </div>
+      <div>
+        <h2 class="footer-title">Contact</h2>
+        <ul>
+          <li><a data-wa="Bonjour Diallo IA, j'aimerais automatiser une tâche dans mon entreprise." href="https://wa.me/2250777561566?text=Bonjour%20Diallo%20IA%2C%20j'aimerais%20automatiser%20une%20t%C3%A2che%20dans%20mon%20entreprise." target="_blank" rel="noopener"><svg class="icon" aria-hidden="true" focusable="false"><use href="#b-whatsapp"/></svg>+225 07 77 56 15 66</a></li>
+          <li><a href="tel:+2250555613362"><svg class="icon" aria-hidden="true" focusable="false"><use href="#i-phone"/></svg>+225 05 55 61 33 62</a></li>
+          <li><a href="mailto:thiernomoussadiallo282@gmail.com"><svg class="icon" aria-hidden="true" focusable="false"><use href="#i-mail"/></svg>E-mail</a></li>
+          <li><span style="display:inline-flex;align-items:center;gap:8px;min-height:36px"><svg class="icon" aria-hidden="true" focusable="false"><use href="#i-map-pin"/></svg>Man, Côte d'Ivoire</span></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p style="margin:0">© 2026 Diallo IA — Man, Côte d'Ivoire</p>
+      <nav aria-label="Liens légaux">
+        <a href="mentions-legales.html">Mentions légales</a>
+        <a href="confidentialite.html">Confidentialité</a>
+      </nav>
+    </div>
+  </div>
+</footer>
+
+<a class="wa-float" data-wa="Bonjour Diallo IA, j'aimerais automatiser une tâche dans mon entreprise." aria-label="Une question ? Écrire sur WhatsApp" href="https://wa.me/2250777561566?text=Bonjour%20Diallo%20IA%2C%20j'aimerais%20automatiser%20une%20t%C3%A2che%20dans%20mon%20entreprise." target="_blank" rel="noopener"><svg class="icon" aria-hidden="true" focusable="false"><use href="#b-whatsapp"/></svg><span class="wa-tip" aria-hidden="true">Une question ?</span></a>
+
+<div class="mobile-bar">
+  <a class="btn btn-wa" data-wa="Bonjour Diallo IA, j'aimerais automatiser une tâche dans mon entreprise." href="https://wa.me/2250777561566?text=Bonjour%20Diallo%20IA%2C%20j'aimerais%20automatiser%20une%20t%C3%A2che%20dans%20mon%20entreprise." target="_blank" rel="noopener"><svg class="icon" aria-hidden="true" focusable="false"><use href="#b-whatsapp"/></svg>WhatsApp</a>
+  <a class="btn btn-call" href="tel:+2250555613362"><svg class="icon" aria-hidden="true" focusable="false"><use href="#i-phone"/></svg>Appeler</a>
+</div>
+
+<script src="assets/js/main.js" defer></script>
+
+</body>
+</html>
