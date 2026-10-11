@@ -22,7 +22,7 @@ mode: collaborative
 
 ## Frame 1 — Accroche
 
-- status: built
+- status: animated
 - src: compositions/01-hook.html
 - duration: 4s
 - transition_in: cut
@@ -36,7 +36,7 @@ mode: collaborative
 
 ## Frame 2 — L'agent répond (4.jpg)
 
-- status: built
+- status: animated
 - src: compositions/02-agent.html
 - duration: 8s
 - transition_in: whip-left
@@ -50,7 +50,7 @@ mode: collaborative
 
 ## Frame 3 — Il enregistre et vous alerte (3.jpg)
 
-- status: built
+- status: animated
 - src: compositions/03-clients.html
 - duration: 8s
 - transition_in: whip-up
@@ -64,7 +64,7 @@ mode: collaborative
 
 ## Frame 4 — Il trie, classe, rapporte (1.jpg)
 
-- status: built
+- status: animated
 - src: compositions/04-tri.html
 - duration: 8s
 - transition_in: whip-left
@@ -78,7 +78,7 @@ mode: collaborative
 
 ## Frame 5 — Appel à l'action
 
-- status: built
+- status: animated
 - src: compositions/05-cta.html
 - duration: 8s
 - transition_in: zoom-through
