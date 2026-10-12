@@ -1,0 +1,42 @@
+REMPLACER LA VOIX DE SYNTHÈSE PAR VOTRE PROPRE VOIX
+====================================================
+
+Méthode simple (sur téléphone, avec CapCut, gratuit)
+1. Ouvrez CapCut > Nouveau projet > importez « diallo-ia-sans-voix.mp4 »
+   (cette version contient déjà la musique et les effets, mais pas de voix).
+2. Touchez « Audio » > « Voix off » (micro) et enregistrez le texte ci-dessous,
+   en suivant les temps indiqués (les sous-titres de la vidéo vous guident).
+3. Exportez en 1080p, 30 images/s. Publiez sur TikTok avec « couverture.jpg »
+   et le texte de « description-tiktok.txt ».
+
+Conseils d'enregistrement : pièce calme (rideaux, vêtements autour), téléphone à
+20 cm de la bouche, ton chaleureux et dynamique, phrases courtes.
+
+Texte et temps (identiques aux sous-titres) :
+00,1 s  Vous perdez des clients sur WhatsApp ?
+02,2 s  Chaque message sans réponse, c'est un client qui part ailleurs.
+05,0 s  Et si votre WhatsApp répondait tout seul, jour et nuit ?
+07,4 s  Nos assistants IA répondent à vos clients, présentent vos produits et vos prix…
+10,8 s  … enregistrent chaque contact dans votre tableau…
+13,1 s  … et vous envoient uniquement les clients sérieux.
+15,3 s  Relances de paiement, rapports chaque matin…
+18,5 s  … et même des automatisations de plus de vingt étapes.
+21,2 s  Il comprend même les messages vocaux.
+23,5 s  Installation rapide, suivi chaque mois, et vous gardez vos outils.
+26,6 s  Écrivez-nous maintenant sur WhatsApp au 07 77 56 15 66.
+32,3 s  Diallo IA, vos tâches faites automatiquement.
+
+Méthode projet (ordinateur, re-rendu complet avec ducking automatique)
+1. Enregistrez votre voix en un seul fichier de 35 s, calée sur les temps ci-dessus.
+2. Remplacez le fichier videos/tiktok-diallo-ia/assets/voix.wav par le vôtre (même nom).
+3. Demandez-moi de relancer le rendu : la musique se baissera automatiquement sous votre voix
+   et les sous-titres resteront synchronisés si vos temps sont proches de ceux-ci.
+
+Fichiers :
+- diallo-ia-tiktok.mp4        version finale (voix + musique + effets)
+- diallo-ia-sans-musique.mp4  voix + effets (pour ajouter un son tendance dans TikTok)
+- diallo-ia-sans-voix.mp4     musique + effets (pour enregistrer votre propre voix)
+- couverture.jpg              couverture 1080 × 1920
+- sous-titres.srt             sous-titres
+- description-tiktok.txt      description à coller dans TikTok
+- voix-provisoire.wav         voix de synthèse actuelle (référence de rythme)

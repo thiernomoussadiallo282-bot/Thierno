@@ -1,0 +1,572 @@
+[
+ {
+  "line": "l01",
+  "text": "Vous",
+  "start": 0.14,
+  "end": 0.28
+ },
+ {
+  "line": "l01",
+  "text": "perdez",
+  "start": 0.28,
+  "end": 0.65
+ },
+ {
+  "line": "l01",
+  "text": "des",
+  "start": 0.65,
+  "end": 0.9
+ },
+ {
+  "line": "l01",
+  "text": "clients",
+  "start": 0.9,
+  "end": 1.17
+ },
+ {
+  "line": "l01",
+  "text": "sur",
+  "start": 1.17,
+  "end": 1.37
+ },
+ {
+  "line": "l01",
+  "text": "WhatsApp",
+  "start": 1.37,
+  "end": 1.73
+ },
+ {
+  "line": "l02",
+  "text": "Chaque",
+  "start": 2.18,
+  "end": 2.49
+ },
+ {
+  "line": "l02",
+  "text": "message",
+  "start": 2.49,
+  "end": 2.82
+ },
+ {
+  "line": "l02",
+  "text": "sans",
+  "start": 2.82,
+  "end": 2.98
+ },
+ {
+  "line": "l02",
+  "text": "réponse,",
+  "start": 2.98,
+  "end": 3.35
+ },
+ {
+  "line": "l02",
+  "text": "c'est",
+  "start": 3.35,
+  "end": 3.63
+ },
+ {
+  "line": "l02",
+  "text": "un",
+  "start": 3.63,
+  "end": 3.66
+ },
+ {
+  "line": "l02",
+  "text": "client",
+  "start": 3.66,
+  "end": 3.91
+ },
+ {
+  "line": "l02",
+  "text": "qui",
+  "start": 3.91,
+  "end": 4.03
+ },
+ {
+  "line": "l02",
+  "text": "part",
+  "start": 4.03,
+  "end": 4.16
+ },
+ {
+  "line": "l02",
+  "text": "ailleurs.",
+  "start": 4.16,
+  "end": 4.5
+ },
+ {
+  "line": "l03",
+  "text": "Et",
+  "start": 4.98,
+  "end": 5.09
+ },
+ {
+  "line": "l03",
+  "text": "si",
+  "start": 5.09,
+  "end": 5.24
+ },
+ {
+  "line": "l03",
+  "text": "votre",
+  "start": 5.24,
+  "end": 5.49
+ },
+ {
+  "line": "l03",
+  "text": "WhatsApp",
+  "start": 5.49,
+  "end": 5.83
+ },
+ {
+  "line": "l03",
+  "text": "répondait",
+  "start": 5.83,
+  "end": 6.23
+ },
+ {
+  "line": "l03",
+  "text": "tout",
+  "start": 6.23,
+  "end": 6.39
+ },
+ {
+  "line": "l03",
+  "text": "seul,",
+  "start": 6.39,
+  "end": 6.61
+ },
+ {
+  "line": "l03",
+  "text": "jour",
+  "start": 6.61,
+  "end": 6.74
+ },
+ {
+  "line": "l03",
+  "text": "et",
+  "start": 6.74,
+  "end": 6.85
+ },
+ {
+  "line": "l03",
+  "text": "nuit",
+  "start": 6.85,
+  "end": 7.0
+ },
+ {
+  "line": "l04",
+  "text": "Nos",
+  "start": 7.43,
+  "end": 7.52
+ },
+ {
+  "line": "l04",
+  "text": "assistants",
+  "start": 7.52,
+  "end": 8.04
+ },
+ {
+  "line": "l04",
+  "text": "IA",
+  "start": 8.04,
+  "end": 8.32
+ },
+ {
+  "line": "l04",
+  "text": "répondent",
+  "start": 8.32,
+  "end": 8.71
+ },
+ {
+  "line": "l04",
+  "text": "à",
+  "start": 8.71,
+  "end": 8.81
+ },
+ {
+  "line": "l04",
+  "text": "vos",
+  "start": 8.81,
+  "end": 8.95
+ },
+ {
+  "line": "l04",
+  "text": "clients,",
+  "start": 8.95,
+  "end": 9.19
+ },
+ {
+  "line": "l04",
+  "text": "présentent",
+  "start": 9.19,
+  "end": 9.66
+ },
+ {
+  "line": "l04",
+  "text": "vos",
+  "start": 9.66,
+  "end": 9.81
+ },
+ {
+  "line": "l04",
+  "text": "produits",
+  "start": 9.81,
+  "end": 10.01
+ },
+ {
+  "line": "l04",
+  "text": "et",
+  "start": 10.01,
+  "end": 10.19
+ },
+ {
+  "line": "l04",
+  "text": "vos",
+  "start": 10.19,
+  "end": 10.33
+ },
+ {
+  "line": "l04",
+  "text": "prix",
+  "start": 10.33,
+  "end": 10.5
+ },
+ {
+  "line": "l05",
+  "text": "enregistrent",
+  "start": 10.83,
+  "end": 11.41
+ },
+ {
+  "line": "l05",
+  "text": "chaque",
+  "start": 11.41,
+  "end": 11.75
+ },
+ {
+  "line": "l05",
+  "text": "contact",
+  "start": 11.75,
+  "end": 11.95
+ },
+ {
+  "line": "l05",
+  "text": "dans",
+  "start": 11.95,
+  "end": 12.19
+ },
+ {
+  "line": "l05",
+  "text": "votre",
+  "start": 12.19,
+  "end": 12.44
+ },
+ {
+  "line": "l05",
+  "text": "tableau",
+  "start": 12.44,
+  "end": 12.76
+ },
+ {
+  "line": "l06",
+  "text": "et",
+  "start": 13.09,
+  "end": 13.24
+ },
+ {
+  "line": "l06",
+  "text": "vous",
+  "start": 13.24,
+  "end": 13.37
+ },
+ {
+  "line": "l06",
+  "text": "envoient",
+  "start": 13.37,
+  "end": 13.69
+ },
+ {
+  "line": "l06",
+  "text": "uniquement",
+  "start": 13.69,
+  "end": 14.26
+ },
+ {
+  "line": "l06",
+  "text": "les",
+  "start": 14.26,
+  "end": 14.31
+ },
+ {
+  "line": "l06",
+  "text": "clients",
+  "start": 14.31,
+  "end": 14.6
+ },
+ {
+  "line": "l06",
+  "text": "sérieux.",
+  "start": 14.6,
+  "end": 14.89
+ },
+ {
+  "line": "l07",
+  "text": "Relances",
+  "start": 15.35,
+  "end": 15.83
+ },
+ {
+  "line": "l07",
+  "text": "de",
+  "start": 15.83,
+  "end": 15.86
+ },
+ {
+  "line": "l07",
+  "text": "paiement,",
+  "start": 15.86,
+  "end": 16.23
+ },
+ {
+  "line": "l07",
+  "text": "rapports",
+  "start": 16.23,
+  "end": 16.57
+ },
+ {
+  "line": "l07",
+  "text": "chaque",
+  "start": 16.57,
+  "end": 16.94
+ },
+ {
+  "line": "l07",
+  "text": "matin",
+  "start": 16.94,
+  "end": 17.17
+ },
+ {
+  "line": "l08",
+  "text": "et",
+  "start": 18.53,
+  "end": 18.63
+ },
+ {
+  "line": "l08",
+  "text": "même",
+  "start": 18.63,
+  "end": 18.93
+ },
+ {
+  "line": "l08",
+  "text": "des",
+  "start": 18.93,
+  "end": 18.99
+ },
+ {
+  "line": "l08",
+  "text": "automatisations",
+  "start": 18.99,
+  "end": 19.79
+ },
+ {
+  "line": "l08",
+  "text": "de",
+  "start": 19.79,
+  "end": 19.9
+ },
+ {
+  "line": "l08",
+  "text": "plus",
+  "start": 19.9,
+  "end": 20.01
+ },
+ {
+  "line": "l08",
+  "text": "de",
+  "start": 20.01,
+  "end": 20.14
+ },
+ {
+  "line": "l08",
+  "text": "vingt",
+  "start": 20.14,
+  "end": 20.34
+ },
+ {
+  "line": "l08",
+  "text": "étapes.",
+  "start": 20.34,
+  "end": 20.65
+ },
+ {
+  "line": "l09",
+  "text": "Il",
+  "start": 21.18,
+  "end": 21.31
+ },
+ {
+  "line": "l09",
+  "text": "comprend",
+  "start": 21.31,
+  "end": 21.64
+ },
+ {
+  "line": "l09",
+  "text": "même",
+  "start": 21.64,
+  "end": 21.94
+ },
+ {
+  "line": "l09",
+  "text": "les",
+  "start": 21.94,
+  "end": 22.01
+ },
+ {
+  "line": "l09",
+  "text": "messages",
+  "start": 22.01,
+  "end": 22.43
+ },
+ {
+  "line": "l09",
+  "text": "vocaux.",
+  "start": 22.43,
+  "end": 22.76
+ },
+ {
+  "line": "l10",
+  "text": "Installation",
+  "start": 23.48,
+  "end": 24.07
+ },
+ {
+  "line": "l10",
+  "text": "rapide,",
+  "start": 24.07,
+  "end": 24.42
+ },
+ {
+  "line": "l10",
+  "text": "suivi",
+  "start": 24.42,
+  "end": 24.66
+ },
+ {
+  "line": "l10",
+  "text": "chaque",
+  "start": 24.66,
+  "end": 24.98
+ },
+ {
+  "line": "l10",
+  "text": "mois,",
+  "start": 24.98,
+  "end": 25.13
+ },
+ {
+  "line": "l10",
+  "text": "et",
+  "start": 25.13,
+  "end": 25.16
+ },
+ {
+  "line": "l10",
+  "text": "vous",
+  "start": 25.16,
+  "end": 25.31
+ },
+ {
+  "line": "l10",
+  "text": "gardez",
+  "start": 25.31,
+  "end": 25.61
+ },
+ {
+  "line": "l10",
+  "text": "vos",
+  "start": 25.61,
+  "end": 25.71
+ },
+ {
+  "line": "l10",
+  "text": "outils.",
+  "start": 25.71,
+  "end": 26.06
+ },
+ {
+  "line": "l11",
+  "text": "Écrivez-nous",
+  "start": 26.64,
+  "end": 27.3
+ },
+ {
+  "line": "l11",
+  "text": "maintenant",
+  "start": 27.3,
+  "end": 27.92
+ },
+ {
+  "line": "l11",
+  "text": "sur",
+  "start": 27.92,
+  "end": 28.1
+ },
+ {
+  "line": "l11",
+  "text": "WhatsApp",
+  "start": 28.1,
+  "end": 28.41
+ },
+ {
+  "line": "l11",
+  "text": "au",
+  "start": 28.41,
+  "end": 28.55
+ },
+ {
+  "line": "l11",
+  "text": "07 77 56 15 66.",
+  "start": 28.55,
+  "end": 31.83
+ },
+ {
+  "line": "l12",
+  "text": "Diallo",
+  "start": 32.34,
+  "end": 32.65
+ },
+ {
+  "line": "l12",
+  "text": "IA,",
+  "start": 32.65,
+  "end": 32.96
+ },
+ {
+  "line": "l12",
+  "text": "vos",
+  "start": 32.96,
+  "end": 33.08
+ },
+ {
+  "line": "l12",
+  "text": "tâches",
+  "start": 33.08,
+  "end": 33.34
+ },
+ {
+  "line": "l12",
+  "text": "faites",
+  "start": 33.34,
+  "end": 33.64
+ },
+ {
+  "line": "l12",
+  "text": "automatiquement.",
+  "start": 33.64,
+  "end": 34.48
+ }
+]

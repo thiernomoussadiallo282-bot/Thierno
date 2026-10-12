@@ -1,4 +1,4 @@
-node_modules/
 .hyperframes/
+node_modules/
 videos/*/renders/
 videos/*/snapshots/
