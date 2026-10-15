@@ -1,0 +1,14 @@
+{
+  "name": "talking-head-diallo",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "dev": "npx --yes hyperframes@0.8.160 preview",
+    "check": "npx --yes hyperframes@0.8.160 check",
+    "render": "npx --yes hyperframes@0.8.160 render",
+    "publish": "npx --yes hyperframes@0.8.160 publish"
+  },
+  "devDependencies": {
+    "@hyperframes/core": "^0.8.145"
+  }
+}

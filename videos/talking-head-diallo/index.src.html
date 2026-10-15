@@ -1,0 +1,250 @@
+<!doctype html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=1080, height=1920" />
+    <script src="assets/vendor/gsap.min.js"></script>
+    <style>
+      * { margin: 0; padding: 0; box-sizing: border-box; }
+      html, body { margin: 0; width: 1080px; height: 1920px; overflow: hidden; background: #000; }
+      #root { position: relative; width: 100%; height: 100%; overflow: hidden; color: #fff; font-family: "Montserrat", sans-serif; --navy: #0b2545; --gold: #f4b942; --wa: #25d366; --ink: #06210f; }
+      .icon { width: 1em; height: 1em; display: inline-block; vertical-align: -0.12em; flex: none; }
+      #video-wrap { position: absolute; inset: 0; overflow: hidden; transform-origin: 540px 900px; }
+      #bg-video { position: absolute; inset: 0; width: 1080px; height: 1920px; object-fit: cover; }
+      #vignette { position: absolute; inset: 0; background: radial-gradient(1100px 1500px at 50% 50%, transparent 55%, rgba(0,0,0,0.45) 100%), linear-gradient(180deg, rgba(4,12,26,0.55) 0%, transparent 32%, transparent 62%, rgba(4,12,26,0.55) 100%); pointer-events: none; }
+      #wm { position: absolute; left: 60px; top: 236px; display: flex; align-items: center; gap: 10px; font-weight: 900; font-size: 30px; padding: 8px 18px 8px 10px; border-radius: 999px; background: rgba(10,22,40,0.82); color: #fff; }
+      #wm svg { width: 40px; height: 40px; } #wm b { color: var(--gold); }
+
+      /* cards live in the top zone y 300–700 (face is ~y 700–1200) */
+      .card { position: absolute; left: 60px; width: 880px; top: 300px; opacity: 0; }
+      .pill { display: inline-flex; align-items: center; gap: 12px; background: var(--gold); color: var(--navy); font-weight: 900; font-size: 32px; letter-spacing: 0.04em; text-transform: uppercase; padding: 10px 22px; border-radius: 999px; box-shadow: 0 10px 30px rgba(0,0,0,0.35); }
+      .title { margin-top: 18px; font-weight: 900; font-size: 74px; line-height: 1.04; letter-spacing: -0.035em; text-shadow: 0 4px 24px rgba(0,0,0,0.7); -webkit-text-stroke: 10px #0a1628; paint-order: stroke fill; }
+      .title .g { color: var(--gold); }
+      .panel { background: rgba(6,18,38,0.86); border: 3px solid rgba(244,185,66,0.6); border-radius: 30px; box-shadow: 0 30px 70px rgba(0,0,0,0.55); }
+
+      /* B project glimpse */
+      .shot { position: relative; width: 880px; height: 360px; border-radius: 26px; overflow: hidden; background: #f7f7f7; box-shadow: 0 30px 70px rgba(0,0,0,0.6), 0 0 0 4px rgba(244,185,66,0.85); }
+      .shot img { position: absolute; display: block; }
+      .shot .blur { position: absolute; inset: 0; backdrop-filter: blur(9px); -webkit-backdrop-filter: blur(9px); }
+      .shot .scan { position: absolute; top: 0; bottom: 0; width: 220px; background: linear-gradient(90deg, transparent, rgba(244,185,66,0.35), transparent); }
+      .shot .lbl { position: absolute; left: 18px; top: 16px; background: rgba(6,18,38,0.9); color: var(--gold); font-weight: 900; font-size: 26px; padding: 8px 16px; border-radius: 999px; display: flex; align-items: center; gap: 10px; }
+      #tasks { position: absolute; left: 60px; width: 880px; top: 300px; opacity: 0; }
+      .row { display: flex; align-items: center; gap: 22px; padding: 20px 26px; margin-bottom: 18px; font-weight: 900; font-size: 54px; letter-spacing: -0.02em; }
+      .row .ic { width: 84px; height: 84px; border-radius: 22px; display: flex; align-items: center; justify-content: center; font-size: 46px; flex: none; }
+      .strike { position: relative; display: inline-block; }
+      .strike i { position: absolute; left: -6px; right: -6px; top: 52%; height: 8px; border-radius: 4px; background: #ef4444; transform-origin: 0 50%; }
+
+      /* C intelligent / fiable */
+      #c1 .title { font-size: 78px; }
+      .duo { display: grid; gap: 16px; margin-top: 18px; }
+      .duo .row { margin: 0; font-size: 46px; opacity: 0; }
+      .duo .row small { display: block; font-size: 30px; font-weight: 700; color: #cbd5e1; letter-spacing: 0; margin-top: 4px; }
+      .duo .row b { color: var(--gold); }
+
+      /* D confidential */
+      .stamp { position: absolute; left: 50%; top: 50%; width: 560px; margin-left: -280px; margin-top: -70px; height: 140px; border: 10px solid #ef4444; border-radius: 22px; color: #ef4444; font-weight: 900; font-size: 74px; letter-spacing: 0.06em; display: flex; align-items: center; justify-content: center; gap: 16px; background: rgba(255,255,255,0.82); }
+
+      /* E backstage */
+      .tags { display: flex; gap: 16px; margin-top: 18px; flex-wrap: wrap; }
+      .tag { display: inline-flex; align-items: center; gap: 12px; font-weight: 900; font-size: 44px; padding: 14px 26px; border-radius: 22px; opacity: 0; }
+      .tag.a { background: #fff; color: var(--navy); }
+      .tag.b { background: #ef4444; color: #fff; }
+      .bar { margin-top: 22px; height: 26px; border-radius: 13px; background: rgba(255,255,255,0.18); overflow: hidden; }
+      .bar b { display: block; height: 100%; width: 100%; background: linear-gradient(90deg, #f4b942, #ffd98a); transform-origin: 0 50%; }
+      .barlbl { margin-top: 10px; font-size: 30px; font-weight: 800; display: inline-block; padding: 6px 16px; border-radius: 12px; background: rgba(10,22,40,0.85); color: #fff; }
+
+      /* F CTA */
+      #sub { position: absolute; left: 140px; width: 800px; top: 300px; opacity: 0; display: flex; align-items: center; gap: 26px; padding: 22px 30px; }
+      #sub .av { width: 130px; height: 130px; border-radius: 50%; background: var(--navy); border: 5px solid var(--gold); display: flex; align-items: center; justify-content: center; flex: none; }
+      #sub .av svg { width: 80px; height: 80px; }
+      #sub b { display: block; font-size: 40px; font-weight: 900; }
+      #sub span { display: block; font-size: 28px; font-weight: 700; color: #cbd5e1; }
+      #sub-btn { margin-top: 12px; display: inline-flex; align-items: center; gap: 10px; background: #fe2c55; color: #fff; font-weight: 900; font-size: 36px; padding: 12px 30px; border-radius: 14px; }
+      #sub-btn.done { background: #334155; }
+      #hand { position: absolute; left: 600px; top: 470px; font-size: 90px; color: #fff; opacity: 0; filter: drop-shadow(0 6px 12px rgba(0,0,0,0.6)); }
+      #comment { position: absolute; left: 60px; width: 880px; top: 300px; opacity: 0; padding: 26px 30px; }
+      #comment .q { display: flex; gap: 18px; align-items: flex-start; font-weight: 900; font-size: 46px; line-height: 1.15; letter-spacing: -0.02em; }
+      #comment .q .ic { width: 76px; height: 76px; border-radius: 50%; background: var(--gold); color: var(--navy); display: flex; align-items: center; justify-content: center; font-size: 42px; flex: none; }
+      #comment .in { margin-top: 20px; height: 76px; border-radius: 38px; background: rgba(255,255,255,0.12); border: 2px solid rgba(255,255,255,0.25); display: flex; align-items: center; padding: 0 28px; font-size: 30px; font-weight: 700; color: #cbd5e1; }
+      #comment .in i { width: 3px; height: 38px; background: var(--gold); margin-left: 6px; }
+
+      /* outro */
+      #outro { position: absolute; inset: 0; opacity: 0; background: radial-gradient(1200px 1000px at 80% 15%, #1a3f6e 0%, transparent 60%), radial-gradient(1000px 900px at 10% 95%, #13315c 0%, transparent 65%), #0b2545; }
+      #outro .dots { position: absolute; inset: 0; background-image: radial-gradient(rgba(255,255,255,0.16) 2px, transparent 2px); background-size: 40px 40px; }
+      #o-logo { position: absolute; left: 60px; width: 880px; top: 300px; display: flex; align-items: center; justify-content: center; gap: 18px; font-weight: 900; font-size: 70px; }
+      #o-logo svg { width: 96px; height: 96px; } #o-logo b { color: var(--gold); }
+      #o-q { position: absolute; left: 60px; width: 880px; top: 470px; text-align: center; font-weight: 900; font-size: 76px; line-height: 1.05; letter-spacing: -0.035em; }
+      #o-q .g { color: var(--gold); }
+      #o-wa { position: absolute; left: 90px; width: 820px; top: 720px; height: 240px; border-radius: 60px; background: var(--wa); color: var(--ink); display: flex; flex-direction: column; align-items: center; justify-content: center; box-shadow: 0 24px 60px rgba(37,211,102,0.45); }
+      #o-wa small { display: flex; align-items: center; gap: 12px; font-size: 40px; font-weight: 900; }
+      #o-wa div { font-family: "League Gothic", sans-serif; font-size: 150px; line-height: 0.95; }
+      #o-sub { position: absolute; left: 60px; width: 880px; top: 1010px; text-align: center; font-weight: 900; font-size: 46px; }
+      #o-sub b { color: #fe2c55; }
+
+      /* captions y 1290–1470 */
+      #caps { position: absolute; left: 60px; width: 880px; top: 1290px; height: 190px; }
+      .chunk { position: absolute; left: 0; right: 0; bottom: 0; display: flex; flex-wrap: wrap; justify-content: center; align-content: flex-end; gap: 0 22px; opacity: 0; }
+      .cw { display: inline-block; font-weight: 900; font-size: 76px; line-height: 1.1; letter-spacing: -0.02em; text-transform: uppercase; color: #fff; -webkit-text-stroke: 12px #000; paint-order: stroke fill; text-shadow: 0 8px 20px rgba(0,0,0,0.55); }
+      #flash { position: absolute; inset: 0; background: #ffe7a8; opacity: 0; pointer-events: none; }
+    </style>
+  </head>
+  <body>
+    <div id="root" data-composition-id="main" data-start="0" data-duration="43.5" data-width="1080" data-height="1920">
+      [[SPRITE]]
+      <div id="video-wrap">
+        <video id="bg-video" class="clip" src="assets/input-video.mp4" data-start="0" data-duration="40.53" data-track-index="0" data-has-audio="true" data-volume="1" playsinline></video>
+      </div>
+      <div id="vignette"></div>
+      <div id="wm">[[LOGO]]<span>Diallo <b>IA</b></span></div>
+
+      <!-- A hook -->
+      <div class="card" id="cA"><span class="pill">[[i:wrench]] Je construis en public</span>
+        <div class="title">Ce qui va <span class="g">changer</span> ma façon de travailler</div></div>
+
+      <!-- B project glimpse -->
+      <div class="card" id="cB"><div class="shot">
+        <img src="assets/cap7.png" alt="" style="left:-40px;top:-60px;width:1240px" />
+        <div class="blur"></div><div class="scan"></div>
+        <div class="lbl">[[i:sparkles]] Projet IA · aperçu</div>
+      </div></div>
+      <div id="tasks">
+        <div class="row panel"><div class="ic" style="background:#ef4444">[[i:repeat]]</div><span class="strike">Tâches répétitives<i></i></span></div>
+        <div class="row panel" style="border-color:var(--gold)"><div class="ic" style="background:var(--gold);color:var(--navy)">[[i:zap]]</div><span>Automatisées par l'<span style="color:var(--gold)">IA</span></span></div>
+      </div>
+
+      <!-- C hard part -->
+      <div class="card" id="c1"><span class="pill">[[i:alarm-clock]] Le plus difficile</span>
+        <div class="title" id="c1-t"><span class="strike">Construire l'IA<i></i></span></div></div>
+      <div class="card" id="c2"><span class="pill">[[i:layers]] Construire un système</span>
+        <div class="duo">
+          <div class="row panel" id="duo1"><div class="ic" style="background:var(--gold);color:var(--navy)">[[i:sparkles]]</div><div><b>Intelligent</b><small>sait quoi faire</small></div></div>
+          <div class="row panel" id="duo2"><div class="ic" style="background:#fff;color:var(--navy)">[[i:shield-check]]</div><div><b>Fiable</b><small>sait quand NE PAS agir</small></div></div>
+        </div></div>
+
+      <!-- D confidential -->
+      <div class="card" id="cD"><div class="shot" style="height:400px">
+        <img src="assets/cap9.png" alt="" style="left:-60px;top:-20px;width:1100px" />
+        <div class="blur" style="backdrop-filter:blur(16px);-webkit-backdrop-filter:blur(16px)"></div>
+        <div class="stamp" id="stamp">[[i:lock]] SECRET</div>
+      </div></div>
+
+      <!-- E backstage -->
+      <div class="card" id="cE"><div class="shot" style="height:300px">
+        <img src="assets/wf1.png" alt="" style="left:-200px;top:-40px;width:1500px" />
+        <div class="blur" style="backdrop-filter:blur(5px);-webkit-backdrop-filter:blur(5px)"></div>
+        <div class="lbl">[[i:workflow]] Construction en cours</div>
+      </div>
+        <div class="tags"><span class="tag a" id="tg1">[[i:mouse-pointer-click]] Les coulisses</span><span class="tag b" id="tg2">[[i:x]] Les erreurs</span></div>
+        <div class="bar"><b id="bar"></b></div>
+        <div class="barlbl">Montré progressivement, étape par étape</div>
+      </div>
+
+      <!-- F subscribe -->
+      <div id="sub" class="panel"><div class="av">[[LOGO]]</div><div><b>@thierno.agents.ia</b><span>Suivez la construction depuis zéro</span><div id="sub-btn">+ S'abonner</div></div></div>
+      <div id="hand">[[i:mouse-pointer-click]]</div>
+      <div id="comment" class="panel"><div class="q"><div class="ic">[[i:messages-square]]</div><div>Jusqu'où laisseriez-vous l'<span style="color:var(--gold)">IA</span> gérer votre business&nbsp;?</div></div>
+        <div class="in">Écrivez votre réponse en commentaire<i></i></div></div>
+
+      <div id="caps"></div>
+
+      <!-- outro -->
+      <div id="outro"><div class="dots"></div>
+        <div id="o-logo">[[LOGO]]<span>Diallo <b>IA</b></span></div>
+        <div id="o-q">Vous voulez votre <span class="g">propre agent IA</span>&nbsp;?</div>
+        <div id="o-wa"><small>[[b:whatsapp]] WhatsApp +225</small><div>07 77 56 15 66</div></div>
+        <div id="o-sub">Abonnez-vous : <b>@thierno.agents.ia</b></div>
+      </div>
+      <div id="flash"></div>
+
+      <audio id="musique" src="assets/musique.wav" data-start="0" data-duration="43.5" data-track-index="21" data-volume="0.32" data-audio-group="music"></audio>
+      [[SFX]]
+    </div>
+
+    <script>
+      (function () {
+        const tl = gsap.timeline({ paused: true });
+        const W = [[WORDS]];
+
+        // punch-in camera on the speaker (jump-cut feel); video keeps playing untouched
+        const Z = [[0, 1.16], [0.35, 1.0], [5.6, 1.1], [15.0, 1.2], [18.85, 1.04], [24.4, 1.15], [27.9, 1.0], [32.6, 1.1], [35.3, 1.22], [36.6, 1.06]];
+        Z.forEach(([t, s], i) => {
+          const prev = i ? Z[i - 1][1] : 1.16;
+          tl.fromTo("#video-wrap", { scale: prev }, { scale: s, duration: i === 1 ? 0.35 : 0.14, ease: "power3.out", immediateRender: false }, t);
+        });
+        tl.fromTo("#video-wrap", { x: 0, y: 0 }, { keyframes: [{ x: -10, y: 6, duration: 0.05 }, { x: 9, y: -5, duration: 0.05 }, { x: -6, y: 3, duration: 0.05 }, { x: 0, y: 0, duration: 0.05 }], immediateRender: false }, 35.32);
+
+        function show(sel, t0, t1, from) {
+          tl.fromTo(sel, Object.assign({ opacity: 0, y: -40, scale: 0.92 }, from || {}), { opacity: 1, y: 0, scale: 1, duration: 0.35, ease: "back.out(1.8)", immediateRender: false }, t0);
+          tl.to(sel, { opacity: 0, y: -30, duration: 0.22, ease: "power2.in" }, t1);
+        }
+        // A
+        show("#cA", 0.15, 5.3);
+        // B
+        show("#cB", 6.7, 9.75);
+        tl.fromTo("#cB .scan", { x: -240 }, { x: 900, duration: 1.4, ease: "none", repeat: 1, immediateRender: false }, 6.9);
+        tl.fromTo("#cB img", { scale: 1 }, { scale: 1.08, duration: 3, ease: "sine.inOut", immediateRender: false }, 6.7);
+        show("#tasks", 9.85, 14.55);
+        tl.fromTo("#tasks .row:nth-child(1) .strike i", { scaleX: 0 }, { scaleX: 1, duration: 0.3, ease: "power2.out", immediateRender: false }, 12.3);
+        tl.fromTo("#tasks .row:nth-child(2)", { opacity: 0, x: 120 }, { opacity: 1, x: 0, duration: 0.35, ease: "back.out(2)", immediateRender: false }, 12.6);
+        // C
+        show("#c1", 15.0, 18.0);
+        tl.fromTo("#c1 .strike i", { scaleX: 0 }, { scaleX: 1, duration: 0.3, ease: "power2.out", immediateRender: false }, 16.25);
+        show("#c2", 18.07, 24.2);
+        tl.fromTo("#duo1", { opacity: 0, x: -120 }, { opacity: 1, x: 0, duration: 0.35, ease: "back.out(2)", immediateRender: false }, 19.5);
+        tl.fromTo("#duo2", { opacity: 0, x: 120 }, { opacity: 1, x: 0, duration: 0.35, ease: "back.out(2)", immediateRender: false }, 22.3);
+        tl.fromTo("#duo2", { scale: 1 }, { keyframes: [{ scale: 1.05, duration: 0.12 }, { scale: 1, duration: 0.2 }], immediateRender: false }, 23.85);
+        // D
+        show("#cD", 24.45, 27.75);
+        tl.fromTo("#stamp", { scale: 2.6, opacity: 0, rotation: -24 }, { scale: 1, opacity: 1, rotation: -8, duration: 0.3, ease: "power4.out", immediateRender: false }, 25.6);
+        // E
+        show("#cE", 27.95, 32.55);
+        tl.fromTo("#tg1", { opacity: 0, y: 30 }, { opacity: 1, y: 0, duration: 0.3, ease: "back.out(2)", immediateRender: false }, 30.4);
+        tl.fromTo("#tg2", { opacity: 0, y: 30 }, { opacity: 1, y: 0, duration: 0.3, ease: "back.out(2)", immediateRender: false }, 31.1);
+        tl.fromTo("#bar", { scaleX: 0.05 }, { scaleX: 0.42, duration: 4.4, ease: "power1.inOut", immediateRender: false }, 28.0);
+        // F subscribe + comment
+        show("#sub", 33.6, 36.5);
+        tl.fromTo("#hand", { opacity: 0, x: 120, y: 80 }, { opacity: 1, x: 0, y: 0, duration: 0.35, ease: "power3.out", immediateRender: false }, 34.85);
+        tl.fromTo("#hand", { scale: 1 }, { keyframes: [{ scale: 0.82, duration: 0.1 }, { scale: 1, duration: 0.15 }], immediateRender: false }, 35.3);
+        tl.to("#hand", { opacity: 0, duration: 0.2 }, 36.0);
+        const sb = document.getElementById("sub-btn"); const st = { v: 0 };
+        tl.fromTo(st, { v: 0 }, { v: 1, duration: 0.01, immediateRender: false, onUpdate: () => { sb.className = st.v > 0.5 ? "done" : ""; sb.textContent = st.v > 0.5 ? "✓ Abonné" : "+ S'abonner"; } }, 35.35);
+        tl.fromTo("#sub-btn", { scale: 1 }, { keyframes: [{ scale: 1.15, duration: 0.1 }, { scale: 1, duration: 0.2 }], immediateRender: false }, 35.36);
+        show("#comment", 36.6, 40.35);
+        tl.fromTo("#comment .in i", { opacity: 1 }, { opacity: 0, duration: 0.3, yoyo: true, repeat: 5, ease: "steps(1)", immediateRender: false }, 37.2);
+
+        // outro
+        tl.fromTo("#outro", { opacity: 0 }, { opacity: 1, duration: 0.35, ease: "power2.out", immediateRender: false }, 40.4);
+        tl.fromTo("#flash", { opacity: 0 }, { keyframes: [{ opacity: 0.5, duration: 0.06 }, { opacity: 0, duration: 0.4 }], immediateRender: false }, 40.38);
+        tl.fromTo("#o-logo", { y: -40, opacity: 0 }, { y: 0, opacity: 1, duration: 0.35, ease: "back.out(2)" }, 40.5);
+        tl.fromTo("#o-q", { y: 40, opacity: 0 }, { y: 0, opacity: 1, duration: 0.35, ease: "power3.out" }, 40.65);
+        tl.fromTo("#o-wa", { scale: 0.6, opacity: 0 }, { scale: 1, opacity: 1, duration: 0.45, ease: "back.out(2)" }, 40.85);
+        tl.fromTo("#o-wa", { scale: 1 }, { scale: 1.04, duration: 0.4, yoyo: true, repeat: 3, ease: "sine.inOut", immediateRender: false }, 41.4);
+        tl.fromTo("#o-sub", { opacity: 0 }, { opacity: 1, duration: 0.3 }, 41.1);
+        tl.to("#wm", { opacity: 0, duration: 0.2 }, 40.4);
+
+        // viral captions: ≤3 words, active word gold
+        const caps = document.getElementById("caps");
+        let chunk = null, n = 0; const chunks = [];
+        W.forEach(([txt, s, e], i) => {
+          const prev = W[i - 1];
+          const brk = !chunk || n >= 3 || (prev && /[.,?!]$/.test(prev[0])) || (prev && s - prev[2] > 0.45);
+          if (brk) { chunk = { el: document.createElement("div"), w: [] }; chunk.el.className = "chunk"; caps.appendChild(chunk.el); chunks.push(chunk); n = 0; }
+          const sp = document.createElement("span"); sp.className = "cw"; sp.textContent = txt.replace(/[.,]$/, ""); chunk.el.appendChild(sp); chunk.w.push([sp, s, e]); n++;
+        });
+        chunks.forEach((c, ci) => {
+          const s0 = c.w[0][1], last = c.w[c.w.length - 1], nx = chunks[ci + 1];
+          const end = nx ? Math.min(nx.w[0][1] - 0.05, last[2] + 0.35) : Math.min(40.35, last[2] + 0.3);
+          tl.fromTo(c.el, { opacity: 0 }, { opacity: 1, duration: 0.01, immediateRender: false }, s0 - 0.03);
+          tl.set(c.el, { opacity: 0 }, end);
+          c.w.forEach(([sp, s, e]) => {
+            tl.fromTo(sp, { opacity: 0, scale: 0.55, y: 18, color: "#ffffff" }, { opacity: 1, scale: 1, y: 0, color: "#f4b942", duration: 0.12, ease: "back.out(2.6)", immediateRender: false }, s - 0.04);
+            tl.to(sp, { color: "#ffffff", duration: 0.06 }, Math.min(e, s + 0.6));
+          });
+        });
+        gsap.set(".cw", { opacity: 0 });
+
+        window.__timelines["main"] = tl;
+      })();
+    </script>
+  </body>
+</html>

@@ -1,0 +1,587 @@
+[
+ {
+  "text": "Je",
+  "start": 0.12,
+  "end": 0.3
+ },
+ {
+  "text": "suis",
+  "start": 0.3,
+  "end": 0.5
+ },
+ {
+  "text": "en",
+  "start": 0.5,
+  "end": 0.68
+ },
+ {
+  "text": "train",
+  "start": 0.68,
+  "end": 0.92
+ },
+ {
+  "text": "de",
+  "start": 0.92,
+  "end": 1.36
+ },
+ {
+  "text": "construire",
+  "start": 1.36,
+  "end": 1.85
+ },
+ {
+  "text": "quelque",
+  "start": 1.85,
+  "end": 2.15
+ },
+ {
+  "text": "chose",
+  "start": 2.15,
+  "end": 2.5
+ },
+ {
+  "text": "qui",
+  "start": 2.5,
+  "end": 2.76
+ },
+ {
+  "text": "pourrait",
+  "start": 2.76,
+  "end": 3.28
+ },
+ {
+  "text": "complètement",
+  "start": 3.28,
+  "end": 3.84
+ },
+ {
+  "text": "changer",
+  "start": 3.84,
+  "end": 4.16
+ },
+ {
+  "text": "ma",
+  "start": 4.16,
+  "end": 4.36
+ },
+ {
+  "text": "façon",
+  "start": 4.36,
+  "end": 4.8
+ },
+ {
+  "text": "de",
+  "start": 4.8,
+  "end": 4.92
+ },
+ {
+  "text": "travailler.",
+  "start": 4.92,
+  "end": 5.663
+ },
+ {
+  "text": "Je",
+  "start": 5.663,
+  "end": 5.88
+ },
+ {
+  "text": "travaille",
+  "start": 5.88,
+  "end": 6.4
+ },
+ {
+  "text": "sur",
+  "start": 6.4,
+  "end": 6.64
+ },
+ {
+  "text": "un",
+  "start": 6.64,
+  "end": 6.76
+ },
+ {
+  "text": "projet",
+  "start": 6.76,
+  "end": 7.118
+ },
+ {
+  "text": "d'intelligence",
+  "start": 7.118,
+  "end": 8.0
+ },
+ {
+  "text": "artificielle",
+  "start": 8.0,
+  "end": 8.68
+ },
+ {
+  "text": "qui",
+  "start": 8.68,
+  "end": 8.893
+ },
+ {
+  "text": "doit",
+  "start": 8.893,
+  "end": 9.123
+ },
+ {
+  "text": "me",
+  "start": 9.123,
+  "end": 9.32
+ },
+ {
+  "text": "permettre",
+  "start": 9.32,
+  "end": 9.848
+ },
+ {
+  "text": "d'automatiser",
+  "start": 9.848,
+  "end": 10.702
+ },
+ {
+  "text": "une",
+  "start": 10.702,
+  "end": 11.013
+ },
+ {
+  "text": "grande",
+  "start": 11.013,
+  "end": 11.365
+ },
+ {
+  "text": "partie",
+  "start": 11.365,
+  "end": 11.717
+ },
+ {
+  "text": "de",
+  "start": 11.717,
+  "end": 11.88
+ },
+ {
+  "text": "mes",
+  "start": 11.88,
+  "end": 12.08
+ },
+ {
+  "text": "tâches",
+  "start": 12.08,
+  "end": 12.56
+ },
+ {
+  "text": "répétitives",
+  "start": 12.56,
+  "end": 13.56
+ },
+ {
+  "text": "dans",
+  "start": 13.56,
+  "end": 13.8
+ },
+ {
+  "text": "mes",
+  "start": 13.8,
+  "end": 13.96
+ },
+ {
+  "text": "futurs",
+  "start": 13.96,
+  "end": 14.32
+ },
+ {
+  "text": "business.",
+  "start": 14.32,
+  "end": 15.04
+ },
+ {
+  "text": "Mais",
+  "start": 15.04,
+  "end": 15.12
+ },
+ {
+  "text": "le",
+  "start": 15.12,
+  "end": 15.28
+ },
+ {
+  "text": "plus",
+  "start": 15.28,
+  "end": 15.48
+ },
+ {
+  "text": "difficile,",
+  "start": 15.48,
+  "end": 15.932
+ },
+ {
+  "text": "ce",
+  "start": 15.932,
+  "end": 16.04
+ },
+ {
+  "text": "n'est",
+  "start": 16.04,
+  "end": 16.16
+ },
+ {
+  "text": "pas",
+  "start": 16.16,
+  "end": 16.36
+ },
+ {
+  "text": "de",
+  "start": 16.36,
+  "end": 16.56
+ },
+ {
+  "text": "construire",
+  "start": 16.56,
+  "end": 16.88
+ },
+ {
+  "text": "l'IA,",
+  "start": 16.88,
+  "end": 17.066
+ },
+ {
+  "text": "c'est",
+  "start": 17.066,
+  "end": 17.251
+ },
+ {
+  "text": "de",
+  "start": 17.251,
+  "end": 17.4
+ },
+ {
+  "text": "construire",
+  "start": 17.4,
+  "end": 18.065
+ },
+ {
+  "text": "un",
+  "start": 18.065,
+  "end": 18.265
+ },
+ {
+  "text": "système",
+  "start": 18.265,
+  "end": 18.88
+ },
+ {
+  "text": "suffisamment",
+  "start": 18.88,
+  "end": 19.56
+ },
+ {
+  "text": "intelligent",
+  "start": 19.56,
+  "end": 20.2
+ },
+ {
+  "text": "pour",
+  "start": 20.2,
+  "end": 20.36
+ },
+ {
+  "text": "savoir",
+  "start": 20.36,
+  "end": 20.88
+ },
+ {
+  "text": "quoi",
+  "start": 20.88,
+  "end": 21.24
+ },
+ {
+  "text": "faire,",
+  "start": 21.24,
+  "end": 21.575
+ },
+ {
+  "text": "et",
+  "start": 21.575,
+  "end": 21.73
+ },
+ {
+  "text": "suffisamment",
+  "start": 21.73,
+  "end": 22.4
+ },
+ {
+  "text": "fiable",
+  "start": 22.4,
+  "end": 22.8
+ },
+ {
+  "text": "pour",
+  "start": 22.8,
+  "end": 23.0
+ },
+ {
+  "text": "savoir",
+  "start": 23.0,
+  "end": 23.44
+ },
+ {
+  "text": "quand",
+  "start": 23.44,
+  "end": 23.72
+ },
+ {
+  "text": "ne",
+  "start": 23.72,
+  "end": 23.88
+ },
+ {
+  "text": "pas",
+  "start": 23.88,
+  "end": 24.04
+ },
+ {
+  "text": "agir.",
+  "start": 24.04,
+  "end": 24.48
+ },
+ {
+  "text": "Je",
+  "start": 24.48,
+  "end": 24.58
+ },
+ {
+  "text": "ne",
+  "start": 24.58,
+  "end": 24.68
+ },
+ {
+  "text": "vais",
+  "start": 24.68,
+  "end": 24.88
+ },
+ {
+  "text": "pas",
+  "start": 24.88,
+  "end": 25.08
+ },
+ {
+  "text": "montrer",
+  "start": 25.08,
+  "end": 25.64
+ },
+ {
+  "text": "exactement",
+  "start": 25.64,
+  "end": 26.24
+ },
+ {
+  "text": "ce",
+  "start": 26.24,
+  "end": 26.4
+ },
+ {
+  "text": "que",
+  "start": 26.4,
+  "end": 26.56
+ },
+ {
+  "text": "je",
+  "start": 26.56,
+  "end": 26.72
+ },
+ {
+  "text": "suis",
+  "start": 26.72,
+  "end": 26.931
+ },
+ {
+  "text": "en",
+  "start": 26.931,
+  "end": 27.112
+ },
+ {
+  "text": "train",
+  "start": 27.112,
+  "end": 27.339
+ },
+ {
+  "text": "de",
+  "start": 27.339,
+  "end": 27.52
+ },
+ {
+  "text": "construire.",
+  "start": 27.52,
+  "end": 27.922
+ },
+ {
+  "text": "Je",
+  "start": 27.922,
+  "end": 28.04
+ },
+ {
+  "text": "préfère",
+  "start": 28.04,
+  "end": 28.48
+ },
+ {
+  "text": "vous",
+  "start": 28.48,
+  "end": 28.64
+ },
+ {
+  "text": "montrer",
+  "start": 28.64,
+  "end": 29.12
+ },
+ {
+  "text": "progressivement",
+  "start": 29.12,
+  "end": 30.12
+ },
+ {
+  "text": "les",
+  "start": 30.2,
+  "end": 30.44
+ },
+ {
+  "text": "coulisses",
+  "start": 30.44,
+  "end": 30.88
+ },
+ {
+  "text": "et",
+  "start": 30.88,
+  "end": 31.04
+ },
+ {
+  "text": "les",
+  "start": 31.04,
+  "end": 31.12
+ },
+ {
+  "text": "erreurs",
+  "start": 31.12,
+  "end": 31.52
+ },
+ {
+  "text": "que",
+  "start": 31.52,
+  "end": 31.68
+ },
+ {
+  "text": "je",
+  "start": 31.68,
+  "end": 31.8
+ },
+ {
+  "text": "vais",
+  "start": 31.8,
+  "end": 32.04
+ },
+ {
+  "text": "rencontrer.",
+  "start": 32.04,
+  "end": 32.64
+ },
+ {
+  "text": "Si",
+  "start": 32.64,
+  "end": 32.76
+ },
+ {
+  "text": "vous",
+  "start": 32.76,
+  "end": 32.942
+ },
+ {
+  "text": "voulez",
+  "start": 32.942,
+  "end": 33.28
+ },
+ {
+  "text": "suivre",
+  "start": 33.28,
+  "end": 33.64
+ },
+ {
+  "text": "la",
+  "start": 33.64,
+  "end": 33.84
+ },
+ {
+  "text": "construction",
+  "start": 33.84,
+  "end": 34.36
+ },
+ {
+  "text": "depuis",
+  "start": 34.36,
+  "end": 34.85
+ },
+ {
+  "text": "zéro,",
+  "start": 34.85,
+  "end": 35.32
+ },
+ {
+  "text": "abonnez-vous,",
+  "start": 35.32,
+  "end": 36.16
+ },
+ {
+  "text": "et",
+  "start": 36.16,
+  "end": 36.3
+ },
+ {
+  "text": "dites-moi",
+  "start": 36.3,
+  "end": 36.55
+ },
+ {
+  "text": "en",
+  "start": 36.55,
+  "end": 36.68
+ },
+ {
+  "text": "commentaire",
+  "start": 36.68,
+  "end": 37.48
+ },
+ {
+  "text": "jusqu'où",
+  "start": 37.48,
+  "end": 38.28
+ },
+ {
+  "text": "vous",
+  "start": 38.28,
+  "end": 38.52
+ },
+ {
+  "text": "laisseriez",
+  "start": 38.52,
+  "end": 39.2
+ },
+ {
+  "text": "l'IA",
+  "start": 39.2,
+  "end": 39.68
+ },
+ {
+  "text": "gérer",
+  "start": 39.68,
+  "end": 40.08
+ },
+ {
+  "text": "votre",
+  "start": 40.08,
+  "end": 40.36
+ },
+ {
+  "text": "business.",
+  "start": 40.36,
+  "end": 40.53
+ }
+]

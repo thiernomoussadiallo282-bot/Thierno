@@ -1,0 +1,96 @@
+1
+00:00:00,120 --> 00:00:01,850
+Je suis en train de construire
+
+2
+00:00:01,850 --> 00:00:04,160
+quelque chose qui pourrait complètement changer
+
+3
+00:00:04,160 --> 00:00:05,663
+ma façon de travailler.
+
+4
+00:00:05,663 --> 00:00:08,000
+Je travaille sur un projet d'intelligence
+
+5
+00:00:08,000 --> 00:00:10,702
+artificielle qui doit me permettre d'automatiser
+
+6
+00:00:10,702 --> 00:00:12,560
+une grande partie de mes tâches
+
+7
+00:00:12,560 --> 00:00:15,040
+répétitives dans mes futurs business.
+
+8
+00:00:15,040 --> 00:00:15,932
+Mais le plus difficile,
+
+9
+00:00:15,932 --> 00:00:17,066
+ce n'est pas de construire l'IA,
+
+10
+00:00:17,066 --> 00:00:19,560
+c'est de construire un système suffisamment
+
+11
+00:00:19,560 --> 00:00:21,575
+intelligent pour savoir quoi faire,
+
+12
+00:00:21,575 --> 00:00:23,720
+et suffisamment fiable pour savoir quand
+
+13
+00:00:23,720 --> 00:00:24,480
+ne pas agir.
+
+14
+00:00:24,480 --> 00:00:26,240
+Je ne vais pas montrer exactement
+
+15
+00:00:26,240 --> 00:00:27,339
+ce que je suis en train
+
+16
+00:00:27,339 --> 00:00:27,922
+de construire.
+
+17
+00:00:27,922 --> 00:00:30,440
+Je préfère vous montrer progressivement les
+
+18
+00:00:30,440 --> 00:00:31,800
+coulisses et les erreurs que je
+
+19
+00:00:31,800 --> 00:00:32,640
+vais rencontrer.
+
+20
+00:00:32,640 --> 00:00:34,360
+Si vous voulez suivre la construction
+
+21
+00:00:34,360 --> 00:00:35,320
+depuis zéro,
+
+22
+00:00:35,320 --> 00:00:36,160
+abonnez-vous,
+
+23
+00:00:36,160 --> 00:00:38,520
+et dites-moi en commentaire jusqu'où vous
+
+24
+00:00:38,520 --> 00:00:40,530
+laisseriez l'IA gérer votre business.
+
