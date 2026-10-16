@@ -1,0 +1,517 @@
+[
+{
+"text": "Et",
+"start": 0.31,
+"end": 0.492
+},
+{
+"text": "si",
+"start": 0.492,
+"end": 0.673
+},
+{
+"text": "des",
+"start": 0.673,
+"end": 0.9
+},
+{
+"text": "entreprises",
+"start": 0.9,
+"end": 1.49
+},
+{
+"text": "pouvaient",
+"start": 1.7,
+"end": 2.074
+},
+{
+"text": "continuer",
+"start": 2.074,
+"end": 2.449
+},
+{
+"text": "de",
+"start": 2.449,
+"end": 2.585
+},
+{
+"text": "travailler",
+"start": 2.585,
+"end": 2.993
+},
+{
+"text": "même",
+"start": 2.993,
+"end": 3.197
+},
+{
+"text": "quand",
+"start": 3.197,
+"end": 3.436
+},
+{
+"text": "elles",
+"start": 3.436,
+"end": 3.674
+},
+{
+"text": "dorment?",
+"start": 3.674,
+"end": 3.98
+},
+{
+"text": "C'est",
+"start": 4.47,
+"end": 4.647
+},
+{
+"text": "exactement",
+"start": 4.647,
+"end": 5.0
+},
+{
+"text": "ce",
+"start": 5.23,
+"end": 5.407
+},
+{
+"text": "genre",
+"start": 5.407,
+"end": 5.716
+},
+{
+"text": "de",
+"start": 5.716,
+"end": 5.892
+},
+{
+"text": "système",
+"start": 5.892,
+"end": 6.29
+},
+{
+"text": "que",
+"start": 6.29,
+"end": 6.511
+},
+{
+"text": "je",
+"start": 6.511,
+"end": 6.687
+},
+{
+"text": "suis",
+"start": 6.687,
+"end": 6.952
+},
+{
+"text": "en",
+"start": 6.952,
+"end": 7.129
+},
+{
+"text": "train",
+"start": 7.129,
+"end": 7.438
+},
+{
+"text": "de",
+"start": 7.438,
+"end": 7.615
+},
+{
+"text": "construire",
+"start": 7.615,
+"end": 8.144
+},
+{
+"text": "avec",
+"start": 8.144,
+"end": 8.409
+},
+{
+"text": "l'intelligence",
+"start": 8.409,
+"end": 9.072
+},
+{
+"text": "artificielle.",
+"start": 9.072,
+"end": 9.69
+},
+{
+"text": "L'objectif",
+"start": 10.09,
+"end": 10.63
+},
+{
+"text": "n'est",
+"start": 10.63,
+"end": 10.925
+},
+{
+"text": "pas",
+"start": 10.925,
+"end": 11.171
+},
+{
+"text": "simplement",
+"start": 11.171,
+"end": 11.76
+},
+{
+"text": "de",
+"start": 12.0,
+"end": 12.171
+},
+{
+"text": "créer",
+"start": 12.171,
+"end": 12.47
+},
+{
+"text": "un",
+"start": 12.47,
+"end": 12.641
+},
+{
+"text": "chatbot",
+"start": 12.641,
+"end": 13.026
+},
+{
+"text": "qui",
+"start": 13.026,
+"end": 13.24
+},
+{
+"text": "répond",
+"start": 13.24,
+"end": 13.582
+},
+{
+"text": "aux",
+"start": 13.582,
+"end": 13.795
+},
+{
+"text": "clients.",
+"start": 13.795,
+"end": 14.18
+},
+{
+"text": "Je",
+"start": 14.31,
+"end": 14.452
+},
+{
+"text": "vais",
+"start": 14.452,
+"end": 14.666
+},
+{
+"text": "construire",
+"start": 14.666,
+"end": 15.093
+},
+{
+"text": "quelque",
+"start": 15.093,
+"end": 15.413
+},
+{
+"text": "chose",
+"start": 15.413,
+"end": 15.663
+},
+{
+"text": "capable",
+"start": 15.663,
+"end": 15.983
+},
+{
+"text": "d'observer,",
+"start": 15.983,
+"end": 16.375
+},
+{
+"text": "d'analyser",
+"start": 16.375,
+"end": 16.766
+},
+{
+"text": "et",
+"start": 16.766,
+"end": 16.908
+},
+{
+"text": "d'exécuter",
+"start": 16.908,
+"end": 17.3
+},
+{
+"text": "certaines",
+"start": 17.51,
+"end": 17.946
+},
+{
+"text": "tâches",
+"start": 17.946,
+"end": 18.263
+},
+{
+"text": "à",
+"start": 18.263,
+"end": 18.381
+},
+{
+"text": "la",
+"start": 18.381,
+"end": 18.54
+},
+{
+"text": "place",
+"start": 18.54,
+"end": 18.817
+},
+{
+"text": "du",
+"start": 18.817,
+"end": 18.975
+},
+{
+"text": "propriétaire.",
+"start": 18.975,
+"end": 19.53
+},
+{
+"text": "Mais",
+"start": 19.93,
+"end": 20.33
+},
+{
+"text": "il",
+"start": 20.33,
+"end": 20.597
+},
+{
+"text": "y",
+"start": 20.597,
+"end": 20.797
+},
+{
+"text": "a",
+"start": 20.797,
+"end": 20.997
+},
+{
+"text": "un",
+"start": 20.997,
+"end": 21.263
+},
+{
+"text": "problème:",
+"start": 21.263,
+"end": 21.93
+},
+{
+"text": "donner",
+"start": 22.06,
+"end": 22.294
+},
+{
+"text": "trop",
+"start": 22.294,
+"end": 22.469
+},
+{
+"text": "de",
+"start": 22.469,
+"end": 22.586
+},
+{
+"text": "pouvoir",
+"start": 22.586,
+"end": 22.849
+},
+{
+"text": "à",
+"start": 22.849,
+"end": 22.937
+},
+{
+"text": "une",
+"start": 22.937,
+"end": 23.083
+},
+{
+"text": "IA",
+"start": 23.083,
+"end": 23.2
+},
+{
+"text": "peut",
+"start": 23.33,
+"end": 23.56
+},
+{
+"text": "être",
+"start": 23.56,
+"end": 23.789
+},
+{
+"text": "dangereux.",
+"start": 23.789,
+"end": 24.21
+},
+{
+"text": "Elle",
+"start": 24.61,
+"end": 24.837
+},
+{
+"text": "doit",
+"start": 24.837,
+"end": 25.063
+},
+{
+"text": "aussi",
+"start": 25.063,
+"end": 25.328
+},
+{
+"text": "savoir",
+"start": 25.328,
+"end": 25.63
+},
+{
+"text": "à",
+"start": 25.63,
+"end": 25.743
+},
+{
+"text": "quel",
+"start": 25.743,
+"end": 25.97
+},
+{
+"text": "moment",
+"start": 25.97,
+"end": 26.272
+},
+{
+"text": "s'arrêter",
+"start": 26.272,
+"end": 26.65
+},
+{
+"text": "et",
+"start": 26.77,
+"end": 26.919
+},
+{
+"text": "demander",
+"start": 26.919,
+"end": 27.291
+},
+{
+"text": "à",
+"start": 27.291,
+"end": 27.403
+},
+{
+"text": "un",
+"start": 27.403,
+"end": 27.552
+},
+{
+"text": "humain.",
+"start": 27.552,
+"end": 27.85
+},
+{
+"text": "Alors,",
+"start": 28.07,
+"end": 28.381
+},
+{
+"text": "j'veux",
+"start": 28.381,
+"end": 28.692
+},
+{
+"text": "votre",
+"start": 28.692,
+"end": 29.003
+},
+{
+"text": "avis:",
+"start": 29.003,
+"end": 29.27
+},
+{
+"text": "vous",
+"start": 29.73,
+"end": 29.943
+},
+{
+"text": "laisseriez",
+"start": 29.943,
+"end": 30.369
+},
+{
+"text": "une",
+"start": 30.369,
+"end": 30.546
+},
+{
+"text": "IA",
+"start": 30.546,
+"end": 30.688
+},
+{
+"text": "gérer",
+"start": 30.688,
+"end": 30.936
+},
+{
+"text": "quelle",
+"start": 30.936,
+"end": 31.22
+},
+{
+"text": "partie",
+"start": 31.22,
+"end": 31.504
+},
+{
+"text": "de",
+"start": 31.504,
+"end": 31.646
+},
+{
+"text": "votre",
+"start": 31.646,
+"end": 31.894
+},
+{
+"text": "entreprise?",
+"start": 31.894,
+"end": 32.32
+},
+{
+"text": "Écrivez-le",
+"start": 33.3,
+"end": 33.783
+},
+{
+"text": "en",
+"start": 33.783,
+"end": 33.959
+},
+{
+"text": "commentaire.",
+"start": 33.959,
+"end": 34.53
+}
+]

@@ -1,0 +1,87 @@
+1
+00:00:00,310 --> 00:00:02,449
+Et si des entreprises pouvaient continuer
+
+2
+00:00:02,449 --> 00:00:03,980
+de travailler même quand elles dorment ?
+
+3
+00:00:04,470 --> 00:00:06,290
+C'est exactement ce genre de système
+
+4
+00:00:06,290 --> 00:00:07,615
+que je suis en train de
+
+5
+00:00:07,615 --> 00:00:09,690
+construire avec l'intelligence artificielle.
+
+6
+00:00:10,090 --> 00:00:12,470
+L'objectif n'est pas simplement de créer
+
+7
+00:00:12,470 --> 00:00:14,180
+un chatbot qui répond aux clients.
+
+8
+00:00:14,310 --> 00:00:15,983
+Je vais construire quelque chose capable
+
+9
+00:00:15,983 --> 00:00:16,375
+d'observer,
+
+10
+00:00:16,375 --> 00:00:18,381
+d'analyser et d'exécuter certaines tâches à
+
+11
+00:00:18,381 --> 00:00:19,530
+la place du propriétaire.
+
+12
+00:00:19,930 --> 00:00:21,930
+Mais il y a un problème :
+
+13
+00:00:22,060 --> 00:00:23,083
+donner trop de pouvoir à une
+
+14
+00:00:23,083 --> 00:00:24,210
+IA peut être dangereux.
+
+15
+00:00:24,610 --> 00:00:25,970
+Elle doit aussi savoir à quel
+
+16
+00:00:25,970 --> 00:00:27,552
+moment s'arrêter et demander à un
+
+17
+00:00:27,552 --> 00:00:27,850
+humain.
+
+18
+00:00:28,070 --> 00:00:28,381
+Alors,
+
+19
+00:00:28,381 --> 00:00:29,270
+j'veux votre avis :
+
+20
+00:00:29,730 --> 00:00:31,220
+vous laisseriez une IA gérer quelle
+
+21
+00:00:31,220 --> 00:00:32,320
+partie de votre entreprise ?
+
+22
+00:00:33,300 --> 00:00:34,530
+Écrivez-le en commentaire.
