@@ -14,7 +14,7 @@ def dur(f): return float(subprocess.check_output(['ffprobe','-v','error','-show_
 tags=[]
 for k,(f,t,d,v) in enumerate(sfx):
     d=min(d,dur(f))
-    tags.append(f'<audio id="sfx-{k:02d}" src="assets/sfx/{f}" data-start="{t:.2f}" data-duration="{d:.2f}" data-track-index="{30+k}" data-volume="{v}" data-audio-group="sfx"></audio>')
+    tags.append(f'<audio id="sfx-{k:02d}" src="assets/sfx/{f}" data-start="{t:.2f}" data-duration="{d:.2f}" data-track-index="{30+k}" data-volume="{v*0.6:.2f}" data-audio-group="sfx"></audio>')
 s=s.replace('[[SFX]]','\n      '.join(tags)).replace('[[SPRITE]]',sprite).replace('[[LOGO]]',LOGO)
 s=s.replace('[[WORDS]]',json.dumps([[x['text'],x['start'],x['end']] for x in W],ensure_ascii=False))
 s=re.sub(r'\[\[i:([a-z0-9-]+)\]\]',r'<svg class="icon" aria-hidden="true"><use href="#i-\1"/></svg>',s)
