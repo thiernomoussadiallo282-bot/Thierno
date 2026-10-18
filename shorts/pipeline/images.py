@@ -10,6 +10,7 @@ import io
 import math
 import os
 import random
+import re
 import time
 import urllib.parse
 from pathlib import Path
@@ -19,7 +20,29 @@ from PIL import Image, ImageDraw, ImageFilter
 L, H = 1080, 1920
 
 
-def generer_images(prompts: list[str], dossier: Path, cfg: dict) -> list[Path]:
+# Distribution des personnages d'une scène à l'autre : hommes et femmes, de 20 à 65 ans.
+# Utilisée quand la description d'une scène ne précise pas déjà qui on voit.
+CASTING = [
+    "an Ivorian man in his forties with a short beard",
+    "an Ivorian woman in her fifties",
+    "a young Ivorian man in his early twenties",
+    "an Ivorian woman in her thirties",
+    "an older Ivorian man in his sixties with grey hair",
+    "a young Ivorian woman in her twenties",
+    "an Ivorian man in his thirties",
+    "an Ivorian woman in her sixties",
+]
+_PERSONNE = re.compile(r"\b(man|men|woman|women|boy|girl|guy|lady|grandmother|grandfather|"
+                       r"father|mother|husband|wife|businessman|businesswoman|male|female)\b", re.I)
+
+
+def avec_casting(prompt: str, i: int, decalage: int = 0) -> str:
+    if _PERSONNE.search(prompt):
+        return prompt
+    return f"{prompt}. Main person: {CASTING[(i + decalage) % len(CASTING)]}"
+
+
+def generer_images(prompts: list[str], dossier: Path, cfg: dict, decalage: int = 0) -> list[Path]:
     dossier.mkdir(parents=True, exist_ok=True)
     c = cfg["images"]
     chemins = []
@@ -28,7 +51,8 @@ def generer_images(prompts: list[str], dossier: Path, cfg: dict) -> list[Path]:
         chemin = dossier / f"scene-{i:02d}.jpg"
         ok = False
         if distant:
-            ok = _pollinations(f"{p}. Style: {c['style']}", c["graine"] + i, c.get("modele", "flux"), chemin)
+            ok = _pollinations(f"{avec_casting(p, i, decalage)}. Style: {c['style']}", c["graine"] + i,
+                               c.get("modele", "flux"), chemin)
             distant = ok or i > 0  # service injoignable dès la 1re image : on n'insiste pas
         if not ok:
             _illustration_locale(p, c["graine"] + i, chemin)

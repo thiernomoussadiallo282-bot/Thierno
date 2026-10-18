@@ -81,7 +81,8 @@ def main() -> int:
         s["fin"] = scenes[i + 1]["debut"] if i + 1 < len(scenes) else debut_outro
 
     # 5. illustrations
-    generer_images([s.image for s in script.scenes], dossier / "images", cfg)
+    generer_images([s.image for s in script.scenes], dossier / "images", cfg,
+                   decalage=dt.date.today().toordinal())
 
     # 6. musique libre + mixage
     graine = int(dt.date.today().strftime("%Y%m%d"))

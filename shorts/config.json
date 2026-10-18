@@ -21,7 +21,7 @@
     "fournisseur": "pollinations",
     "modele": "flux",
     "graine": 4242,
-    "style": "photorealistic editorial photograph, shot on a 35mm full-frame camera, natural skin texture, real West African people (Côte d'Ivoire), authentic everyday settings in Abidjan: small shops, offices, streets, homes, cinematic natural lighting, shallow depth of field, subtle teal and warm golden color grade, vertical 9:16 composition with the subject in the upper two thirds, sharp focus, no text, no letters, no logos, no watermark, no illustration, no cartoon, no 3D render"
+    "style": "candid documentary photograph, shot on a 35mm camera, ordinary everyday people (not models), natural unretouched skin with pores, wrinkles and small imperfections, no makeup look, realistic body proportions, natural unposed expression, real West African people (Côte d'Ivoire), authentic everyday settings in Abidjan: small shops, offices, markets, streets, homes, natural lighting, slight film grain, shallow depth of field, subtle teal and warm golden color grade, vertical 9:16 composition with the subject in the upper two thirds, no text, no letters, no logos, no watermark, no illustration, no cartoon, no 3D render, not glamorous, not airbrushed"
   },
   "claude": {
     "modele": "claude-opus-5-5",

@@ -46,7 +46,10 @@ Structure : accroche → problème vécu → solution (l'agent I.A.) → exemple
 - Honnêteté : aucun chiffre, client, témoignage ou résultat inventé. Si tu donnes un exemple, présente-le comme un exemple.
 - Pour chaque scène, décris en anglais une photo réaliste qui montre concrètement l'idée : une vraie personne
   (commerçant, directrice d'école, agent immobilier…), son geste, le lieu à Abidjan ou ailleurs en Côte d'Ivoire,
-  le cadrage (gros plan, plan moyen). Pas de robot, pas d'hologramme, pas de texte, pas d'écran lisible, pas de logo."""
+  le cadrage (gros plan, plan moyen). Pas de robot, pas d'hologramme, pas de texte, pas d'écran lisible, pas de logo.
+- Varie les personnes d'une scène à l'autre : alterne hommes et femmes, et des âges différents (20 à 65 ans).
+  Précise toujours dans la description le sexe et l'âge approximatif (ex. « an Ivorian man in his fifties »).
+  Des gens ordinaires au visage naturel, pas des mannequins."""
 
 
 def ecrire_script(idee: dict, cfg: dict) -> ScriptShort:
@@ -95,25 +98,25 @@ def _script_modele(idee: dict, cfg: dict) -> ScriptShort:
     angle = (idee.get("angle") or "").rstrip(".")
     textes = [
         ("Vous perdez du temps… et des clients. Chaque jour.",
-         "close-up of an Ivorian shop owner in his small boutique at dusk, looking worried at his smartphone full of unread messages"),
+         "close-up of an Ivorian man in his forties, owner of a small boutique, at dusk, looking worried at his smartphone full of unread messages"),
         (f"{sujet} ? Oui, c'est possible. Parce que chaque jour, des heures partent dans les mêmes tâches : répondre, relancer, trier.",
-         "a tired young Ivorian woman behind the counter of her shop, phone in hand, notebooks and receipts piled up"),
+         "a tired Ivorian woman in her fifties behind the counter of her shop, phone in hand, notebooks and receipts piled up"),
         (f"{angle}." if angle else "Pourtant, une grande partie de ce travail suit toujours les mêmes règles.",
-         "a tidy small office desk in Abidjan with a laptop and a notebook, warm morning light through the window"),
+         "an Ivorian man in his sixties at a tidy small office desk in Abidjan with a laptop and a notebook, warm morning light through the window"),
         ("C'est exactement ce qu'un agent I.A. sait faire : appliquer vos règles, sans se fatiguer, à toute heure.",
-         "an Ivorian entrepreneur smiling as he reads an instant reply on his phone, sitting in his shop"),
+         "an Ivorian man in his thirties smiling as he reads an instant reply on his phone, sitting in his shop"),
         ("Prenons un exemple simple : un client écrit le soir pour demander un prix. L'agent répond tout de suite, poliment, avec les bonnes informations.",
-         "a customer lying on a sofa at night in Abidjan, face lit by her phone screen, smiling"),
+         "an older Ivorian man in his sixties sitting on a sofa at night in Abidjan, face lit by his phone screen, smiling"),
         ("Le lendemain matin, vous trouvez la conversation résumée, prête à être conclue.",
-         "a business owner drinking coffee on a balcony in the morning, reading his phone with a satisfied smile"),
+         "an Ivorian woman in her forties drinking coffee on a balcony in the morning, reading her phone with a satisfied smile"),
         ("Vous gardez le contrôle : l'agent prépare, propose, et vous validez ce qui compte.",
-         "medium shot of an Ivorian businesswoman tapping to approve a message on her phone in her office"),
+         "medium shot of an Ivorian woman in her thirties tapping to approve a message on her phone in her office"),
         ("Résultat : moins d'oublis, des clients qui ont une réponse rapide, et du temps pour développer votre activité.",
-         "happy customers checking their phones in a lively Abidjan street market"),
+         "a young Ivorian man in his twenties and an older woman checking their phones in a lively Abidjan street market"),
         ("Pas besoin d'être expert en technologie. On part de votre façon de travailler, et on l'automatise étape par étape.",
-         "two young Ivorian professionals discussing in front of a whiteboard in a bright office"),
+         "an Ivorian man in his fifties and a young woman in her twenties discussing in front of a whiteboard in a bright office"),
         (f"Abonnez-vous à {m['compte']} pour la suite, et écrivez-moi sur WhatsApp au {m['whatsapp']} pour avoir votre propre agent I.A.",
-         "close-up of a hand holding a smartphone in warm golden light, blurred city background"),
+         "close-up of the hand of an Ivorian man in his forties holding a smartphone in warm golden light, blurred city background"),
     ]
     return ScriptShort(
         accroche=_raccourcir(sujet, 6),
