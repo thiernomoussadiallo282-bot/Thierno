@@ -8,5 +8,13 @@ export type ShortProps = {
   mots: Mot[];
   debutOutro: number;
   audio: string;
-  marque: { nom: string; compte: string; whatsapp: string; appel_action: string };
+  marque: {
+    nom: string;
+    compte: string;
+    whatsapp: string;
+    appel_action: string;
+    logo_fin: string;
+    logo_fichier: string;
+    phrase_fin: string;
+  };
 };

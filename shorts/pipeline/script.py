@@ -48,7 +48,8 @@ Structure : accroche → problème vécu → solution (l'agent I.A.) → exemple
   (commerçant, directrice d'école, agent immobilier…), son geste, le lieu à Abidjan ou ailleurs en Côte d'Ivoire,
   le cadrage (gros plan, plan moyen). Pas de robot, pas d'hologramme, pas de texte, pas d'écran lisible, pas de logo.
 - Varie les personnes d'une scène à l'autre : alterne hommes et femmes, et des âges différents (20 à 65 ans).
-  Précise toujours dans la description le sexe et l'âge approximatif (ex. « an Ivorian man in his fifties »).
+  Précise toujours dans la description le sexe et l'âge approximatif (ex. « an Ivorian man in his fifties »),
+  et pour les plus de 45 ans des signes visibles de l'âge (cheveux gris ou blancs, rides).
   Des gens ordinaires au visage naturel, pas des mannequins."""
 
 

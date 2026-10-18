@@ -23,20 +23,26 @@ L, H = 1080, 1920
 # Distribution des personnages d'une scène à l'autre : hommes et femmes, de 20 à 65 ans.
 # Utilisée quand la description d'une scène ne précise pas déjà qui on voit.
 CASTING = [
-    "an Ivorian man in his forties with a short beard",
-    "an Ivorian woman in her fifties",
-    "a young Ivorian man in his early twenties",
-    "an Ivorian woman in her thirties",
-    "an older Ivorian man in his sixties with grey hair",
-    "a young Ivorian woman in her twenties",
-    "an Ivorian man in his thirties",
-    "an Ivorian woman in her sixties",
+    "a middle-aged Ivorian man about 45 years old, short greying beard, a few wrinkles around the eyes",
+    "a mature Ivorian woman about 55 years old, grey hairs visible at the temples, laugh lines, reading glasses",
+    "a young Ivorian man about 22 years old, student look",
+    "an Ivorian grandmother about 65 years old, white hair under a headscarf, deep wrinkles, warm smile",
+    "an elderly Ivorian man about 65 years old, white hair and white beard, weathered face",
+    "an Ivorian woman about 35 years old, simple everyday clothes, natural hair",
+    "an Ivorian man about 30 years old, casual shirt",
+    "a mature Ivorian businesswoman about 50 years old, slightly greying hair in a bun, visible age lines",
 ]
 _PERSONNE = re.compile(r"\b(man|men|woman|women|boy|girl|guy|lady|grandmother|grandfather|"
                        r"father|mother|husband|wife|businessman|businesswoman|male|female)\b", re.I)
 
 
+_AGE = re.compile(r"\b(in (?:his|her) (fifties|sixties|seventies)|(5|6|7)\d[ -]year)", re.I)
+
+
 def avec_casting(prompt: str, i: int, decalage: int = 0) -> str:
+    if _AGE.search(prompt):  # âge mûr demandé : on insiste, sinon le modèle rajeunit les visages
+        return (f"{prompt}. The person must clearly look their real age: grey or white hair, "
+                f"visible wrinkles and age lines, not young, not a model")
     if _PERSONNE.search(prompt):
         return prompt
     return f"{prompt}. Main person: {CASTING[(i + decalage) % len(CASTING)]}"

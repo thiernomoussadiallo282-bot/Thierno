@@ -2,7 +2,7 @@ name: Short quotidien
 
 on:
   schedule:
-    - cron: "47 6 * * *" # tous les jours vers 06:47 UTC (= heure d'Abidjan)
+    - cron: "47 6 * * 1-5" # du lundi au vendredi vers 06:47 UTC (= heure d'Abidjan)
   workflow_dispatch:
     inputs:
       idee:

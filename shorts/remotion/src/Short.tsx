@@ -197,36 +197,55 @@ const BarreProgression: React.FC<{ debutOutro: number }> = ({ debutOutro }) => {
   return <div style={{ position: "absolute", left: 0, top: 0, height: 10, width: `${v * 100}%`, background: OR }} />;
 };
 
+/** Logo de fin : l'image fournie (marque/logo.png) si elle existe, sinon un logo typographique. */
+const LogoFin: React.FC<{ nom: string; fichier: string }> = ({ nom, fichier }) => {
+  if (fichier) return <Img src={staticFile(fichier)} style={{ maxWidth: 640, maxHeight: 360, objectFit: "contain" }} />;
+  const [premier, ...reste] = nom.split(" ");
+  return (
+    <div style={{ display: "flex", flexDirection: "column", alignItems: "center", gap: 26 }}>
+      <svg width={170} height={170} viewBox="0 0 100 100">
+        <circle cx="50" cy="50" r="46" fill="none" stroke={OR} strokeWidth="5" />
+        <path d="M30 14 L38 10 L48 11 L56 13 L62 12 L66 16 L70 22 L74 30 L80 36 L88 38 L84 46 L76 56 L74 64 L70 72 L66 80 L60 86 L55 88 L52 84 L50 76 L48 66 L46 58 L42 50 L36 48 L28 48 L20 44 L14 36 L14 28 L20 20 L26 16 Z" fill={OR} strokeLinejoin="round" stroke={OR} strokeWidth="2" transform="translate(50 50) scale(0.78) translate(-51 -49)" />
+        <ellipse cx="80" cy="72" rx="2.6" ry="6" fill={OR} transform="translate(50 50) scale(0.78) translate(-51 -49) rotate(18 80 72)" />
+      </svg>
+      <div style={{ fontWeight: 900, fontSize: 92, lineHeight: 1, letterSpacing: "-0.02em" }}>
+        {premier} <span style={{ color: OR }}>{reste.join(" ")}</span>
+      </div>
+    </div>
+  );
+};
+
 const Outro: React.FC<{ marque: ShortProps["marque"] }> = ({ marque }) => {
   const frame = useCurrentFrame();
   const { fps } = useVideoConfig();
-  const entree = spring({ frame, fps, config: { damping: 16 } });
+  const fondu = interpolate(frame, [0, 8], [0, 1], { extrapolateRight: "clamp" });
   const el = (delai: number) => {
-    const s = spring({ frame: frame - delai, fps, config: { damping: 13 } });
-    return { opacity: Math.min(1, s * 1.4), transform: `translateY(${(1 - s) * 50}px)` };
+    const s = spring({ frame: frame - delai, fps, config: { damping: 14 } });
+    return { opacity: Math.min(1, s * 1.4), transform: `translateY(${(1 - s) * 40}px)` };
   };
   return (
     <AbsoluteFill
       style={{
-        background: `radial-gradient(circle at 50% 30%, #1d4373 0%, ${NAVY} 70%)`,
-        transform: `translateY(${(1 - entree) * 1920}px)`,
+        backgroundColor: NAVY,
+        opacity: fondu,
         alignItems: "center",
-        paddingTop: 330,
+        justifyContent: "flex-start",
+        paddingTop: 300,
         color: "#fff",
         textAlign: "center",
       }}
     >
-      <div style={{ ...el(4), display: "flex", alignItems: "center", gap: 20, fontWeight: 900, fontSize: 64 }}>
-        <Logo taille={90} /> {marque.nom.replace(/\s*IA$/, "")} <span style={{ color: OR }}>IA</span>
+      <div style={el(2)}>
+        <LogoFin nom={marque.logo_fin} fichier={marque.logo_fichier} />
       </div>
-      <div style={{ ...el(10), marginTop: 70, fontWeight: 900, fontSize: 70, lineHeight: 1.1, padding: "0 90px" }}>
-        Vous voulez votre <span style={{ color: OR }}>propre agent IA</span> ?
+      <div style={{ ...el(8), marginTop: 70, fontWeight: 800, fontSize: 58, lineHeight: 1.15, padding: "0 90px" }}>
+        {marque.phrase_fin}
       </div>
-      <div style={{ ...el(18), marginTop: 70, background: "#25d366", color: "#062b14", borderRadius: 36, padding: "26px 60px", boxShadow: "0 20px 60px rgba(37,211,102,0.35)" }}>
-        <div style={{ fontWeight: 800, fontSize: 38 }}>WhatsApp</div>
-        <div style={{ fontWeight: 900, fontSize: 84, letterSpacing: "0.02em" }}>{marque.whatsapp}</div>
+      <div style={{ ...el(14), marginTop: 50, background: "#25d366", color: "#04210f", borderRadius: 36, padding: "24px 56px" }}>
+        <div style={{ fontWeight: 800, fontSize: 40 }}>WhatsApp</div>
+        <div style={{ fontWeight: 900, fontSize: 86, letterSpacing: "0.01em", lineHeight: 1.05 }}>{marque.whatsapp}</div>
       </div>
-      <div style={{ ...el(26), marginTop: 60, fontWeight: 800, fontSize: 44 }}>
+      <div style={{ ...el(20), marginTop: 44, fontWeight: 800, fontSize: 42 }}>
         {marque.appel_action} : <span style={{ color: OR }}>{marque.compte}</span>
       </div>
     </AbsoluteFill>

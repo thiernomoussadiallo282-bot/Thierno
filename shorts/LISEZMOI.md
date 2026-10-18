@@ -1,6 +1,6 @@
 # Short quotidien automatique — Diallo IA
 
-Chaque jour, ce pipeline transforme une ligne de `idees.csv` en un Short vertical de 60 secondes
+Du lundi au vendredi, ce pipeline transforme une ligne de `idees.csv` en un Short vertical de 60 secondes
 (1080×1920), prêt à publier sur YouTube Shorts, TikTok, Facebook et Instagram.
 
 ```
@@ -24,7 +24,10 @@ musique libre (générée) ─► mixage + ducking + -14 LUFS ─► montage Rem
 - 0–2,8 s : accroche en gros titre, puis les illustrations s'enchaînent (zoom lent, fondus).
 - Sous-titres mot à mot : 3 mots maximum à l'écran, mot prononcé en jaune doré.
 - Filigrane « Diallo IA » et barre de progression en haut.
-- Fin (environ 3,5 s) : « Vous voulez votre propre agent IA ? » + WhatsApp + compte à suivre.
+- Fin : dès que la voix lit l'appel à l'action, écran simple bleu nuit avec le logo « Afrique Racontée »,
+  « Vous voulez votre propre agent IA ? », le numéro WhatsApp en très grand et le compte à suivre.
+  Pour utiliser votre vrai logo, déposez-le dans `shorts/marque/logo.png` (PNG, fond transparent de préférence) ;
+  sinon un logo typographique (carte de l'Afrique + nom) est dessiné automatiquement.
 - Textes placés hors des zones cachées par l'interface TikTok/YouTube.
 
 ## Ce qui est produit chaque jour
@@ -44,7 +47,7 @@ depuis le téléphone, puis le poster.
 1. Dans le dépôt GitHub : **Settings → Secrets and variables → Actions → New repository secret**.
    Nom : `ANTHROPIC_API_KEY`, valeur : votre clé API Claude (console.anthropic.com).
    Sans clé, le pipeline fonctionne quand même avec un script modèle, moins bon.
-2. Le workflow `.github/workflows/short-quotidien.yml` tourne tous les jours vers 06:47 (heure d'Abidjan).
+2. Le workflow `.github/workflows/short-quotidien.yml` tourne du lundi au vendredi vers 06:47 (heure d'Abidjan), soit 5 vidéos par semaine.
 3. Pour lancer un Short tout de suite : onglet **Actions → Short quotidien → Run workflow**.
    Cochez « Essai » pour tester sans consommer d'idée.
 4. Chaque exécution réussie passe l'idée à `fait` dans `idees.csv` et crée une release.
@@ -83,7 +86,7 @@ python -m pipeline.main --idee 4 --essai
   (par exemple `fr-FR-HenriNeural`, `fr-CA-JeanNeural`) dans `config.json`.
 - `voix.traitement_radio` : égalisation + compression pour une voix pleine et claire au téléphone.
 - `voix.mots_cibles` : longueur du script. La vitesse de la voix s'ajuste seule pour tenir en 60 s.
-- `marque` : nom, compte, numéro WhatsApp et phrase de fin.
+- `marque` : nom (filigrane), compte, numéro WhatsApp, `logo_fin` (nom affiché à la fin), `phrase_fin`.
 - `musique.volume_db` : volume de la musique sous la voix (−20 dB par défaut).
 
 ## Bon à savoir

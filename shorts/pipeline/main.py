@@ -13,6 +13,7 @@ import datetime as dt
 import json
 import os
 import re
+import shutil
 import subprocess
 import sys
 from pathlib import Path
@@ -68,7 +69,9 @@ def main() -> int:
         m["end"] = round(m["end"] + DEBUT_VOIX, 3)
     (dossier / "mots.json").write_text(json.dumps(mots, ensure_ascii=False, indent=1), encoding="utf-8")
 
-    # 4. découpage en scènes (chaque scène commence à son premier mot prononcé)
+    # 4. découpage en scènes (chaque scène commence à son premier mot prononcé).
+    # La dernière scène (l'appel à l'action) n'a pas d'image : la carte de fin (logo + WhatsApp)
+    # s'affiche dès qu'elle commence, pendant que la voix lit l'appel à l'action.
     debut_outro = min(total - outro, max(DEBUT_VOIX + d_voix + 0.5, total - outro - 6))
     debut_outro = max(debut_outro, DEBUT_VOIX + d_voix + 0.3)
     scenes, k = [], 0
@@ -77,12 +80,22 @@ def main() -> int:
         debut = 0.0 if i == 0 else mots[k]["start"] - 0.15
         scenes.append({"debut": round(debut, 3), "image": f"images/scene-{i:02d}.jpg"})
         k += n
+    if len(scenes) > 2:
+        debut_outro = min(debut_outro, scenes.pop()["debut"])
     for i, s in enumerate(scenes):
         s["fin"] = scenes[i + 1]["debut"] if i + 1 < len(scenes) else debut_outro
 
-    # 5. illustrations
-    generer_images([s.image for s in script.scenes], dossier / "images", cfg,
+    # 5. images (sans la scène de fin)
+    generer_images([s.image for s in script.scenes[:len(scenes)]], dossier / "images", cfg,
                    decalage=dt.date.today().toordinal())
+    marque = dict(cfg["marque"])
+    logo = RACINE / marque.get("logo_fichier", "")
+    if marque.get("logo_fichier") and logo.is_file():
+        (dossier / "marque").mkdir(exist_ok=True)
+        shutil.copy(logo, dossier / "marque" / logo.name)
+        marque["logo_fichier"] = f"marque/{logo.name}"
+    else:
+        marque["logo_fichier"] = ""
 
     # 6. musique libre + mixage
     graine = int(dt.date.today().strftime("%Y%m%d"))
@@ -99,7 +112,7 @@ def main() -> int:
         "mots": [{**m, "text": _affichage(m["text"])} for m in mots],
         "debutOutro": round(debut_outro, 3),
         "audio": "mix.wav",
-        "marque": cfg["marque"],
+        "marque": marque,
     }
     (dossier / "props.json").write_text(json.dumps(props, ensure_ascii=False, indent=1), encoding="utf-8")
     video = dossier / "short.mp4"

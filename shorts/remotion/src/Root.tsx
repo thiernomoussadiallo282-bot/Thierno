@@ -10,7 +10,7 @@ const exemple: ShortProps = {
   mots: [],
   debutOutro: 56.5,
   audio: "mix.wav",
-  marque: { nom: "Diallo IA", compte: "@thierno.agents.ia", whatsapp: "07 77 56 15 66", appel_action: "Abonnez-vous pour la suite" },
+  marque: { nom: "Diallo IA", compte: "@thierno.agents.ia", whatsapp: "07 77 56 15 66", appel_action: "Abonnez-vous pour la suite", logo_fin: "Afrique Racontée", logo_fichier: "", phrase_fin: "Vous voulez votre propre agent IA ?" },
 };
 
 export const Root: React.FC = () => (

@@ -3,7 +3,10 @@
     "nom": "Diallo IA",
     "compte": "@thierno.agents.ia",
     "whatsapp": "07 77 56 15 66",
-    "appel_action": "Abonnez-vous pour la suite"
+    "appel_action": "Abonnez-vous pour la suite",
+    "logo_fin": "Afrique Racontée",
+    "logo_fichier": "marque/logo.png",
+    "phrase_fin": "Vous voulez votre propre agent IA ?"
   },
   "duree_totale_s": 60,
   "duree_outro_s": 3.5,
