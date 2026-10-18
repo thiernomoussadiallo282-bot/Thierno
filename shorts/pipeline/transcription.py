@@ -24,10 +24,18 @@ def horodater(audio: Path, texte: str, cfg: dict) -> tuple[list[dict], str]:
 
 
 def _whisper(audio: Path, cfg: dict) -> list[dict]:
+    import numpy as np
+    import soundfile as sf
     from faster_whisper import WhisperModel
+    from scipy.signal import resample_poly
+
+    # audio décodé ici (16 kHz mono) : évite le décodeur PyAV, dont les versions récentes
+    # sont incompatibles avec faster-whisper
+    son, sr = sf.read(str(audio), dtype="float32", always_2d=True)
+    son = resample_poly(son.mean(axis=1), 16000, sr).astype(np.float32)
 
     modele = WhisperModel(cfg["whisper"]["modele"], device="cpu", compute_type="int8")
-    segments, _ = modele.transcribe(str(audio), language=cfg["whisper"]["langue"],
+    segments, _ = modele.transcribe(son, language=cfg["whisper"]["langue"],
                                     word_timestamps=True, vad_filter=False, beam_size=5)
     mots = [{"text": w.word.strip(), "start": float(w.start), "end": float(w.end)}
             for s in segments for w in (s.words or []) if w.word.strip()]

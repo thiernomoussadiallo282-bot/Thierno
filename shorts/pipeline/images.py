@@ -8,6 +8,7 @@ from __future__ import annotations
 
 import io
 import math
+import os
 import random
 import time
 import urllib.parse
@@ -36,22 +37,32 @@ def generer_images(prompts: list[str], dossier: Path, cfg: dict) -> list[Path]:
     return chemins
 
 
+_dernier_appel = 0.0
+
+
 def _pollinations(prompt: str, graine: int, modele: str, chemin: Path) -> bool:
+    """Sans compte, Pollinations accepte environ une image toutes les 15 s : on espace les appels.
+    Avec un jeton gratuit (variable POLLINATIONS_TOKEN, auth.pollinations.ai) la limite est plus haute."""
+    global _dernier_appel
     import requests
 
+    jeton = os.environ.get("POLLINATIONS_TOKEN", "")
+    entetes = {"Authorization": f"Bearer {jeton}"} if jeton else {}
+    attente = 4 if jeton else 16
     url = ("https://image.pollinations.ai/prompt/" + urllib.parse.quote(prompt) +
            f"?width={L}&height={H}&seed={graine}&model={modele}&nologo=true&enhance=false")
-    for essai in range(3):
+    for essai in range(5):
+        time.sleep(max(0.0, _dernier_appel + attente * (essai + 1) - time.time()))
+        _dernier_appel = time.time()
         try:
-            r = requests.get(url, timeout=180)
+            r = requests.get(url, headers=entetes, timeout=180)
             if r.ok and r.headers.get("content-type", "").startswith("image"):
                 img = Image.open(io.BytesIO(r.content)).convert("RGB")
                 _cadrer(img).save(chemin, quality=92)
                 return True
-            print(f"[images] pollinations HTTP {r.status_code}")
+            print(f"[images] pollinations HTTP {r.status_code} {r.text[:120]!r}")
         except Exception as e:
             print(f"[images] pollinations : {e.__class__.__name__}")
-        time.sleep(5 * (essai + 1))
     return False
 
 
