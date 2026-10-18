@@ -21,7 +21,7 @@
     "fournisseur": "pollinations",
     "modele": "flux",
     "graine": 4242,
-    "style": "flat 2D editorial illustration, clean vector shapes, deep navy blue (#0b1f3a) and warm gold (#f4b942) palette with soft teal accents, subtle paper grain, soft volumetric light, African characters when people appear, modern West African city details, centered composition, vertical 9:16, no text, no letters, no logos, no watermark"
+    "style": "photorealistic editorial photograph, shot on a 35mm full-frame camera, natural skin texture, real West African people (Côte d'Ivoire), authentic everyday settings in Abidjan: small shops, offices, streets, homes, cinematic natural lighting, shallow depth of field, subtle teal and warm golden color grade, vertical 9:16 composition with the subject in the upper two thirds, sharp focus, no text, no letters, no logos, no watermark, no illustration, no cartoon, no 3D render"
   },
   "claude": {
     "modele": "claude-opus-5-5",

@@ -14,7 +14,7 @@ musique libre (générée) ─► mixage + ducking + -14 LUFS ─► montage Rem
 |---|---|---|
 | Script, accroche, titre, description, hashtags | Claude (`claude-opus-5-5`) | `pipeline/script.py` |
 | Voix off masculine française | Edge TTS (`fr-FR-RemyMultilingualNeural`), traitement « voix radio » | `pipeline/voix.py` |
-| Illustrations dans un style fixe | Pollinations (Flux), style et graine fixes | `pipeline/images.py` |
+| Photos réalistes dans un style fixe | Pollinations (Flux), style et graine fixes | `pipeline/images.py` |
 | Sous-titres mot à mot | Whisper (faster-whisper `small`), recalé sur le texte exact | `pipeline/transcription.py` |
 | Musique libre de droits | synthétisée par le pipeline (ou vos musiques dans `musiques/`) | `pipeline/musique.py` |
 | Montage 1080×1920, 30 i/s | Remotion | `remotion/src/Short.tsx` |
@@ -75,7 +75,7 @@ python -m pipeline.main --idee 4 --essai
 
 ## Réglages (`config.json`)
 
-- `images.style` et `images.graine` : le style visuel fixe de toutes les vidéos. Changez-les pour une nouvelle identité.
+- `images.style` et `images.graine` : le style visuel fixe de toutes les vidéos (photos réalistes, personnes ivoiriennes, étalonnage bleu-doré). Changez-les pour une nouvelle identité.
 - `voix.edge_voix` : la voix. Par défaut Rémy (masculine, expressive), légèrement plus grave (`edge_tonalite`)
   et un peu plus rapide (`vitesse_base`) pour plus d'énergie. Pour comparer les voix masculines :
   **Actions → Short quotidien → Run workflow**, cochez « Seulement écouter les voix », puis téléchargez

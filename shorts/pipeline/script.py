@@ -44,8 +44,9 @@ Structure : accroche → problème vécu → solution (l'agent I.A.) → exemple
 - La dernière scène invite à s'abonner à {compte} et à écrire sur WhatsApp au {whatsapp} pour avoir son propre agent I.A.
 - Écris « I.A. » pour que la voix prononce bien « I-A ».
 - Honnêteté : aucun chiffre, client, témoignage ou résultat inventé. Si tu donnes un exemple, présente-le comme un exemple.
-- Pour chaque scène, décris une illustration (en anglais) qui montre concrètement l'idée : personnages, lieu, objets.
-  Pas de texte, pas d'écran lisible, pas de logo dans l'image."""
+- Pour chaque scène, décris en anglais une photo réaliste qui montre concrètement l'idée : une vraie personne
+  (commerçant, directrice d'école, agent immobilier…), son geste, le lieu à Abidjan ou ailleurs en Côte d'Ivoire,
+  le cadrage (gros plan, plan moyen). Pas de robot, pas d'hologramme, pas de texte, pas d'écran lisible, pas de logo."""
 
 
 def ecrire_script(idee: dict, cfg: dict) -> ScriptShort:
@@ -94,25 +95,25 @@ def _script_modele(idee: dict, cfg: dict) -> ScriptShort:
     angle = (idee.get("angle") or "").rstrip(".")
     textes = [
         ("Vous perdez du temps… et des clients. Chaque jour.",
-         "a curious West African entrepreneur looking at a glowing smartphone in a small shop at dusk"),
+         "close-up of an Ivorian shop owner in his small boutique at dusk, looking worried at his smartphone full of unread messages"),
         (f"{sujet} ? Oui, c'est possible. Parce que chaque jour, des heures partent dans les mêmes tâches : répondre, relancer, trier.",
-         "a tired shop owner surrounded by floating paper notes and chat bubbles"),
+         "a tired young Ivorian woman behind the counter of her shop, phone in hand, notebooks and receipts piled up"),
         (f"{angle}." if angle else "Pourtant, une grande partie de ce travail suit toujours les mêmes règles.",
-         "a calm desk with a notebook and a laptop, warm morning light, organised workspace"),
+         "a tidy small office desk in Abidjan with a laptop and a notebook, warm morning light through the window"),
         ("C'est exactement ce qu'un agent I.A. sait faire : appliquer vos règles, sans se fatiguer, à toute heure.",
-         "a friendly abstract robot assistant made of soft geometric shapes helping a business owner"),
+         "an Ivorian entrepreneur smiling as he reads an instant reply on his phone, sitting in his shop"),
         ("Prenons un exemple simple : un client écrit le soir pour demander un prix. L'agent répond tout de suite, poliment, avec les bonnes informations.",
-         "a smartphone glowing in a dark room at night, a chat conversation shown as abstract bubbles"),
+         "a customer lying on a sofa at night in Abidjan, face lit by her phone screen, smiling"),
         ("Le lendemain matin, vous trouvez la conversation résumée, prête à être conclue.",
-         "a business owner drinking coffee in the morning reading a tablet with a satisfied smile"),
+         "a business owner drinking coffee on a balcony in the morning, reading his phone with a satisfied smile"),
         ("Vous gardez le contrôle : l'agent prépare, propose, et vous validez ce qui compte.",
-         "a business owner approving a task on a tablet while a small robot assistant waits"),
+         "medium shot of an Ivorian businesswoman tapping to approve a message on her phone in her office"),
         ("Résultat : moins d'oublis, des clients qui ont une réponse rapide, et du temps pour développer votre activité.",
-         "happy customers receiving messages on their phones in a lively Abidjan street"),
+         "happy customers checking their phones in a lively Abidjan street market"),
         ("Pas besoin d'être expert en technologie. On part de votre façon de travailler, et on l'automatise étape par étape.",
-         "two people drawing a simple workflow with arrows on a whiteboard"),
+         "two young Ivorian professionals discussing in front of a whiteboard in a bright office"),
         (f"Abonnez-vous à {m['compte']} pour la suite, et écrivez-moi sur WhatsApp au {m['whatsapp']} pour avoir votre propre agent I.A.",
-         "a smartphone with a green chat bubble icon floating above an open hand, golden light"),
+         "close-up of a hand holding a smartphone in warm golden light, blurred city background"),
     ]
     return ScriptShort(
         accroche=_raccourcir(sujet, 6),
