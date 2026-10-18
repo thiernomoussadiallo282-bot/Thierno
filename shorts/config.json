@@ -1,0 +1,34 @@
+{
+  "marque": {
+    "nom": "Diallo IA",
+    "compte": "@thierno.agents.ia",
+    "whatsapp": "07 77 56 15 66",
+    "appel_action": "Abonnez-vous pour la suite"
+  },
+  "duree_totale_s": 60,
+  "duree_outro_s": 3.5,
+  "voix": {
+    "moteur": "edge",
+    "edge_voix": "fr-FR-HenriNeural",
+    "kokoro_voix": "ff_siwis",
+    "mots_cibles": 150
+  },
+  "images": {
+    "fournisseur": "pollinations",
+    "modele": "flux",
+    "graine": 4242,
+    "style": "flat 2D editorial illustration, clean vector shapes, deep navy blue (#0b1f3a) and warm gold (#f4b942) palette with soft teal accents, subtle paper grain, soft volumetric light, African characters when people appear, modern West African city details, centered composition, vertical 9:16, no text, no letters, no logos, no watermark"
+  },
+  "claude": {
+    "modele": "claude-opus-5-5",
+    "effort": "medium"
+  },
+  "whisper": {
+    "modele": "small",
+    "langue": "fr"
+  },
+  "musique": {
+    "volume_db": -20,
+    "bpm": 112
+  }
+}

@@ -1,0 +1,3 @@
+Déposez ici vos propres musiques libres de droits (mp3, wav, m4a, ogg) :
+musiques CC0, YouTube Audio Library, Pixabay Music… en vérifiant leur licence.
+Le pipeline en prend une différente chaque jour. Dossier vide = musique générée automatiquement.
