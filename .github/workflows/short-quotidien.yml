@@ -13,6 +13,10 @@ on:
         description: "Essai : ne pas marquer l'idée comme faite ni publier de release"
         type: boolean
         default: false
+      echantillons_voix:
+        description: "Seulement écouter les voix masculines disponibles (pas de vidéo)"
+        type: boolean
+        default: false
 
 permissions:
   contents: write
@@ -22,7 +26,28 @@ concurrency:
   cancel-in-progress: false
 
 jobs:
+  echantillons:
+    if: ${{ inputs.echantillons_voix == true }}
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    defaults:
+      run:
+        working-directory: shorts
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - run: sudo apt-get update -qq && sudo apt-get install -y -qq ffmpeg
+      - run: pip install edge-tts
+      - run: python -m pipeline.echantillons
+      - uses: actions/upload-artifact@v4
+        with:
+          name: echantillons-voix
+          path: shorts/sorties/echantillons-voix/*.mp3
+
   short:
+    if: ${{ inputs.echantillons_voix != true }}
     runs-on: ubuntu-latest
     timeout-minutes: 60
     defaults:

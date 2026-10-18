@@ -22,13 +22,26 @@ class ScriptShort(BaseModel):
 
 CONSIGNES = """Tu écris des scripts de YouTube Shorts / TikTok verticaux de 60 secondes, en français,
 pour {nom} ({compte}), une entreprise qui crée des agents IA et des automatisations pour les
-entreprises en Côte d'Ivoire et en Afrique de l'Ouest.
+entreprises en Côte d'Ivoire et en Afrique de l'Ouest. Le texte sera lu par une voix masculine
+énergique : écris pour l'oreille, pas pour l'œil.
 
-Règles :
-- Environ {mots} mots de voix off au total (60 secondes à vitesse naturelle). Phrases courtes, orales, directes.
-- La première scène est une accroche forte (question, contraste ou promesse) qui tient en une phrase.
-- 7 à 9 scènes. Chaque scène = 1 ou 2 phrases.
-- La dernière scène invite à s'abonner à {compte} et à écrire sur WhatsApp au {whatsapp} pour avoir son propre agent IA.
+Accroche (première scène, 3 premières secondes) :
+- Une seule phrase de 12 mots maximum qui arrête le pouce : question qui touche une douleur,
+  contraste surprenant ou promesse concrète. Jamais « Bonjour », jamais « Dans cette vidéo ».
+- Exemples de formes : « Vous perdez des clients… pendant que vous dormez. » /
+  « Arrêtez de répondre à la main à vos clients. »
+
+Style oral :
+- Environ {mots} mots au total. Phrases courtes (souvent moins de 12 mots), une idée par phrase.
+- Parle directement au spectateur avec « vous ». Rythme varié : une phrase longue, puis deux très courtes.
+- Utilise la ponctuation pour l'intonation : « ? » pour les questions, « ! » pour l'énergie (avec mesure),
+  « … » pour une pause de suspense avant une révélation.
+- Relance l'attention au milieu (« Et c'est là que ça devient intéressant. », « Mais attendez. »).
+- Pas de listes lues à plat, pas de jargon, pas de parenthèses, pas d'abréviations (écris les nombres en lettres).
+
+Structure : accroche → problème vécu → solution (l'agent I.A.) → exemple concret → bénéfice → appel à l'action.
+- 7 à 9 scènes, chaque scène = 1 ou 2 phrases.
+- La dernière scène invite à s'abonner à {compte} et à écrire sur WhatsApp au {whatsapp} pour avoir son propre agent I.A.
 - Écris « I.A. » pour que la voix prononce bien « I-A ».
 - Honnêteté : aucun chiffre, client, témoignage ou résultat inventé. Si tu donnes un exemple, présente-le comme un exemple.
 - Pour chaque scène, décris une illustration (en anglais) qui montre concrètement l'idée : personnages, lieu, objets.
@@ -80,9 +93,9 @@ def _script_modele(idee: dict, cfg: dict) -> ScriptShort:
     sujet = idee["idee"].rstrip(".")
     angle = (idee.get("angle") or "").rstrip(".")
     textes = [
-        (f"{sujet} : et si c'était plus simple que vous ne le pensez ?",
+        ("Vous perdez du temps… et des clients. Chaque jour.",
          "a curious West African entrepreneur looking at a glowing smartphone in a small shop at dusk"),
-        ("Chaque jour, des heures partent dans des tâches répétitives : répondre, relancer, trier, recopier.",
+        (f"{sujet} ? Oui, c'est possible. Parce que chaque jour, des heures partent dans les mêmes tâches : répondre, relancer, trier.",
          "a tired shop owner surrounded by floating paper notes and chat bubbles"),
         (f"{angle}." if angle else "Pourtant, une grande partie de ce travail suit toujours les mêmes règles.",
          "a calm desk with a notebook and a laptop, warm morning light, organised workspace"),

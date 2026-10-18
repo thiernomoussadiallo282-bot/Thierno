@@ -9,9 +9,13 @@
   "duree_outro_s": 3.5,
   "voix": {
     "moteur": "edge",
-    "edge_voix": "fr-FR-HenriNeural",
-    "kokoro_voix": "ff_siwis",
-    "mots_cibles": 150
+    "edge_voix": "fr-FR-RemyMultilingualNeural",
+    "edge_tonalite": "-3Hz",
+    "vitesse_base": 1.06,
+    "traitement_radio": true,
+    "mots_cibles": 145,
+    "secours": [],
+    "kokoro_voix": "ff_siwis"
   },
   "images": {
     "fournisseur": "pollinations",

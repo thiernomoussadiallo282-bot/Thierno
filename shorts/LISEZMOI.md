@@ -13,7 +13,7 @@ musique libre (générée) ─► mixage + ducking + -14 LUFS ─► montage Rem
 | Étape | Outil | Fichier |
 |---|---|---|
 | Script, accroche, titre, description, hashtags | Claude (`claude-opus-5-5`) | `pipeline/script.py` |
-| Voix off française | Edge TTS (`fr-FR-HenriNeural`), Kokoro en secours | `pipeline/voix.py` |
+| Voix off masculine française | Edge TTS (`fr-FR-RemyMultilingualNeural`), traitement « voix radio » | `pipeline/voix.py` |
 | Illustrations dans un style fixe | Pollinations (Flux), style et graine fixes | `pipeline/images.py` |
 | Sous-titres mot à mot | Whisper (faster-whisper `small`), recalé sur le texte exact | `pipeline/transcription.py` |
 | Musique libre de droits | synthétisée par le pipeline (ou vos musiques dans `musiques/`) | `pipeline/musique.py` |
@@ -76,7 +76,12 @@ python -m pipeline.main --idee 4 --essai
 ## Réglages (`config.json`)
 
 - `images.style` et `images.graine` : le style visuel fixe de toutes les vidéos. Changez-les pour une nouvelle identité.
-- `voix.edge_voix` : par exemple `fr-FR-DeniseNeural` pour une voix féminine.
+- `voix.edge_voix` : la voix. Par défaut Rémy (masculine, expressive), légèrement plus grave (`edge_tonalite`)
+  et un peu plus rapide (`vitesse_base`) pour plus d'énergie. Pour comparer les voix masculines :
+  **Actions → Short quotidien → Run workflow**, cochez « Seulement écouter les voix », puis téléchargez
+  l'artefact `echantillons-voix` (6 voix, même accroche). Recopiez ensuite le nom de la voix choisie
+  (par exemple `fr-FR-HenriNeural`, `fr-CA-JeanNeural`) dans `config.json`.
+- `voix.traitement_radio` : égalisation + compression pour une voix pleine et claire au téléphone.
 - `voix.mots_cibles` : longueur du script. La vitesse de la voix s'ajuste seule pour tenir en 60 s.
 - `marque` : nom, compte, numéro WhatsApp et phrase de fin.
 - `musique.volume_db` : volume de la musique sous la voix (−20 dB par défaut).
@@ -87,8 +92,9 @@ python -m pipeline.main --idee 4 --essai
   Relisez quand même `publication.txt` avant de publier.
 - **Remotion** est gratuit pour un particulier ou une entreprise de 3 personnes maximum. Au-delà,
   une licence est nécessaire (remotion.dev/license).
-- **Edge TTS** utilise le service de synthèse vocale de Microsoft Edge, sans compte.
-  Si ce service ne répond pas, le pipeline essaie Kokoro (local).
+- **Edge TTS** utilise le service de synthèse vocale de Microsoft Edge, sans compte. En cas d'échec il
+  est réessayé 4 fois. Kokoro (local) n'a qu'une voix française féminine : il ne sert de secours que si
+  vous ajoutez `"kokoro"` dans `voix.secours`.
 - **Pollinations** est gratuit et sans clé (une image toutes les ~15 s ; ajoutez un secret `POLLINATIONS_TOKEN`, jeton gratuit sur auth.pollinations.ai, pour aller plus vite). S'il ne répond pas, des illustrations de secours sont
   dessinées localement dans la même palette, pour que la vidéo du jour sorte quand même.
 - **Whisper** : si le modèle ne peut pas être chargé, les temps des mots sont estimés
