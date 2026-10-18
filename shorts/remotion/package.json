@@ -3,7 +3,7 @@
   "private": true,
   "description": "Montage Remotion des Shorts quotidiens Diallo IA",
   "scripts": {
-    "studio": "remotion studio src/index.ts --public-dir=../exemple",
+    "studio": "remotion studio src/index.ts",
     "render": "remotion render src/index.ts Short"
   },
   "dependencies": {
