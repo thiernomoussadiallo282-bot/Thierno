@@ -95,7 +95,7 @@ python -m pipeline.main --idee 4 --essai
 - **Edge TTS** utilise le service de synthèse vocale de Microsoft Edge, sans compte. En cas d'échec il
   est réessayé 4 fois. Kokoro (local) n'a qu'une voix française féminine : il ne sert de secours que si
   vous ajoutez `"kokoro"` dans `voix.secours`.
-- **Pollinations** est gratuit et sans clé (une image toutes les ~15 s ; ajoutez un secret `POLLINATIONS_TOKEN`, jeton gratuit sur auth.pollinations.ai, pour aller plus vite). S'il ne répond pas, des illustrations de secours sont
+- **Pollinations** est gratuit et sans clé (une image toutes les 45 s environ, d’où environ 8 minutes par vidéo ; ajoutez un secret `POLLINATIONS_TOKEN`, jeton gratuit sur auth.pollinations.ai, pour aller plus vite). S'il ne répond pas, des illustrations de secours sont
   dessinées localement dans la même palette, pour que la vidéo du jour sorte quand même.
 - **Whisper** : si le modèle ne peut pas être chargé, les temps des mots sont estimés
   (`metadata.json` → `"sous_titres": "estimation"`).
